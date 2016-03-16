@@ -16,7 +16,7 @@ $(function() {
     
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//Amazing-W' + '.disqus.com/embed.js';
+      dsq.src = '//amazingw' + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     

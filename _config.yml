@@ -2,9 +2,9 @@
 title: AW的个人博客
 email: wqf_525@live.cn
 description: > # this means to ignore newlines until "baseurl:"
-  闫肃的博客
+  AW的个人博客
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://amazing" # the base hostname & protocol for your site
+url: "http://amazingw.github.com" # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
 
 # Sidebar filter
@@ -19,12 +19,12 @@ github: amazingw
 # dribbble: username
 
 # avatar头像及Favicon
-avatar: http://p2.gexing.com/touxiang/20130518/1919/519763a7c8ee7_200x200_3.jpg
-favicon: http://ico.58pic.com/ajax/download?id=120277&format=ico
+avatar: /assets/icon/favicon.ico
+favicon: /assets/img/favicon.jpg
 
 # disqus 设置
 disqus:
-  shortname: Amazing-W
+  shortname: amazingw
 
 # google analytics 设置
 ga:

@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AW的个人博客</title>
-    <description>闫肃的博客
+    <description>AW的个人博客
 </description>
-    <link>http://amazing/</link>
-    <atom:link href="http://amazing/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 16 Mar 2016 15:11:00 +0800</pubDate>
-    <lastBuildDate>Wed, 16 Mar 2016 15:11:00 +0800</lastBuildDate>
+    <link>http://amazingw.github.com/</link>
+    <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 16 Mar 2016 17:28:30 +0800</pubDate>
+    <lastBuildDate>Wed, 16 Mar 2016 17:28:30 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -24,8 +24,8 @@
 
 </description>
         <pubDate>Sun, 04 Oct 2015 00:00:00 +0800</pubDate>
-        <link>http://amazing/2015/10/04/general-vim-resources.html</link>
-        <guid isPermaLink="true">http://amazing/2015/10/04/general-vim-resources.html</guid>
+        <link>http://amazingw.github.com/2015/10/04/general-vim-resources.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2015/10/04/general-vim-resources.html</guid>
         
         <category>Vim</category>
         
@@ -374,8 +374,8 @@ void max_heapify(vector&amp;lt;int&amp;gt; &amp;amp;nums, int beg, int end)
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 07 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://amazing/2015/09/07/sort-algorithms.html</link>
-        <guid isPermaLink="true">http://amazing/2015/09/07/sort-algorithms.html</guid>
+        <link>http://amazingw.github.com/2015/09/07/sort-algorithms.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2015/09/07/sort-algorithms.html</guid>
         
         <category>算法</category>
         
@@ -393,8 +393,8 @@ void max_heapify(vector&amp;lt;int&amp;gt; &amp;amp;nums, int beg, int end)
 &lt;p&gt;Google 会把 &lt;code class=&quot;highlighter-rouge&quot;&gt;a-good_reource-of-seo.html&lt;/code&gt; 拆分成关键字：&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;good_resource&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;of&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;seo&lt;/code&gt;。&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Feb 2015 00:00:00 +0800</pubDate>
-        <link>http://amazing/2015/02/13/general-seo-resources.html</link>
-        <guid isPermaLink="true">http://amazing/2015/02/13/general-seo-resources.html</guid>
+        <link>http://amazingw.github.com/2015/02/13/general-seo-resources.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2015/02/13/general-seo-resources.html</guid>
         
         <category>SEO</category>
         
@@ -494,8 +494,8 @@ void max_heapify(vector&amp;lt;int&amp;gt; &amp;amp;nums, int beg, int end)
 
 </description>
         <pubDate>Sat, 10 Jan 2015 00:00:00 +0800</pubDate>
-        <link>http://amazing/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html</link>
-        <guid isPermaLink="true">http://amazing/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html</guid>
+        <link>http://amazingw.github.com/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html</guid>
         
         <category>Blog</category>
         
@@ -569,8 +569,8 @@ $post_info = $post-&amp;gt;my_post_info;
 &lt;p&gt;来保证不出问题。&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Jan 2015 00:00:00 +0800</pubDate>
-        <link>http://amazing/2015/01/08/conflict-between-camel-and-snake-in-laravel.html</link>
-        <guid isPermaLink="true">http://amazing/2015/01/08/conflict-between-camel-and-snake-in-laravel.html</guid>
+        <link>http://amazingw.github.com/2015/01/08/conflict-between-camel-and-snake-in-laravel.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2015/01/08/conflict-between-camel-and-snake-in-laravel.html</guid>
         
         <category>PHP</category>
         
@@ -735,8 +735,8 @@ class Foo extends Facade {
 
 </description>
         <pubDate>Sat, 06 Dec 2014 00:00:00 +0800</pubDate>
-        <link>http://amazing/2014/12/06/ioc-and-facade-in-laravel.html</link>
-        <guid isPermaLink="true">http://amazing/2014/12/06/ioc-and-facade-in-laravel.html</guid>
+        <link>http://amazingw.github.com/2014/12/06/ioc-and-facade-in-laravel.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2014/12/06/ioc-and-facade-in-laravel.html</guid>
         
         <category>PHP</category>
         
@@ -809,8 +809,8 @@ brew link php55
 &lt;p&gt;再看php的版本，已经切换好了。&lt;/p&gt;
 </description>
         <pubDate>Fri, 26 Sep 2014 00:00:00 +0800</pubDate>
-        <link>http://amazing/2014/09/26/use-old-version-of-brew-php.html</link>
-        <guid isPermaLink="true">http://amazing/2014/09/26/use-old-version-of-brew-php.html</guid>
+        <link>http://amazingw.github.com/2014/09/26/use-old-version-of-brew-php.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2014/09/26/use-old-version-of-brew-php.html</guid>
         
         <category>PHP</category>
         
@@ -930,8 +930,8 @@ chmod 600 ~/Desktop/.localized
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
-        <link>http://amazing/2014/08/03/general-mac-resources.html</link>
-        <guid isPermaLink="true">http://amazing/2014/08/03/general-mac-resources.html</guid>
+        <link>http://amazingw.github.com/2014/08/03/general-mac-resources.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2014/08/03/general-mac-resources.html</guid>
         
         <category>Mac</category>
         
@@ -995,8 +995,8 @@ grant all privileges on *.* to test@&#39;localhost&#39; identified by &#39;test&
 
 </description>
         <pubDate>Sun, 11 May 2014 00:00:00 +0800</pubDate>
-        <link>http://amazing/2014/05/11/general-mysql-resources.html</link>
-        <guid isPermaLink="true">http://amazing/2014/05/11/general-mysql-resources.html</guid>
+        <link>http://amazingw.github.com/2014/05/11/general-mysql-resources.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2014/05/11/general-mysql-resources.html</guid>
         
         <category>MySQL</category>
         
@@ -1144,8 +1144,8 @@ fastcgi_param MYSQL_PASSWORD &#39;root&#39;;
 &lt;/ol&gt;
 </description>
         <pubDate>Sun, 04 May 2014 00:00:00 +0800</pubDate>
-        <link>http://amazing/2014/05/04/set-environment-variables-of-server-for-php.html</link>
-        <guid isPermaLink="true">http://amazing/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
+        <link>http://amazingw.github.com/2014/05/04/set-environment-variables-of-server-for-php.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
         
         <category>PHP</category>
         
