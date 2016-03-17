@@ -4,7 +4,7 @@ title: Laravel 核心：控制反转（Inversion of Control）和门面模式（
 category: 服务端开发
 tags: [PHP, Laravel]
 keywords: Laravel,PHP,IoC,Facade
-description: 
+description: ""
 ---
 
 > 这两个概念对于 Laravel 的使用者来说应该并不陌生，尤其是当你希望扩展或者替换 Laravel 核心库的时候，理解和合理使用它们可以极大提升 Laravel 的战斗力。这里以创建一个自己的 ServiceProvider 为例理解 Inversion of Control 和 Facade 在 Laravel 中的应用。
