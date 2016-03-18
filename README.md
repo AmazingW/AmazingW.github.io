@@ -1,7 +1,7 @@
 ### 我的博客
 
 地址：[http://AmazingW.github.io](http://AmazingW.github.io)
-博客参考su yan的开源模块，感谢他
+博客参考su yan的开源模块，感谢他,我保留了suyan的一部分技术类的文章，非常感谢他
 ### 安装说明
 
 1. fork库到自己的github
