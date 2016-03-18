@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12134abe-2015-4e3d-9269-a6a44d5dafc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/server_design.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/serve_tech/2014-12-06-ioc-and-facade-in-laravel.md" afterPath="$PROJECT_DIR$/_posts/serve_tech/2014-12-06-ioc-and-facade-in-laravel.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/19/php-session-security.html" afterPath="$PROJECT_DIR$/_site/2012/09/19/php-session-security.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/27/open-widown-in-javascript.html" afterPath="$PROJECT_DIR$/_site/2012/09/27/open-widown-in-javascript.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/27/php-variable-variables.html" afterPath="$PROJECT_DIR$/_site/2012/09/27/php-variable-variables.html" />
@@ -108,6 +106,62 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/02/13/general-seo-resources.html" afterPath="$PROJECT_DIR$/_site/2015/02/13/general-seo-resources.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/09/07/sort-algorithms.html" afterPath="$PROJECT_DIR$/_site/2015/09/07/sort-algorithms.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/10/04/general-vim-resources.html" afterPath="$PROJECT_DIR$/_site/2015/10/04/general-vim-resources.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation1.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation2.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/LLVM-record.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/LLVM-record.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/OC-Singleton.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/OC-Singleton.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Objc-API-Thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Objc-API-Thread.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/OtherLinkerFlags-iOS-XCode.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/OtherLinkerFlags-iOS-XCode.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/RunTime-Swizzle.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/RunTime-Swizzle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/UITextInput-proto.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/UITextInput-proto.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/c++-extern-detail.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/c++-extern-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/code-style-gnuc.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/code-style-gnuc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/error-of-cocopods.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/error-of-cocopods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/forever-background-ios.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/forever-background-ios.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/game-developper-code-desing.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/game-developper-code-desing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/hit-test-Event.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/hit-test-Event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-ActionSheet-problem.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-ActionSheet-problem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Alpha-hidden-opaque.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Alpha-hidden-opaque.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Animations.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Animations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Base-Knowledge.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Base-Knowledge.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-BlueTooth_develop.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-BlueTooth_develop.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Extension.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Extension.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-GCD-Thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-GCD-Thread.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Crop-Graphics.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Crop-Graphics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Dealing.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Dealing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-NSPredicate.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-NSPredicate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Photo-memory.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Photo-memory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-multi-thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-multi-thread.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-pause-CALayer-Annimation.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-pause-CALayer-Annimation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-self-define-take-photo.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-self-define-take-photo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-static-librays.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-static-librays.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-GCDAsyncSocket.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-GCDAsyncSocket.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-ICONFONT.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-ICONFONT.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-NSInvocation.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-NSInvocation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-useProtoBuffer.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-useProtoBuffer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-useWifi.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-useWifi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/issues-when-using-github.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/issues-when-using-github.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/knowledge-of-game-developper.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/knowledge-of-game-developper.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/linux-file-system.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/linux-file-system.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/nodejs-deamon-fork.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/nodejs-deamon-fork.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/output-format.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/output-format.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/pop-experiences.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/pop-experiences.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/runtime-main-point.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/runtime-main-point.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/scrollview-experience.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/scrollview-experience.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/server-design.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/server-design.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/socket-develop-knowledge.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/socket-develop-knowledge.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/sql-design.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/sql-design.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/sql-use-of-explain.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/sql-use-of-explain.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/symbol-not-found-for-architecture-armv7.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/symbol-not-found-for-architecture-armv7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/tabbar-zoom.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/tabbar-zoom.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-attribute-string.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-attribute-string.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-bundle.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-bundle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-const.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-const.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-rac.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-rac.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-vfl.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-vfl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/using-of-UIActivityIndicatorView.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/using-of-UIActivityIndicatorView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/win7-service.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/win7-service.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/xcode-quickbutton.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/xcode-quickbutton.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="$PROJECT_DIR$/_site/404.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/pages/feed.xml" afterPath="$PROJECT_DIR$/_site/pages/feed.xml" />
@@ -131,31 +185,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016-03-17-scrollview-experience.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-scrollview-experience.md">
+      <file leaf-file-name="2016-03-18-from-swift-2-oc.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2016-03-18-from-swift-2-oc.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-03-17-UITextInput-proto.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-UITextInput-proto.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.640678">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2016-03-17-RunTime-Swizzle.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-RunTime-Swizzle.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45062837">
+              <caret line="589" column="3" selection-start-line="589" selection-start-column="3" selection-end-line="589" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -169,12 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2016-03-17-sql-use-of-explain.md" />
-        <option value="$PROJECT_DIR$/_posts/serve_tech/2016-03-17-sql-use-of-explain.md" />
-        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-LLVM-record.md" />
-        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-code-style-gnuc.md" />
-        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-new-post.md" />
-        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-c++-extern-detail.md" />
         <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-socket-develop-knowledge.md" />
         <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-const.md" />
         <option value="$PROJECT_DIR$/_posts/serve_tech/2016-03-17-server-design.md" />
@@ -220,6 +248,12 @@
         <option value="$PROJECT_DIR$/_posts/2016-03-17-scrollview-experience.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-17-UITextInput-proto.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-17-RunTime-Swizzle.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-03-17-UITableViewCell-AutoHeight.md" />
+        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-UITableViewCell-AutoHeight.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-03-17-crashlog-from-dump.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-03-18-tableview-controls.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-03-18-swfit-server.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-03-18-from-swift-2-oc.md" />
       </list>
     </option>
   </component>
@@ -303,71 +337,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_tech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AmazingW.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,7 +426,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18852459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -464,7 +434,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34732425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34732425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -510,46 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-LLVM-record.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/life/2013-08-01-the-importent-of-writing.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44481054">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-c++-extern-detail.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-socket-develop-knowledge.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-const.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43564355">
-          <caret line="343" column="0" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/serve_tech/2016-03-17-sql-design.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -615,14 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5841584">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-bundle.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22772278">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -909,8 +831,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-UITextInput-proto.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.640678">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-crashlog-from-dump.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7559322">
+          <caret line="546" column="12" selection-start-line="546" selection-start-column="12" selection-end-line="546" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-UITableViewCell-AutoHeight.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1220339">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-bundle.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47288135">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-18-tableview-controls.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-18-swfit-server.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30508474">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2016-03-18-from-swift-2-oc.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45062837">
+          <caret line="589" column="3" selection-start-line="589" selection-start-column="3" selection-end-line="589" selection-end-column="3" />
           <folding />
         </state>
       </provider>

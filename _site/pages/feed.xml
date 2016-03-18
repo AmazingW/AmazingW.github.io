@@ -6,9 +6,1380 @@
 </description>
     <link>http://amazingw.github.com/</link>
     <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Mar 2016 17:36:41 +0800</pubDate>
-    <lastBuildDate>Thu, 17 Mar 2016 17:36:41 +0800</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2016 09:56:58 +0800</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2016 09:56:58 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>类型化却不失灵活的 Table View Controller</title>
+        <description>&lt;p&gt;对（几乎）所有的 iOS 开发者来说，UITableView 就像是面包和黄油一样必不可少。大部分情况下，我们用一个 UITableViewCell 展现一种数据类型，然后通过 Identifier 来重用单元格。在 objc.io 中介绍了这种技术。当我们想在一个 Table View 中使用多个不同类型的 cell 时，情况则复杂的多。cell 的不一致让我们很难处理。&lt;/p&gt;
+
+&lt;p&gt;本文介绍了解决这个问题的三种途径。每种方案都试图修复前一种方案中导致的问题。第一种方法在许多 O-C 代码库中都很常见。第二种方法利用了枚举，但仍然不是最好的解决办法。第三种方法的实现使用了协议和泛型——它们是 Swift 提供给我们的神兵利器。&lt;/p&gt;
+
+&lt;p&gt;基础&lt;/p&gt;
+
+&lt;p&gt;我会带你完成一个 demo 项目（github 地址)，在这个例子中，我们创建了一个包含两种不同 cell 的 Table View：一种 cell 用于显示文本，一种 cell 用于显示图片，如下图所示：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/table1.png&quot; alt=&quot;table_view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;显示两种数据（文字和图片）的 UITableView&lt;/p&gt;
+
+&lt;p&gt;在渲染视图时，我喜欢用值类型来封装数据。我把这个称作 view data。这里，我们使用了两个 view data：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct TextCellViewData {
+    let title: String
+}
+
+struct ImageCellViewData {
+    let image: UIImage
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;（在真实项目中可能会有更多属性；image 属性应该声明为 NSURL ，以免对 UIKit 产生依赖）。对应地，我们也需要两种 cell 来展现这两种 view data：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class TextTableViewCell: UITableViewCell {
+    func updateWithViewData(viewData: TextCellViewData) {
+        textLabel?.text = viewData.title
+    }
+}
+
+class ImageTableViewCell: UITableViewCell {
+    func updateWithViewData(viewData: ImageCellViewData) {
+        imageView?.image = viewData.image
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;然后，我们开始进入 View Controller 中。&lt;/p&gt;
+
+&lt;p&gt;第一种方法:简单方法&lt;/p&gt;
+
+&lt;p&gt;我不喜欢一开始就讲很复杂的东西，一开始，先讲一个简单的实现，用于显示一点东西在屏幕上。&lt;/p&gt;
+
+&lt;p&gt;我们想让 Table View 受数组中的数据驱动（准确地说是 items 数组）。因为我们的数据是完全不同的两种结构体，所以数组的类型只能是 [Any]。在 registerCells() 方法中我们使用标准的 cell 重用机制提前注册了 cell。在 tableView(_:cellForRowAtIndexPath:) 方法中我们根据指定 IndexPath 所对应的 view data 的类型来创建 cell。我们的 View Controller 的完整实现非常简单（为简便起见，我们用 ViewController 作为 Table View 的数据源。在真实项目中，我们可能需要将数据源抽离到一个单独的对象中。）：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class ViewController: UIViewController {
+
+    @IBOutlet weak var tableView: UITableView!
+
+    var items: [Any] = [
+        TextCellViewData(title: &quot;Foo&quot;),
+        ImageCellViewData(image: UIImage(named: &quot;Apple&quot;)!),
+        ImageCellViewData(image: UIImage(named: &quot;Google&quot;)!),
+        TextCellViewData(title: &quot;Bar&quot;),
+    ]
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        tableView.dataSource = self
+        registerCells()
+    }
+
+    func registerCells() {
+        tableView.registerClass(TextTableViewCell.self, forCellReuseIdentifier: textCellIdentifier)
+        tableView.registerClass(ImageTableViewCell.self, forCellReuseIdentifier: imageCellIdentifier)
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&amp;gt; Int {
+        return items.count
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
+        let viewData = items[indexPath.row]
+
+        if (viewData is TextCellViewData) {
+            let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as! TextTableViewCell
+            cell.updateWithViewData(viewData as! TextCellViewData)
+            return cell
+        } else if (viewData is ImageCellViewData) {
+            let cell = tableView.dequeueReusableCellWithIdentifier(imageCellIdentifier) as! ImageTableViewCell
+            cell.updateWithViewData(viewData as! ImageCellViewData)
+            return cell
+        }
+
+        fatalError()
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这个方法是可行的，但至少有以下几个原因让我不太满意:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;我们无法重用这个 ViewController。如果我们想再加入一种新的 cell，比如用于显示视频，我们不得不在三个地方修改代码：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;加入一个新的可重用 Identifier&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改 registerCells() 方法&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改 tableView(_:cellForRowAtIndexPath:) 方法&lt;/p&gt;
+
+    &lt;p&gt;如果我们修改 items，提供给它一种 view data，而这种 view data 类型是我们无法处理的，则我们会触发 tableView(_:cellForRowAtIndexPath:) 方法中的 fatalError()。&lt;/p&gt;
+
+    &lt;p&gt;在 view data 和 cell 之间存在关联性，但在类型系统中却无法体现这种关联性。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;第二种方法：枚举&lt;/p&gt;
+
+&lt;p&gt;我们可以添加一个 TableViewItem 枚举类型来从某种程度上解决这些问题，在枚举中，我们将 view data 所支持的所有类型都列举进去：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enum TableViewItem {
+    case Text(viewData: TextCellViewData)
+    case Image(viewData: ImageCellViewData)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;然后将 items 属性的类型修改为 [TableViewItem]：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var items: [TableViewItem] = [
+    .Text(viewData: TextCellViewData(title: &quot;Foo&quot;)),
+    .Image(viewData: ImageCellViewData(image: UIImage(named: &quot;Apple&quot;)!)),
+    .Image(viewData: ImageCellViewData(image: UIImage(named: &quot;Google&quot;)!)),
+    .Text(viewData: TextCellViewData(title: &quot;Bar&quot;)),
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;再修改 registerCells() 方法:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func registerCells() {
+    for item in items {
+        let cellClass: AnyClass
+        let identifier: String
+
+        switch(item) {
+        case .Text(viewData: _):
+            cellClass = TextTableViewCell.self
+            identifier = textCellIdentifier
+        case .Image(viewData: _):
+            cellClass = ImageTableViewCell.self
+            identifier = imageCellIdentifier
+        }
+
+        tableView.registerClass(cellClass, forCellReuseIdentifier: identifier)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;最后，修改 tableView(_:cellForRowAtIndexPath:) 方法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
+    let item = items[indexPath.row]
+
+    switch(item) {
+    case let .Text(viewData: viewData):
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as! TextTableViewCell
+        cell.updateWithViewData(viewData)
+        return cell
+    case let .Image(viewData: viewData):
+        let cell = tableView.dequeueReusableCellWithIdentifier(imageCellIdentifier) as! ImageTableViewCell
+        cell.updateWithViewData(viewData)
+        return cell
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不可否认，这种方法比上一种方法更好：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;View Controller 只能提供枚举中指定的 view data 类型。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;用 switch 语句代替了烦人的 if 语句，同时可以去掉 fatalError()。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;然后我们还可以改进这个实现，比如将单元格的重用和设置修改为：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
+    let item = items[indexPath.row]
+
+    switch(item) {
+    case let .Text(viewData: viewData):
+        return tableView.dequeueCellWithViewData(viewData) as TextTableViewCell
+    case let .Image(viewData: viewData):
+        return tableView.dequeueCellWithViewData(viewData) as ImageTableViewCell
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但是悲催的是，我们得在所有的地方都要加入这些 switch 语句。到目前为止，我们只在两个地方使用了 switch 语句，但不难想象绝不仅限于此。例如，当自动布局将变得不可用我们必须使用手动布局时，我们必须在 tableView(_:heightForRowAtIndexPath:) 中再使用一个 switch 语句。&lt;/p&gt;
+
+&lt;p&gt;这个方法不是不可以使用，但我始终对那些 switch 语句耿耿于怀，于是我打算更进一步。&lt;/p&gt;
+
+&lt;p&gt;第三种（终极）方法：协议和泛型&lt;/p&gt;
+
+&lt;p&gt;让我们彻底推翻前两种解决办法，另起炉灶。&lt;/p&gt;
+
+&lt;p&gt;声明 Updatable 协议&lt;/p&gt;
+
+&lt;p&gt;我们的 cell 是根据 view data 来呈现不同界面的，因此我们定义一个 Updatable 协议，同时让它和一个类型 ViewData 进行绑定：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol Updatable: class {
+    typealias ViewData
+
+    func updateWithViewData(viewData: ViewData)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;然后让我们的自定义单元格实现该协议：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension TextTableViewCell: Updatable {
+    typealias ViewData = TextCellViewData
+}
+
+extension ImageTableViewCell: Updatable {
+    typealias ViewData = ImageCellViewData
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;看过前两种方法之后，我们不难发现，对于 items 中的每个 view data 对象，我们都需要：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;找出要使用哪一种 cell 类&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;找出要使用哪一个重用 Identifier&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;用 veiw data 渲染 cell&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;定义 CellConfigurator 结构&lt;/p&gt;
+
+&lt;p&gt;因此，我们另外声明一个结构来包装 view data。用结构来提供更多的属性和功能。不妨把这个结构命名为 CellConfigurator:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct CellConfigurator {
+
+    let viewData: Cell.ViewData
+    let reuseIdentifier: String = NSStringFromClass(Cell)
+    let cellClass: AnyClass = Cell.self
+
+    ...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这个是一个泛型结构，使用类型参数 Cell。Cell 有两个约束：首先必须实现了 Updatable 协议，其次它必须是 UITableViewCell 子类。&lt;/p&gt;
+
+&lt;p&gt;CellConfigurator 有三个属性: viewData, reuseIdentifier 和 cellClass。viewData 的类型取决于 Cell 的类型，它没有默认值。其他两个属性的值则取决于 Cell 的具体类型（这是 Swift 中的新特性，它真的很棒！）。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ...
+    // further part of CellConfigurator
+    func updateCell(cell: UITableViewCell) {
+        if let cell = cell as? Cell {
+            cell.updateWithViewData(viewData)
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;最后，我们将 UITableViewCell 实例传给 updateCell() 方法，就可以将 viewData 渲染到 cell 上。这里，我们不需要用到 Cell 的类型，因为 UITableViewCell 对象是通过 dequeueReusableCellWithIdentifier(_:forIndexPath:) 方法返回的。呼，这么短的实现，解释起来这么费劲。&lt;/p&gt;
+
+&lt;p&gt;然后，在 items 数组中生成 CellConfigurator 实例：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let items = [
+    CellConfigurator(viewData: TextCellViewData(title: &quot;Foo&quot;)),
+    CellConfigurator(viewData: ImageCellViewData(image: UIImage(named: &quot;Apple&quot;)!)),
+    CellConfigurator(viewData: ImageCellViewData(image: UIImage(named: &quot;Google&quot;)!)),
+    CellConfigurator(viewData: TextCellViewData(title: &quot;Bar&quot;)),
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;等等，怎么回事？居然出现一个编译时错误？&lt;/p&gt;
+
+&lt;p&gt;Type of expression is ambiguous without more context&lt;/p&gt;
+
+&lt;p&gt;那是因为 CellConfigurator 是泛型，但 Swift 数组只能保存相同类型，我们不能简单地把 CellConfigurator和 CellConfigurator放到同一个数组中。这是对的，但却不是我们想要的。&lt;/p&gt;
+
+&lt;p&gt;啊哈，稍等一会，马上搞定。Cell 类型参数实际上只在声明 viewData 的时候用到。因此，我们在 CellConfigurator 中可以不需要指明 Cell 的真实类型。新声明一个非泛型协议：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol CellConfiguratorType {
+    var reuseIdentifier: String { get }
+    var cellClass: AnyClass { get }
+
+    func updateCell(cell: UITableViewCell)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;修改 CellConfigurator，让它实现 CellConfiguratorType:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension CellConfigurator: CellConfiguratorType {
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;现在可以将 items 的类型声明为：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let items: [CellConfiguratorType]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;编译通过。&lt;/p&gt;
+
+&lt;p&gt;View Controller&lt;/p&gt;
+
+&lt;p&gt;我们现在开始修改 View Controller。 registerCells() 可以变得更简单:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func registerCells() {
+    for cellConfigurator in items {
+        tableView.registerClass(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;tableView(_:cellForRowAtIndexPath:) 方法也变得更简单了，这真是一个好消息：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
+    let cellConfigurator = items[indexPath.row]
+    let cell = tableView.dequeueReusableCellWithIdentifier(cellConfigurator.reuseIdentifier, forIndexPath: indexPath)
+    cellConfigurator.updateCell(cell)
+    return cell
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;为能重用 View Controller，我们还必须再做一些工作。比如让 items 能够从类外部修改。这里就不再多说了，你可以在 GitHub 上参考最终实现的这个框架和 demo：ConfigurableTableViewController&lt;/p&gt;
+
+&lt;p&gt;结束语&lt;/p&gt;
+
+&lt;p&gt;我们来看一下，最后一个方案和前两种方案相比有什么不同：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;当我们想增加一种新的 cell 时，不需要修改 View Controller&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;View Controller 是类型安全的。如果我们增加一种 cell 根本不支持的 view data 时，我们会得到一个编译错误。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;刷新 cell 时不需要 switch 语句。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/03/18/tableview-controls.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/tableview-controls.html</guid>
+        
+        <category>tableview</category>
+        
+        <category>iOS</category>
+        
+        
+        <category>客户端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>服务端 Swift</title>
+        <description>&lt;p&gt;自从苹果官方发布了一个 Swift 的 Linux 开源版本之后，服务端 Swift 终于迎来了一个令人激动的前景。我的好奇心终于无法克制，是时候尝试一下服务端 Swift 了！&lt;/p&gt;
+
+&lt;p&gt;除了用过几个 Baas 以外，我没有任何后端编程经验，但幸运的是开源社区已经提供了现成的框架。我试了一下 Tanner Nelson 推荐的 Vapor 框架。它的使用非常简单，非常适合我当前的任务，在这篇文档中还会使用到 Heroku。我决定使用 Heroku 的原因是我们的后端团队在使用它，它对于前端来说非常友好。&lt;/p&gt;
+
+&lt;p&gt;写到这里的时候，为了解决 Heroku 框架运行中的几个小问题，我专门提交了一个 pull request 。如果代码还没被合并的话，请设置你的包管理器从 这里 下载。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;安装&lt;/h3&gt;
+
+&lt;p&gt;要继续本教程，首先，你需要一个 Heroku 账号 ，并安装好 Swift Development Snapshot 。写到这里的时候，在它的正式版中还未包含 swift 包管理器。因此为了使用这个工具，你必须下载开发版的 snapshot。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;开始&lt;/h3&gt;
+
+&lt;p&gt;我们的目标是创建一个简单的 Swift 服务器并运行在 Heroku 上。这不需要在 linux 环境下进行，就像是你在使用本地服务器。你只消创建一个本地的 Xcode 项目，对项目进行一些设置，然后就可以在 Swift 包管理器 中运行它。整过过程分为 4 个步骤：&lt;/p&gt;
+
+&lt;p&gt;将 main.swift 拷贝根目录下的 Sources 目录&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server1.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;创建一个 Package.swift 文件&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server2.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;将 .build 目录添加到 import paths&lt;/p&gt;
+
+&lt;p&gt;要使用自动补全和语法加亮功能，需要将 Swift 包管理器的 build 目录提交到 import paths 中。注意，在 import paths 的 Debug 中设置的 debug 目录，而 Release 项则输入 release 目录。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server3.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用 toolchain 运行 Xcode&lt;/p&gt;
+
+&lt;p&gt;如果你使用 Xcode 7.3，你可以用 Xcode &amp;gt; Toolchains 菜单开启一个Xcode 实例，用于打开 swift snapshot。因为我们不能在 Xcode 中进行编译，我们只能以命令行的方式进行编译。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server4.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;编写服务器&lt;/p&gt;
+
+&lt;p&gt;令我高兴的是，为了进行概念验证，我需要编写的代码其实只有寥寥数行。我启动和运行服务器的代码甚至不到 10 行。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server5.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;要启动服务器，只需在终端中输入一句命令，：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server6.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;好了，让我们打开浏览器。我的浏览器安装了 json 插件，你的画面或许会有不同。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server7.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;迁移到云上&lt;/p&gt;
+
+&lt;p&gt;服务器在本地顺利运行起来了，但如果放到云端则更好。我迫不及待地想将 App 在云上跑起来。对于我来说这是一个全新的挑战，幸运的是，我得到了 Vincent Toms 的悉心指导。&lt;/p&gt;
+
+&lt;p&gt;Heroku 的安装是一件非常愉悦的体验，几分钟后我就创建了一个 Heroku App，接下来我就要上传我的项目了。&lt;/p&gt;
+
+&lt;p&gt;出错啦&lt;/p&gt;
+
+&lt;p&gt;这只是今天的诸多错误中的一个。我已经预计到事情不可能一帆风顺，因此我查看了 Vapor 的文档，最终发现问题出在所谓的 buildpacks 上。Heorku 提供了一些标准的 buildpacks，但完全没有针对 Swift 的 buildpacks。无奈之下求救于开源社区，刚好看到 Kyle Fuller 的 buildpack 。集成它就简单得多了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server8.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;用这个 buildpack 启动后，App 成功加载，接下来就是访问它的 URL。&lt;/p&gt;
+
+&lt;p&gt;再次出错&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server9.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;事情不会那么顺利的，是吧？经过 google 一番，仔细查看了一些例子，我发现我还差一个 Procfile。浏览一下这个文件的内容，你就能明白这个文件是干什么用的了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server10.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;buildpack 创建了可执行文件，但 Heroku 并不知道。通过 Procfile，我们告诉 Heroku 去运行 SwiftServerIO 可执行文件。上传这个 Procfile。&lt;/p&gt;
+
+&lt;p&gt;仍然出错&lt;/p&gt;
+
+&lt;p&gt;Heroku 编译的 2 分支仿佛变得无比漫长。我重新打开了浏览器，发现仍然报错。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server11.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我以为 Heroku 可能还未启动完成（实际不是），因此我又等了一小会，终于发现出错了。可执行文件生成了， process file 也就绪，一定是别的什么地方出问题了。再次 google，一直到我最终发现我需要设置 App 的规模(scale up)。这要使用到 Heroku 的 toolbelt 中的一个简单命令。&lt;/p&gt;
+
+&lt;p&gt;heroku ps:scale web=1&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server12.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Heroku 在免费情况下只有一个 dyno（Heroku 计费单位，10~50 个请求/秒）。但对于我们的简单服务器来说，这也够了。因此，在我们将 scale web 设置为 1 个 dyno 之后，再次用浏览器查看。&lt;/p&gt;
+
+&lt;p&gt;成功了！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server13.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;成功了！服务器启动，出现了万能的 hello world！经过一番欢呼雀跃之后，让我们真正来问一声好吧！&lt;/p&gt;
+
+&lt;p&gt;响应请求&lt;/p&gt;
+
+&lt;p&gt;在 main.swfit 文件中添加一小段代码，让服务器在问好的同时能够因人而异。就微微偷一下懒，新加一个路由，让服务器根据输入输出不同的问候语。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server14.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;一切正常，但根据一般规律，我仍然做好了出错的心理准备。提交修改，push 代码到 Heroku。&lt;/p&gt;
+
+&lt;p&gt;Say Hello!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server15.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;大约一份多钟的编译之后，在浏览器中访问 URL，服务器返回了问候语。你可以在这里查看效果 。&lt;/p&gt;
+
+&lt;p&gt;接下来是什么？&lt;/p&gt;
+
+&lt;p&gt;可以说，服务端 Swift 的今天离不开社区强大支持。对于我来说，能够从云端获取 JSON 是一个令人兴奋的开始，我已经迫不及待地想看看接下来还会发生什么。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/03/18/swfit-server.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/swfit-server.html</guid>
+        
+        <category>Swift</category>
+        
+        <category>server</category>
+        
+        
+        <category>客户端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>从Objective-C到Swift</title>
+        <description>&lt;p&gt;这篇文章是自己学习Swift的笔记与深化。希望这篇文章能够帮助已经有Objective-C经验的开发者更快地学习Swift。同时也品味到Swift的精妙之处。&lt;/p&gt;
+
+&lt;p&gt;结论放在开头:我认为Swift比Objective-C更优雅,更安全同时也更现代,更性感。&lt;/p&gt;
+
+&lt;p&gt;文章组织脉络：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;从Objective-C到Swift的语法差异。我们熟悉的Objective-C特性在Swift中如何展现。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;从Objective-C到Swift的进步改进。研究对比Swift在安全性,易用性上的提升,给我们带来的新编程范式。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;目录：&lt;/p&gt;
+
+&lt;p&gt;1.属性(property)和实例变量(instance variable)&lt;/p&gt;
+
+&lt;p&gt;2.控制流&lt;/p&gt;
+
+&lt;p&gt;3.函数&lt;/p&gt;
+
+&lt;p&gt;4.类与初始化(Initializers)&lt;/p&gt;
+
+&lt;p&gt;5.枚举与结构体&lt;/p&gt;
+
+&lt;p&gt;6.协议(Protocols)&lt;/p&gt;
+
+&lt;p&gt;7.Swift与Cocoa&lt;/p&gt;
+
+&lt;p&gt;8.总结&lt;/p&gt;
+
+&lt;p&gt;1.属性(property)和实例变量(instance variable)&lt;/p&gt;
+
+&lt;p&gt;Objective-C property in Swift world&lt;/p&gt;
+
+&lt;p&gt;在Cocoa世界开发的过程中,我们最常打交道的是property.&lt;/p&gt;
+
+&lt;p&gt;典型的声明为:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift当中,摆脱了C的包袱后,变得更为精炼,我们只需直接在类中声明即可&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Shape {
+    var name = &quot;shape&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;注意到这里,我们不再需要@property指令,而在Objective-C中,我们可以指定property的attribute,例如strong,weak,readonly等。&lt;/p&gt;
+
+&lt;p&gt;而在Swift的世界中,我们通过其他方式来声明这些property的性质。&lt;/p&gt;
+
+&lt;p&gt;需要注意的几点:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;strong: 在Swift中是默认的&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;weak: 通过weak关键词申明&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;p&gt;weak var delegate: UITextFieldDelegate?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;readonly,readwrie 直接通过声明常量let,声明变量var的方式来指明&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;copy 通过@NSCopying指令声明。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;值得注意的是String,Array和Dictionary在Swift是以值类型(value type)而不是引用类型(reference type)出现,因此它们在赋值,初始化,参数传递中都是以拷贝的方式进行（简单来说,String,Array,Dictionary在Swift中是通过struct实现的）&lt;/p&gt;
+
+&lt;p&gt;延伸阅读：Value and Reference Types&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;nonatomic,atomic 所有的Swift properties 都是nonatomic。但是我们在线程安全上已经有许多机制,例如NSLock,GCD相关API等。个人推测原因是苹果想把这一个本来就用的很少的特性去掉,线程安全方面交给平时我们用的更多的机制去处理。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;然后值得注意的是,在Objective-C中,我们可以跨过property直接与instance variable打交道,而在Swift是不可以的。&lt;/p&gt;
+
+&lt;p&gt;例如：我们可以不需要将someString声明为property,直接使用即可。即使我们将otherString声明为property,我们也可以直接用_otherString来使用property背后的实例变量。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SomeClass&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;someString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;otherString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift中,我们不能直接与instance variable打交道。也就是我们声明的方式简化为简单的一种,简单来说在Swift中,我们只与property打交道。&lt;/p&gt;
+
+&lt;p&gt;A Swift property does not have a corresponding instance variable, and the backing store for a property is not accessed directly&lt;/p&gt;
+
+&lt;p&gt;小结&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;因此之前使用OC导致的像巧哥指出的开发争议就不再需要争执了,在Swift的世界里,我们只与property打交道。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;并且我们在OC中init和dealloc不能使用属性self.property = XXX来进行设置的情况得以解决和统一。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(不知道这一条规定,在init直接用self.property = value 的同学请自觉阅读iOS夯实：内存管理)&lt;/p&gt;
+
+&lt;p&gt;个人觉得这看似小小一点变动使Swift开发变得更加安全以及在代码的风格更为统一与稳定。&lt;/p&gt;
+
+&lt;p&gt;Swift property延伸：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Stored Properties和Computed properties&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在Swift中,property被分为两类：Stored Properties和Computed properties 简单来说,就是stored properties 能够保存值,而computed properties只提供getter与setter,利用stored properties来生成自己的值。个人感觉Computed properties更像方法,而不是传统意义的属性。但是这样一个特性存在,使得我们更容易组织我们的代码。&lt;/p&gt;
+
+&lt;p&gt;延伸阅读：computed property vs function&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Type Properties&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Swift提供了语言级别定义类变量的方法。&lt;/p&gt;
+
+&lt;p&gt;In C and Objective-C, you define static constants and variables associated with a type as global static variables.In Swift, however, type properties are written as part of the type’s definition, within the type’s outer curly braces, and each type property is explicitly scoped to the type it supports.&lt;/p&gt;
+
+&lt;p&gt;在Objective-C中,我们只能通过单例,或者static变量加类方法来自己构造类变量：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Model&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Model&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@synchronized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@synchronized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Foo.h
+@interface Foo {
+}
+
++(NSDictionary*) dictionary;
+
+// Foo.m
++(NSDictionary*) dictionary
+{
+  static NSDictionary* fooDict = nil;
+
+  static dispatch_once_t oncePredicate;
+
+  dispatch_once(&amp;amp;oncePredicate, ^{
+        // create dict
+    });
+
+  return fooDict;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift中我们通过清晰的语法便能定义类变量：&lt;/p&gt;
+
+&lt;p&gt;通过static定义的类变量无法在子类重写,通过class定义的类变量则可在子类重写。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct SomeStructure {
+    static var storedTypeProperty = &quot;Some value.&quot;
+    static var computedTypeProperty: Int {
+        return 1
+    }
+    class var overrideableComputedTypeProperty: Int {
+        return 107
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;同时利用类变量我们也有了更优雅的单例模式实现：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class singletonClass {
+    static let sharedInstance = singletonClass()
+    private init() {} // 这就阻止其他对象使用这个类的默认的&#39;()&#39;初始化方法
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Swift单例模式探索：The Right Way to Write a Singleton&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;延伸：目前Swift支持的type propertis中的Stored Properties类型不是传统意义上的类变量(class variable)，暂时不能通过class 关键词定义,通过static定义的类变量类似java中的类变量,是无法被继承的,父类与子类的类变量指向的都是同一个静态变量。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;延伸阅读： Class variables not yet supported&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class SomeStructure {
+    class var storedTypeProperty = &quot;Some value.&quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;//Swift 2.0
+Error: Class stored properties not yet supported in classes&lt;/p&gt;
+
+&lt;p&gt;通过编译器抛出的错误信息,相信在未来的版本中会完善Type properties。&lt;/p&gt;
+
+&lt;p&gt;2.控制流&lt;/p&gt;
+
+&lt;p&gt;Swift与Objective-C在控制流的语法上关键词基本是一致的,但是扩展性和安全性得到了很大的提升。&lt;/p&gt;
+
+&lt;p&gt;主要有三种类型的语句&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;if,switch和新增的guard&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;for,while&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;break,continue&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;主要差异有：&lt;/p&gt;
+
+&lt;p&gt;关于if&lt;/p&gt;
+
+&lt;p&gt;语句里的条件不再需要使用()包裹了。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let number = 23
+if number &amp;lt; 10 {
+    print(&quot;The number is small&quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但是后面判断执行的的代码必须使用{}包裹住。&lt;/p&gt;
+
+&lt;p&gt;为什么呢,在C,C++等语言中,如果后面执行的语句只有语句,我们可以写成:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  int number = 23
+    if (number &amp;lt; 10)
+        NSLog(&quot;The number is small&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但是如果有时要在后面添加新的语句,忘记添加{},灾难就很可能发送。&lt;/p&gt;
+
+&lt;p&gt;：） 像苹果公司自己就犯过这样的错误。下面这段代码就是著名的goto fail错误,导致了严重的安全性问题。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  if ((err = SSLHashSHA1.update(&amp;amp;hashCtx, &amp;amp;signedParams)) != 0)
+    goto fail;
+    goto fail;  // :)注意 这不是Python的缩减
+  ... other checks ...
+  fail:
+    ... buffer frees (cleanups) ...
+    return err;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;最终在Swift,苹果终于在根源上消除了可能导致这种错误的可能性。&lt;/p&gt;
+
+&lt;p&gt;if 后面的条件必须为Boolean表达式&lt;/p&gt;
+
+&lt;p&gt;也就是不会隐式地与0进行比较,下面这种写法是错误的,因为number并不是一个boolean表达式,number != 0才是。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int number = 0
+if number{
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;关于for&lt;/p&gt;
+
+&lt;p&gt;for循环在Swift中变得更方便,更强大。&lt;/p&gt;
+
+&lt;p&gt;得益于Swift新添加的范围操作符…与…&amp;lt;&lt;/p&gt;
+
+&lt;p&gt;我们能够将之前繁琐的for循环：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for (int i = 1; i &amp;lt;= 5; i++)
+{
+    NSLog(@&quot;%d&quot;, i);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;改写为：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for index in 1...5 {
+    print(index)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;当然,熟悉Python的亲们知道Python的range函数很方便,我们还能自由选择步长。 像这样：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;range(1,5) #代表从1到5(不包含5)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;[1, 2, 3, 4]&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;range(1,5,2) #代表从1到5，间隔2(不包含5)&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;[1, 3]&lt;/p&gt;
+
+&lt;p&gt;虽然在《The Swift Programming Language》里面没有提到类似的用法,但是在Swift中我们也有优雅的方法办到。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-`&quot;&gt;for index in stride(from: 1, through: 5, by: 2) {
+    print(index)
+}// through是包括5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后对字典的遍历也增强了.在Objective-c的快速枚举中我们只能对字典的键进行枚举。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSString *key;
+for (key in someDictionary){
+     NSLog(@&quot;Key: %@, Value %@&quot;, key, [someDictionary objectForKey: key]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift中,通过tuple我们可以同时枚举key与value:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let dictionary = [&quot;firstName&quot;:&quot;Mango&quot;,&quot;lastName&quot;:&quot;Fang&quot;]
+for (key,value) in dictionary{
+    print(key+&quot; &quot;+value)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;关于Switch&lt;/p&gt;
+
+&lt;p&gt;Swich在Swift中也得到了功能的增强与安全性的提高。&lt;/p&gt;
+
+&lt;p&gt;不需要Break来终止往下一个Case执行&lt;/p&gt;
+
+&lt;p&gt;也就是下面这两种写法是等价的。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let character = &quot;a&quot;
+switch character{
+    case &quot;a&quot;:
+        print(&quot;A&quot;)
+    break
+    case &quot;b&quot;:
+        print(&quot;B&quot;)
+    break
+default: print(&quot;character&quot;)
+
+let character = &quot;a&quot;
+switch character{
+    case &quot;a&quot;:
+        print(&quot;A&quot;)
+    case &quot;b&quot;:
+        print(&quot;B&quot;)
+default: print(&quot;character&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这种改进避免了忘记写break造成的错误,自己深有体会,曾经就是因为漏写了break而花了一段时间去debug。&lt;/p&gt;
+
+&lt;p&gt;如果我们想不同值统一处理,使用逗号将值隔开即可。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;switch some value to consider {
+case value 1,value 2:
+    statements
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Switch支持的类型&lt;/p&gt;
+
+&lt;p&gt;在OC中,Swtich只支持int类型,char类型作为匹配。&lt;/p&gt;
+
+&lt;p&gt;而在Swift中,Switch支持的类型大大的拓宽了。实际上,苹果是这么说的。&lt;/p&gt;
+
+&lt;p&gt;A switch statement supports any kind of data&lt;/p&gt;
+
+&lt;p&gt;这意味在开发中我们能够能够对字符串,浮点数等进行匹配了。&lt;/p&gt;
+
+&lt;p&gt;之前在OC繁琐的写法就可以进行改进了:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if ([cardName isEqualToString:@&quot;Six&quot;]) {
+    [self setValue:6];
+} else if ([cardName isEqualToString:@&quot;Seven&quot;]) {
+    [self setValue:7];
+} else if ([cardName isEqualToString:@&quot;Eight&quot;]) {
+    [self setValue:8];
+} else if ([cardName isEqualToString:@&quot;Nine&quot;]) {
+    [self setValue:9];
+}
+
+switch carName{
+    case &quot;Six&quot;:
+        self.vaule = 6
+    case &quot;Seven&quot;:
+        self.vaule = 7
+    case &quot;Eight&quot;:
+        self.vaule = 8
+    case &quot;Night&quot;:
+        self.vaule = 9
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.函数&lt;/p&gt;
+
+&lt;p&gt;对于在OC中,方法有两种类型,类方法与实例方法。方法的组成由方法名,参数,返回值组成。&lt;/p&gt;
+
+&lt;p&gt;在Swift中函数的定义基本与OC一样。&lt;/p&gt;
+
+&lt;p&gt;主要区别为：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;通过func关键词定义函数
+
+返回值在-&amp;gt;关键词后标注
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;各举一个类方法与实例方法例子。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+ (UIColor*)blackColor
+- (void)addSubview:(UIView *)view
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;对应的swift版本&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    class func blackColor() -&amp;gt; UIColor //类方法, 通过 class func 关键词声明
+    func addSubview(view: UIView) //实例方法
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;改进：&lt;/p&gt;
+
+&lt;p&gt;在Swift中,函数的最重要的改进就是函数作为一等公民(first-class),和对象一样可以作为参数进行传递,可以作为返回值,函数式编程也成为了Swift支持的编程范式。&lt;/p&gt;
+
+&lt;p&gt;In computer science, a programming language is said to have first-class functions if it treats functions as first-class citizens. Specifically, this means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures&lt;/p&gt;
+
+&lt;p&gt;让我们初略感受一下函数式编程的魅力:&lt;/p&gt;
+
+&lt;p&gt;举一个例子,我们要筛选出一个数组里大于4的数字。&lt;/p&gt;
+
+&lt;p&gt;在OC中我们可能会用快速枚举来进行筛选。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   NSArray *oldArray = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@10];
+    NSMutableArray *newArray;
+    for (NSNumber* number in oldArray) {
+        if ([number compare:@4] == NSOrderedDescending ) {
+            [newArray addObject:number];
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift中,我们用两行代码解决这个问题：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let oldArray = [1,2,3,4,5,6,7,8,9,10]
+let newArray = oldArray.filter({$0 &amp;gt; 4})
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;进一步了解Swift的函数式编程可以通过这篇优秀的博客Functional Reactive Programming in Swift&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;个人觉得另外一个很棒的改进是：Default parameter values
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在我们的项目中,经常会不断进行功能的增添。为了新增特性,许多方法在开发的过程中不断变动。举一个例子：我们开始有一个tableViewCell,它的设置方法一开始简单地需要一个Model参数：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func configureCellWithModel(Model: model)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;不久之后,我们想对部分Cell增添一个设置背景颜色的功能。方法需要再接收多一个参数：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func configureCellWithModel(Model: model,color:UIColor)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这个时候方法改变,所以涉及到这些方法的地方都需要修改。给我们造成的困扰&lt;/p&gt;
+
+&lt;p&gt;一是：需要做许多重复修改的工作。&lt;/p&gt;
+
+&lt;p&gt;二是：无法做得很好的扩展和定制,有些地方的cell需要设置颜色,有些不需要。但是在OC里,我们只能对所有的cell都赋值。你可能觉得我们可以写两个方法,一个接收颜色参数,一个不接受。但是我们知道这不是一个很好的解决方法,会造成冗余的代码,维护起来也不方便。&lt;/p&gt;
+
+&lt;p&gt;而在Swift中,default parameter values的引入让我们能够这样修改我们的代码：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func configureCellWithModel(Model: model,color:UIColor = UIColor.whiteColor())
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这样的改进能让我们写出的代码更具向后兼容性,减少了我们的重复工作量,减少了犯错误的可能性。&lt;/p&gt;
+
+&lt;p&gt;4.类与初始化（Initializers）&lt;/p&gt;
+
+&lt;p&gt;文件结构与访问控制&lt;/p&gt;
+
+&lt;p&gt;在swift中,一个类不再分为interface（.h）与implementation(.m)两个文件实现,直接在一个.swift文件里进行处理。好处就是我们只需管理一份文件,以往两头奔波修改的情况就得到解放了,也减少了头文件与实现文件不同步导致的错误。&lt;/p&gt;
+
+&lt;p&gt;这时我们会想到,那么我们如何来定义私有方法与属性呢,在OC中我们通过在class extension中定义私有属性,在.m文件定义私有方法。&lt;/p&gt;
+
+&lt;p&gt;而在Swift中,我们通过Access Control来进行控制。&lt;/p&gt;
+
+&lt;p&gt;properties, types, functions等能够进行版本控制的统称为实体。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Public：可以访问自己模块或应用中源文件里的任何实体，别人也可以访问引入该模块中源文件里的所有实体。通常情况下，某个接口或Framework是可以被任何人使用时，你可以将其设置为public级别。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Internal：可以访问自己模块或应用中源文件里的任何实体，但是别人不能访问该模块中源文件里的实体。通常情况下，某个接口或Framework作为内部结构使用时，你可以将其设置为internal级别。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Private：只能在当前源文件中使用的实体，称为私有实体。使用private级别，可以用作隐藏某些功能的实现细节&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;一个小技巧,如果我们有一系列的私有方法,我们可以把它们组织起来,放进一个extension里,这样就不需要每个方法都标记private,同时也便于管理组织代码：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// MARK: Private
+private extension ViewController {
+    func privateFunction() {
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;创建对象与alloc和init&lt;/p&gt;
+
+&lt;p&gt;关于初始化,在Swift中创建一个对象的语法很简洁：只需在类名后加一对圆括号即可。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var shape = Shape()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift中,initializer也与OC有所区别,Swift的初始化方法不返回数据。而在OC中我们通常返回一个self指针。&lt;/p&gt;
+
+&lt;p&gt;Unlike Objective-C initializers, Swift initializers do not return a value. Their primary role is to ensure that new instances of a type are correctly initialized before they are used for the first time.&lt;/p&gt;
+
+&lt;p&gt;Swift的初始化方法让我们只关注对象的初始化。之前在OC世界中为什么要self = [super init]？。这种问题得以避免。Swift帮助我们处理了alloc的过程。也让我们的代码更简洁明确。&lt;/p&gt;
+
+&lt;p&gt;而在Swift中,init也有了更严格的规则。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对于所有Stored Properties,都必须在对象被创建出来前设置好。也就是我们必须在init方法中赋好值,或是直接给属性提供一个默认值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果有property可以被允许在初始出来时没有值,也就是需要在创建出来后再赋值,或是在程序运行过程都可能不会被赋值。那么这个property必须被声明为optional类型。该类型的属性会在init的时候初始化为nil.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;initializer严格分为Designated Initializer和Convenience Initializer 并且有语法定义。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;而在Objective-C中没有明确语法标记哪个初始化方式是convenience方法。关于Designated Initializer可参阅之前的:Objective-C 拾遗：designated initializer&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;init(parameters) {
+    statements
+}
+
+convenience init(parameters) {
+    statements
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;5.枚举与结构体&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;枚举&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在Swift中,枚举是一等公民。(first-class)。能够拥有方法,computed properties等以往只有类支持的特性。&lt;/p&gt;
+
+&lt;p&gt;在C中,枚举为每个成员指定一个整型值。而在Swift中,枚举更强大和灵活。我们不必给枚举成员提供一个值。如果我们想要为枚举成员提供一个值(raw value),我们可以用字符串,字符,整型或浮点数类型。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enum CompassPoint {
+case North
+case South
+case East
+case West
+  }
+  var directionToHead = CompassPoint.West
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;结构体&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Struct在Swift中和类有许多相同的地方,可以定义属性,方法,初始化方法,可通过extension扩展等。&lt;/p&gt;
+
+&lt;p&gt;不同的地方在于struct是值类型.在传递的过程中都是通过拷贝进行。&lt;/p&gt;
+
+&lt;p&gt;在这里要提到在前面第一节处提到了String,Array和Dictionary在Swift是以值类型出现的。这背后的原因就是String,Array,Dictionary在Swift中是通过Struct实现的。而之前在Objective-C它们都是通过class实现的。&lt;/p&gt;
+
+&lt;p&gt;Swift中强大的Struct使得我们能够更多与值类型打交道。Swift的值类型增强了不可变性(Immutabiliity)。而不可变性提升了我们代码的稳定性,多线程并发的安全性。&lt;/p&gt;
+
+&lt;p&gt;在WWDC2014《Advanced iOS Application Architecture and Patterns》中就有一节的标题是Simplify with immutability。&lt;/p&gt;
+
+&lt;p&gt;延伸阅读：WWDC心得：Advanced iOS Application Architecture and Patterns&lt;/p&gt;
+
+&lt;p&gt;6.协议（Protocols）&lt;/p&gt;
+
+&lt;p&gt;语法:&lt;/p&gt;
+
+&lt;p&gt;在Objective-C中我们这么声明Protocol:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@protocol&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SampleProtocol&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;someMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;而在Swift中：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol SampleProtocol
+{
+    func someMethod()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在Swift遵循协议:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class AnotherClass: SomeSuperClass, SampleProtocol
+{
+    func someMethod() {}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;那么之前Objective-C的protocol中,我们可以标志optional。那在Swift中呢？&lt;/p&gt;
+
+&lt;p&gt;遗憾的是,目前纯Swift的protocol还不支持optional。但根据苹果官方论坛的一位员工的回答,未来Swift是会支持的。&lt;/p&gt;
+
+&lt;p&gt;Optional methods in protocols are limited to @objc protocols only because we haven’t implemented them in native protocols yet. This is something we plan to support. We’ve gotten a number of requests for abstract/pure virtual classes and methods too.&lt;/p&gt;
+
+&lt;p&gt;— Joe Groff&lt;/p&gt;
+
+&lt;p&gt;Source: https://devforums.apple.com/message/1051431#1051431&lt;/p&gt;
+
+&lt;p&gt;protocol和delegate是紧密联系的。那么我们在Swift中如何定义Delegate呢？&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol MyDelegate : class {
+}
+class MyClass {
+    weak var delegate : MyDelegate?
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;注意到上面的protocol定义后面跟着的class。这意味着该protocol只能被class类型所遵守。&lt;/p&gt;
+
+&lt;p&gt;并且只有遵守了class protocol的delegate才能定义为weak。这是因为在Swift中,除了class能够遵守协议,枚举和结构同样能够遵守协议。而枚举和结构是值类型,不存在内存管理的问题。因此只需要class类型的变量声明为weak即可。&lt;/p&gt;
+
+&lt;p&gt;利用Swift的optional chaining,我们能够很方便的检查delegate是否为Nil,是否有实现某个方法:&lt;/p&gt;
+
+&lt;p&gt;以前我们要在Objective-C这样检查：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; if (self.dataSource &amp;amp;&amp;amp; [self.dataSource respondsToSelector:@selector(titleForSegmentAtIndex:)]) {
+        thisSegmentTitle = [self.dataSource titleForSegmentAtIndex:index];
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在Swift中,非常的优雅简洁。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if let thisSementTitle = dataSource?.titleFroSegmentAtIndex?(index){
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;新特性:&lt;/p&gt;
+
+&lt;p&gt;1.在Swift中,protocol变得更加强大,灵活：&lt;/p&gt;
+
+&lt;p&gt;2.class,enum,structure都可以遵守协议。&lt;/p&gt;
+
+&lt;p&gt;Extension也能遵守协议。利用它,我们不需要继承,也能够让系统的类也遵循我们的协议。&lt;/p&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol myProtocol {
+ func hello() -&amp;gt; String
+}
+extension String:myProtocol{
+ func hello() -&amp;gt; String {
+     return &quot;hello world!&quot;
+ }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;我们还能够用这个特性来组织我们的代码结构,如下面的代码所示,将UITableViewDataSource的实现移到了Extension。使代码更清晰。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// MARK: - UITableViewDataSource
+extension MyViewcontroller: UITableViewDataSource {
+// table view data source methods
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.Protocol Oriented Programming&lt;/p&gt;
+
+&lt;p&gt;随着Swift2.0的发布,面向协议编程正式也加入到了Swift的编程范式。Cool.&lt;/p&gt;
+
+&lt;p&gt;这种编程方式通过怎样的语法特性支撑的呢？&lt;/p&gt;
+
+&lt;p&gt;那就是我们能够对协议进行扩展,也就是我们能够提供协议的默认实现,能够为协议添加新的方法与实现。&lt;/p&gt;
+
+&lt;p&gt;用前面的myProtocol为例子,我们在Swift里这样为它提供默认实现。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension myProtocol{
+    func hello() -&amp;gt; String {
+     return &quot;hello world!&quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;我们还能对系统原有的protocol进行扩展,大大增强了我们的想象空间。Swift2.0的实现也有很多地方用extension protocol的形式进行了重构。&lt;/p&gt;
+
+&lt;p&gt;面向协议编程能够展开说很多,在这里这简单地介绍了语法。有兴趣的朋友可以参考下面的资料：&lt;/p&gt;
+
+&lt;p&gt;Session 408: Protocol-Oriented Programming in Swift&lt;/p&gt;
+
+&lt;p&gt;IF YOU’RE SUBCLASSING, YOU’RE DOING IT WRONG.&lt;/p&gt;
+
+&lt;p&gt;7.Swift与Cocoa&lt;/p&gt;
+
+&lt;p&gt;一门语言的的强大与否,除了自身优秀的特性外,很大一点还得依靠背后的框架。Swift直接采用苹果公司经营了很久的Cocoa框架。现在我们来看看使用Swift和Cocoa交互一些需要注意的地方。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;id与AnyObject
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在Swift中,没有id类型,Swift用一个名字叫AnyObject的protocol来代表任意类型的对象。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; id myObject = [[UITableViewCell alloc]init];
+
+ var myObject: AnyObject = UITableViewCell()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;我们知道id的类型直到运行时才能被确定,如果我们向一个对象发送一条不能响应的消息,就会导致crash。&lt;/p&gt;
+
+&lt;p&gt;我们可以利用Swift的语法特性来防止这样的错误:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;myObject.method?()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果myObject没有这个方法,就不会执行,类似检查delegate是否有实现代理方法。&lt;/p&gt;
+
+&lt;p&gt;在Swift中,在AnyObject上获取的property都是optional的。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;闭包&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;OC中的block在Swift中无缝地转换为闭包。函数实际上也是一种特殊的闭包。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;错误处理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;之前OC典型的错误处理步骤:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSFileManager *fileManager = [NSFileManager defaultManager];
+NSURL *URL = [NSURL fileURLWithPath:@&quot;/path/to/file&quot;];
+NSError *error = nil;
+BOOL success = [fileManager removeItemAtURL:URL error:&amp;amp;error];
+if (!success) {
+ NSLog(@&quot;Error: %@&quot;, error.domain);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在Swift中：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let fileManager = NSFileManager.defaultManager()
+let URL = NSURL.fileURLWithPath(&quot;/path/to/file&quot;)
+do {
+ try fileManager.removeItemAtURL(URL)
+} catch let error as NSError {
+ print(&quot;Error: \(error.domain)&quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;KVO&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Swift支持KVO。但是KVO在Swift,个人觉得是不够优雅的,KVO在Swift只限支持继承NSObject的类,有其局限性,在这里就不介绍如何使用了。&lt;/p&gt;
+
+&lt;p&gt;网上也出现了一些开源库来解决这样的问题。有兴趣可以参考一下:&lt;/p&gt;
+
+&lt;p&gt;Observable-Swift&lt;/p&gt;
+
+&lt;p&gt;KVO 在OS X中有Binding的能力,也就是我们能够将两个属性绑定在一起,一个属性变化,另外一个属性也会变化。对与UI和数据的同步更新很有帮助,也是MVVM架构的需求之一。之前已经眼馋这个特性很久了,虽然Swift没有原生带来支持,Swift支持的泛型编程给开源界带来许多新的想法。下面这个库就是实现binding的效果。&lt;/p&gt;
+
+&lt;p&gt;Bond&lt;/p&gt;
+
+&lt;p&gt;8.总结&lt;/p&gt;
+
+&lt;p&gt;到这里就基本介绍完Swift当中最基本的语法和与Objective-C的对比和改进。&lt;/p&gt;
+
+&lt;p&gt;事实上Swift的世界相比OC的世界还有很多新鲜的东西等待我们去发现和总结,Swift带来的多范式编程也将给我们编程的架构和代码的组织带来更来的思考。而Swift也是一个不断变化,不断革新的语言。相信未来的发展和稳定性会更让我们惊喜。这篇文章也将随着Swift的更新而不断更新,同时限制篇幅,突出重点。&lt;/p&gt;
+
+&lt;p&gt;希望这篇文章能够给各位同行的小伙伴们快速了解和学习Swift提供一点帮助。有疏漏错误的地方欢迎直接提出。感谢。&lt;/p&gt;
+
+&lt;p&gt;参考：&lt;/p&gt;
+
+&lt;p&gt;《The Swift Programming Language》&lt;/p&gt;
+
+&lt;p&gt;Apple Swift Blog&lt;/p&gt;
+
+&lt;p&gt;Using Swift with Cocoa and Objective-C&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/03/18/from-swift-2-oc.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/from-swift-2-oc.html</guid>
+        
+        <category>Objective-C</category>
+        
+        <category>swift</category>
+        
+        
+        <category>客户端开发</category>
+        
+      </item>
     
       <item>
         <title>win7服务</title>
@@ -1614,475 +2985,6 @@ http://wenku.baidu.com/view/f57c7041be1e650e52ea9985.html
         <category>server</category>
         
         <category>develop</category>
-        
-        
-        <category>服务端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>Linux文件格式详解</title>
-        <description>&lt;p&gt;本文讨论了 UNIX/LINUX平台下三种主要的可执行文件格式：a.out（assembler and link editor output汇编器和链接编辑器的输出）、COFF（Common Object File Format 通用对象文件格式）、ELF（Executableand Linking Format 可执行和链接格式）。首先是对可执行文件格式的一个综述，并通过描述 ELF文件加载过程以揭示可执行文件内容与加载运行操作之间的关系。随后依此讨论了此三种文件格式，并着重讨论 ELF文件的动态连接机制，其间也穿插了对各种文件格式优缺点的评价。最后对三种可执行文件格式有一个简单总结，并提出作者对可文件格式评价的一些感想。&lt;/p&gt;
-
-&lt;p&gt;可执行文件格式综述
-相对于其它文件类型，可执行文件可能是一个操作系统中最重要的文件类型，因为它们是完成操作的真正执行者。可执行文件的大小、运行速度、资源占用情况以及可扩展性、可移植性等与文件格式的定义和文件加载过程紧密相关。研究可执行文件的格式对编写高性能程序和一些黑客技术的运用都是非常有意义的。&lt;/p&gt;
-
-&lt;p&gt;不 管何种可执行文件格式，一些基本的要素是必须的，显而易见的，文件中应包含代码和数据。因为文件可能引用外部文件定义的符号（变量和函数），因此重定位信 息和符号信息也是需要的。一些辅助信息是可选的，如调试信息、硬件信息等。基本上任意一种可执行文件格式都是按区间保存上述信息，称为段 （Segment）或节（Section）。不同的文件格式中段和节的含义可能有细微区别，但根据上下文关系可以很清楚的理解，这不是关键问题。最后，可 执行文件通常都有一个文件头部以描述本文件的总体结构。&lt;/p&gt;
-
-&lt;p&gt;相对可执 行文件有三个重要的概念：编译（compile）、连接（link，也可称为链接、联接）、加载（load）。源程序文件被编译成目标文件，多个目标文件 被连接成一个最终的可执行文件，可执行文件被加载到内存中运行。因为本文重点是讨论可执行文件格式，因此加载过程也相对重点讨论。下面是LINUX平台下 ELF文件加载过程的一个简单描述。&lt;/p&gt;
-
-&lt;p&gt;1：内核首先读ELF文件的 头部，然后根据头部的数据指示分别读入各种数据结构，找到标记为可加载（loadable）的段，并调用函数 mmap()把段内容加载到内存中。在加载之前，内核把段的标记直接传递给mmap()，段的标记指示该段在内存中是否可读、可写，可执行。显然，文本段 是只读可执行，而数据段是可读可写。这种方式是利用了现代操作系统和处理器对内存的保护功能。著名的Shellcode（参考资料 17）的编写技巧则是突破此保护功能的一个实际例子。&lt;/p&gt;
-
-&lt;p&gt;2：内核分析出ELF文件标记为 PT_INTERP 的段中所对应的动态连接器名称，并加载动态连接器。现代 LINUX 系统的动态连接器通常是 /lib/ld-linux.so.2，相关细节在后面有详细描述。&lt;/p&gt;
-
-&lt;p&gt;3：内核在新进程的堆栈中设置一些标记-值对，以指示动态连接器的相关操作。&lt;/p&gt;
-
-&lt;p&gt;4：内核把控制传递给动态连接器。&lt;/p&gt;
-
-&lt;p&gt;5：动态连接器检查程序对外部文件（共享库）的依赖性，并在需要时对其进行加载。&lt;/p&gt;
-
-&lt;p&gt;6：动态连接器对程序的外部引用进行重定位，通俗的讲，就是告诉程序其引用的外部变量/函数的地址，此地址位于共享库被加载在内存的区间内。动态连接还有一个延迟（Lazy）定位的特性，即只在”真正”需要引用符号时才重定位，这对提高程序运行效率有极大帮助。&lt;/p&gt;
-
-&lt;p&gt;7：动态连接器执行在ELF文件中标记为 .init 的节的代码，进行程序运行的初始化。在早期系统中，初始化代码对应函数 _init(void)(函数名强制固定)，在现代系统中，则对应形式为&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;
-&lt;span class=&quot;nf&quot;&gt;__attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;init_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;……&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;其中函数名为任意。&lt;/p&gt;
-
-&lt;p&gt;8：动态连接器把控制传递给程序，从 ELF 文件头部中定义的程序进入点开始执行。在 a.out 格式和ELF格式中，程序进入点的值是显式存在的，在 COFF 格式中则是由规范隐含定义。&lt;/p&gt;
-
-&lt;p&gt;从 上面的描述可以看出，加载文件最重要的是完成两件事情：加载程序段和数据段到内存；进行外部定义符号的重定位。重定位是程序连接中一个重要概念。我们知 道，一个可执行程序通常是由一个含有 main()的主程序文件、若干目标文件、若干共享库（Shared Libraries）组成。（注：采用一些特别的技巧，也可编写没有 main函数的程序，请参阅参考资料 2）一个 C程序可能引用共享库定义的变量或函数，换句话说就是程序运行时必须知道这些变量/函数的地址。在静态连接中，程序所有需要使用的外部定义都完全包含在可 执行程序中，而动态连接则只在可执行文件中设置相关外部定义的一些引用信息，真正的重定位是在程序运行之时。静态连接方式有两个大问题：如果库中变量或函 数有任何变化都必须重新编译连接程序；如果多个程序引用同样的变量/函数，则此变量/函数会在文件/内存中出现多次，浪费硬盘/内存空间。比较两种连接方 式生成的可执行文件的大小，可以看出有明显的区别。&lt;/p&gt;
-
-&lt;p&gt;a.out 文件格式分析
-a.out 格式在不同的机器平台和不同的 UNIX 操作系统上有轻微的不同，例如在 MC680x0 平台上有 6 个 section。下面我们讨论的是最”标准”的格式。&lt;/p&gt;
-
-&lt;p&gt;a.out 文件包含 7 个 section，格式如下：
-exec header（执行头部，也可理解为文件头部）
-text segment（文本段）
-data segment(数据段)
-text relocations(文本重定位段)
-data relocations（数据重定位段）
-symbol table（符号表）
-string table（字符串表）&lt;/p&gt;
-
-&lt;p&gt;执行头部的数据结构：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_midmag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 魔数和其它信息 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;      &lt;span class=&quot;cm&quot;&gt;/* 文本段的长度 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;      &lt;span class=&quot;cm&quot;&gt;/* 数据段的长度 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_bss&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;       &lt;span class=&quot;cm&quot;&gt;/* BSS段的长度 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_syms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;      &lt;span class=&quot;cm&quot;&gt;/* 符号表的长度 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_entry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;     &lt;span class=&quot;cm&quot;&gt;/* 程序进入点 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_trsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 文本重定位表的长度 */&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;a_drsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 数据重定位表的长度 */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;文 件头部主要描述了各个 section 的长度，比较重要的字段是a_entry（程序进入点），代表了系统在加载程序并初试化各种环境后开始执行程序代码的入口。这个字段在后面讨论的 ELF文件头部中也有出现。由 a.out 格式和头部数据结构我们可以看出，a.out的格式非常紧凑，只包含了程序运行所必须的信息（文本、数据、BSS），而且每个 section的顺序是固定的。这种结构缺乏扩展性，如不能包含”现代”可执行文件中常见的调试信息，最初的 UNIX 黑客对 a.out 文件调试使用的工具是adb，而 adb 是一种机器语言调试器！&lt;/p&gt;
-
-&lt;p&gt;a.out 文件中包含符号表和两个重定位表，这三个表的内容在连接目标文件以生成可执行文件时起作用。在最终可执行的 a.out 文件中，这三个表的长度都为0。a.out文件在连接时就把所有外部定义包含在可执行程序中，如果从程序设计的角度来看，这是一种硬编码方式，或者可称为 模块之间是强藕和的。在后面的讨论中，我们将会具体看到ELF格式和动态连接机制是如何对此进行改进的。&lt;/p&gt;
-
-&lt;p&gt;a.out 是早期UNIX系统使用的可执行文件格式，由 AT&amp;amp;T设计，现在基本上已被 ELF 文件格式代替。a.out 的设计比较简单，但其设计思想明显的被后续的可执行文件格式所继承和发扬。可以参阅参考资料16 和阅读参考资料 15 源代码加深对 a.out 格式的理解。参考资料 12 讨论了如何在”现代”的红帽LINUX运行 a.out格式文件。&lt;/p&gt;
-
-&lt;p&gt;COFF 文件格式分析
-COFF 格式比 a.out 格式要复杂一些，最重要的是包含一个节段表(section table)，因此除了 .text，.data，和 .bss 区段以外，还可以包含其它的区段。另外也多了一个可选的头部，不同的操作系统可一对此头部做特定的定义。&lt;/p&gt;
-
-&lt;p&gt;COFF 文件格式如下：
-File Header(文件头部)
-Optional Header(可选文件头部)
-Section 1 Header(节头部)
-………
-Section n Header(节头部)
-Raw Data for Section 1(节数据)
-Raw Data for Section n(节数据)
-Relocation Info for Sect. 1(节重定位数据)
-Relocation Info for Sect. n(节重定位数据)
-Line Numbers for Sect. 1(节行号数据)
-Line Numbers for Sect. n(节行号数据)
-Symbol table(符号表)
-String table(字符串表)&lt;/p&gt;
-
-&lt;p&gt;文件头部的数据结构：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filehdr&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-     &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;f_magic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 魔数 */&lt;/span&gt;
-       &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;f_nscns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 节个数 */&lt;/span&gt;
-       &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;f_timdat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;cm&quot;&gt;/* 文件建立时间 */&lt;/span&gt;
-       &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;f_symptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;cm&quot;&gt;/* 符号表相对文件的偏移量 */&lt;/span&gt;
-       &lt;span class=&quot;kt&quot;&gt;long&lt;/span&gt;            &lt;span class=&quot;n&quot;&gt;f_nsyms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 符号表条目个数 */&lt;/span&gt;
-       &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;f_opthdr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;   &lt;span class=&quot;cm&quot;&gt;/* 可选头部长度 */&lt;/span&gt;
-       &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;short&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;f_flags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 标志 */&lt;/span&gt;
-   &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;COFF 文件头部中魔数与其它两种格式的意义不太一样，它是表示针对的机器类型，例如 0x014c 相对于 I386 平台，而 0x268 相对于Motorola 68000系列等。当 COFF 文件为可执行文件时，字段 f_flags 的值为F_EXEC（0X00002），同时也表示此文件没有未解析的符号，换句话说，也就是重定位在连接时就已经完成。由此也可以看出，原始的 COFF格式不支持动态连接。为了解决这个问题以及增加一些新的特性，一些操作系统对 COFF 格式进行了扩展。Microsoft 设计了名为PE（Portable Executable）的文件格式，主要扩展是在 COFF 文件头部之上增加了一些专用头部，具体细节请参阅参考资料18，某些 UNIX 系统也对 COFF 格式进行了扩展，如 XCOFF（extended common object fileformat）格式，支持动态连接，请参阅参考资料 5。&lt;/p&gt;
-
-&lt;p&gt;紧接文件头部的是可选头部，COFF 文件格式规范中规定可选头部的长度可以为 0，但在 LINUX 系统下可选头部是必须存在的。下面是 LINUX 下可选头部的数据结构：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;magic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 魔数 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;vstamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 版本号 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;tsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 文本段长度 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;dsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 已初始化数据段长度 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;bsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 未初始化数据段长度 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;entry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 程序进入点 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;text_start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;       &lt;span class=&quot;cm&quot;&gt;/* 文本段基地址 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;data_start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;       &lt;span class=&quot;cm&quot;&gt;/* 数据段基地址 */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;COFF_AOUTHDR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;字段 magic 为 0413 时表示 COFF 文件是可执行的，注意到可选头部中显式定义了程序进入点，标准的 COFF 文件没有明确的定义程序进入点的值，通常是从 .text 节开始执行，但这种设计并不好。&lt;/p&gt;
-
-&lt;p&gt;前 面我们提到，COFF 格式比 a.out格式多了一个节段表，一个节头条目描述一个节数据的细节，因此 COFF 格式能包含更多的节，或者说可以根据实际需要，增加特定的节，具体表现在COFF 格式本身的定义以及稍早提及的 COFF 格式扩展。我个人认为，节段表的出现可能是 COFF 格式相对 a.out格式最大的进步。下面我们将简单描述 COFF文件中节的数据结构，因为节的意义更多体现在程序的编译和连接上，所以本文不对其做更多的描述。此外，ELF 格式和COFF格式对节的定义非常相似，在随后的 ELF 格式分析中，我们将省略相关讨论。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;COFF_scnhdr&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;     &lt;span class=&quot;cm&quot;&gt;/* 节名称 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_paddr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 物理地址 */&lt;/span&gt;
-   &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_vaddr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 虚拟地址 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;     &lt;span class=&quot;cm&quot;&gt;/* 节长度 */&lt;/span&gt;
-   &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_scnptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 节数据相对文件的偏移量 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_relptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 节重定位信息偏移量 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_lnnoptr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 节行信息偏移量 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_nreloc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 节重定位条目数 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_nlnno&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 节行信息条目数 */&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s_flags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 段标记 */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;有 一点需要注意：LINUX系统中头文件coff.h中对字段s_paddr的注释是”physicaladdress”，但似乎应该理解为”节被加载到内 存中所占用的空间长度”。字段s_flags标记该节的类型，如文本段、数据段、BSS段等。在COFF的节中也出现了行信息，行信息描述了二进制代码与 源代码的行号之间的对映关系，在调试时很有用。&lt;/p&gt;
-
-&lt;p&gt;参考资料 19是一份对COFF格式详细描述的中文资料，更详细的内容请参阅参考资料 20。&lt;/p&gt;
-
-&lt;p&gt;ELF文件格式分析
-ELF 文件有三种类型：可重定位文件：也就是通常称的目标文件，后缀为.o。共享文件：也就是通常称的库文件，后缀为.so。可执行文件：本文主要讨论的文件格 式，总的来说，可执行文件的格式与上述两种文件的格式之间的区别主要在于观察的角度不同：一种称为连接视图（Linking View），一种称为执行视图（Execution View）。&lt;/p&gt;
-
-&lt;p&gt;首先看看ELF文件的总体布局：
-ELF header(ELF头部)
-Program header table(程序头表)
-Segment1（段1）
-Segment2（段2）
-………
-Sengmentn（段n）
-Setion header table(节头表，可选)&lt;/p&gt;
-
-&lt;p&gt;段 由若干个节(Section)构成,节头表对每一个节的信息有相关描述。对可执行程序而言，节头表是可选的。参考资料 1中作者谈到把节头表的所有数据全部设置为0，程序也能正确运行！ELF头部是一个关于本文件的路线图（roadmap），从总体上描述文件的结构。下面 是ELF头部的数据结构：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;unsigned&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e_ident&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;EI_NIDENT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;     &lt;span class=&quot;cm&quot;&gt;/* 魔数和相关信息 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                 &lt;span class=&quot;cm&quot;&gt;/* 目标文件类型 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;              &lt;span class=&quot;cm&quot;&gt;/* 硬件体系 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;              &lt;span class=&quot;cm&quot;&gt;/* 目标文件版本 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Addr&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_entry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                &lt;span class=&quot;cm&quot;&gt;/* 程序进入点 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Off&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;e_phoff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                &lt;span class=&quot;cm&quot;&gt;/* 程序头部偏移量 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Off&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;e_shoff&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                &lt;span class=&quot;cm&quot;&gt;/* 节头部偏移量 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_flags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                &lt;span class=&quot;cm&quot;&gt;/* 处理器特定标志 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_ehsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;               &lt;span class=&quot;cm&quot;&gt;/* ELF头部长度 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_phentsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;            &lt;span class=&quot;cm&quot;&gt;/* 程序头部中一个条目的长度 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_phnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                &lt;span class=&quot;cm&quot;&gt;/* 程序头部条目个数  */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_shentsize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;            &lt;span class=&quot;cm&quot;&gt;/* 节头部中一个条目的长度 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_shnum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;                &lt;span class=&quot;cm&quot;&gt;/* 节头部条目个数 */&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Elf32_Half&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;e_shstrndx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;             &lt;span class=&quot;cm&quot;&gt;/* 节头部字符表索引 */&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Elf32_Ehdr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;下面我们对ELF头表中一些重要的字段作出相关说明，完整的ELF定义请参阅参考资料 6和参考资料7。&lt;/p&gt;
-
-&lt;p&gt;e_ident[0]-e_ident[3] 包含了ELF文件的魔数，依次是0x7f、’E’、’L’、’F’。注意，任何一个ELF文件必须包含此魔数。参考资料3中讨论了利用程序、工具、 /Proc文件系统等多种查看ELF魔数的方法。e_ident[4]表示硬件系统的位数，1代表32位，2代表64位。e_ident[5]表示数据编 码方式，1代表小印第安排序（最大有意义的字节占有最低的地址），2代表大印第安排序（最大有意义的字节占有最高的地址）。e_ident[6]指定 ELF头部的版本，当前必须为1。e_ident[7]到e_ident[14]是填充符，通常是0。ELF格式规范中定义这几个字节是被忽略的，但实际 上是这几个字节完全可以可被利用。如病毒Lin/Glaurung.676/666（参考资料1）设置e_ident[7]为0x21,表示本文件已被感染；或者存放可执行代码（参考资料2）。ELF头部中大多数字段都是对子头部数据的描述，其意义相对比较简单。值得注意的是某些病毒可能修改字段e_entry（程序进入点）的值，以指向病毒代码，例如上面提到的病毒Lin/Glaurung.676/666。&lt;/p&gt;
-
-&lt;p&gt;一个实际可执行文件的文件头部形式如下：（利用命令readelf）&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   ELF Header:
-   Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
-   Class:                             ELF32
-   Data:                              2&lt;span class=&quot;s1&quot;&gt;&#39;s complement, little endian
-   Version:                           1 (current)
-   OS/ABI:                            UNIX - System V
-   ABI Version:                       0
-   Type:                              EXEC (Executable file)
-   Machine:                           Intel 80386
-   Version:                           0x1
-   Entry point address:               0x80483cc
-   Start of program headers:          52 (bytes into file)
-   Start of section headers:          14936 (bytes into file)
-   Flags:                             0x0
-   Size of this header:               52 (bytes)
-   Size of program headers:           32 (bytes)
-   Number of program headers:         6
-   Size of section headers:           40 (bytes)
-   Number of section headers:         34
-   Section header string table index: 31
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;紧接ELF头部的是程序头表，它是一个结构数组，包含了ELF头表中字段e_phnum定义的条目，结构描述一个段或其他系统准备执行该程序所需要的信息。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;typedef&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 段类型 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Off&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;p_offset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;        &lt;span class=&quot;cm&quot;&gt;/* 段位置相对于文件开始处的偏移量 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Addr&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_vaddr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;      &lt;span class=&quot;cm&quot;&gt;/* 段在内存中的地址 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Addr&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_paddr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;      &lt;span class=&quot;cm&quot;&gt;/* 段的物理地址 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_filesz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 段在文件中的长度 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_memsz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 段在内存中的长度 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_flags&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 段的标记 */&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;Elf32_Word&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;p_align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;    &lt;span class=&quot;cm&quot;&gt;/* 段在内存中对齐标记 */&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Elf32_Phdr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在详细讨论可执行文件程序头表之前，首先查看一个实际文件的输出：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Program Headers:
-Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
-PHDR           0x000034 0x08048034 0x08048034 0x000c0 0x000c0 R E 0x4
-INTERP         0x0000f4 0x080480f4 0x080480f4 0x00013 0x00013 R   0x1
-      &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Requesting program interpreter: /lib/ld-linux.so.2]
-   LOAD           0x000000 0x08048000 0x08048000 0x00684 0x00684 R E 0x1000
-   LOAD           0x000684 0x08049684 0x08049684 0x00118 0x00130 RW  0x1000
-   DYNAMIC        0x000690 0x08049690 0x08049690 0x000c8 0x000c8 RW  0x4
-   NOTE           0x000108 0x08048108 0x08048108 0x00020 0x00020 R   0x4
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Section to Segment mapping:
-  Segment Sections...
-   00
-   01     .interp
-   02     .interp .note.ABI-tag .hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .eh_frame
-   03     .data .dynamic .ctors .dtors .jcr .got .bss
-   04     .dynamic
-   05     .note.ABI-tag
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Section Headers:
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 0]                   NULL            00000000 000000 000000 00      0   0  0
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 1] .interp           PROGBITS        080480f4 0000f4 000013 00   A  0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 2] .note.ABI-tag     NOTE            08048108 000108 000020 00   A  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 3] .hash             HASH            08048128 000128 000040 04   A  4   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 4] .dynsym           DYNSYM          08048168 000168 0000b0 10   A  5   1  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 5] .dynstr           STRTAB          08048218 000218 00007b 00   A  0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 6] .gnu.version      VERSYM          08048294 000294 000016 02   A  4   0  2
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 7] .gnu.version_r    VERNEED         080482ac 0002ac 000030 00   A  5   1  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 8] .rel.dyn          REL             080482dc 0002dc 000008 08   A  4   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 9] .rel.plt          REL             080482e4 0002e4 000040 08   A  4   b  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;10] .init             PROGBITS        08048324 000324 000017 00  AX  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;11] .plt              PROGBITS        0804833c 00033c 000090 04  AX  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;12] .text             PROGBITS        080483cc 0003cc 0001f8 00  AX  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;13] .fini             PROGBITS        080485c4 0005c4 00001b 00  AX  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;14] .rodata           PROGBITS        080485e0 0005e0 00009f 00   A  0   0 32
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;15] .eh_frame         PROGBITS        08048680 000680 000004 00   A  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;16] .data             PROGBITS        08049684 000684 00000c 00  WA  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;17] .dynamic          DYNAMIC         08049690 000690 0000c8 08  WA  5   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;18] .ctors            PROGBITS        08049758 000758 000008 00  WA  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;19] .dtors            PROGBITS        08049760 000760 000008 00  WA  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;20] .jcr              PROGBITS        08049768 000768 000004 00  WA  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;21] .got              PROGBITS        0804976c 00076c 000030 04  WA  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;22] .bss              NOBITS          0804979c 00079c 000018 00  WA  0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;23] .comment          PROGBITS        00000000 00079c 000132 00      0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;24] .debug_aranges    PROGBITS        00000000 0008d0 000098 00      0   0  8
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;25] .debug_pubnames   PROGBITS        00000000 000968 000040 00      0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;26] .debug_info       PROGBITS        00000000 0009a8 001cc6 00      0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;27] .debug_abbrev     PROGBITS        00000000 00266e 0002cc 00      0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;28] .debug_line       PROGBITS        00000000 00293a 0003dc 00      0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;29] .debug_frame      PROGBITS        00000000 002d18 000048 00      0   0  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;30] .debug_str        PROGBITS        00000000 002d60 000bcd 01  MS  0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;31] .shstrtab         STRTAB          00000000 00392d 00012b 00      0   0  1
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;32] .symtab           SYMTAB          00000000 003fa8 000740 10     33  56  4
-  &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;33] .strtab           STRTAB          00000000 0046e8 000467 00      0   0  1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;对 一个ELF可执行程序而言，一个基本的段是标记p_type为PT_INTERP的段，它表明了运行此程序所需要的程序解释器（/lib/ld- linux.so.2），实际上也就是动态连接器（dynamiclinker）。最重要的段是标记p_type为PT_LOAD的段，它表明了为运行程 序而需要加载到内存的数据。查看上面实际输入，可以看见有两个可LOAD段，第一个为只读可执行（FLg为RE）,第二个为可读可写（Flg为RW）。段 1包含了文本节.text，注意到ELF文件头部中程序进入点的值为0x80483cc，正好是指向节.text在内存中的地址。段二包含了数据 节.data，此数据节中数据是可读可写的，相对的只读数据节.rodata包含在段1中。ELF格式可以比COFF格式包含更多的调试信息，如上面所列 出的形式为.debug_xxx的节。在I386平台LINUX系统下，用命令file查看一个ELF可执行程序的可能输出是：a.out: ELF 32-bit LSB executable, Intel 80386, version 1(SYSV), for GNU/Linux 2.2.5, dynamically linked (uses shared libs), notstripped。&lt;/p&gt;
-
-&lt;p&gt;ELF文件中包含了动态连接器的全路径，内核定位”正确”的动态连接器在内存中的地址是”正确”运行可执行文件的保证，参考资料 13讨论了如何通过查找动态连接器在内存中的地址以达到颠覆（Subversiver）动态连接机制的方法。&lt;/p&gt;
-
-&lt;p&gt;最 后我们讨论ELF文件的动态连接机制。每一个外部定义的符号在全局偏移表(Global Offset Table GOT)中有相应的条目,如果符号是函数则在过程连接表(Procedure Linkage TablePLT)中也有相应的条目，且一个PLT条目对应一个GOT条目。对外部定义函数解析可能是整个ELF文件规范中最复杂的，下面是函数符号解析 过程的一个描述。&lt;/p&gt;
-
-&lt;p&gt;1：代码中调用外部函数func,语句形式为call 0xaabbccdd,地址0xaabbccdd实际上就是符号func在PLT表中对应的条目地址（假设地址为标号.PLT2）。&lt;/p&gt;
-
-&lt;p&gt;2：PLT表的形式如下&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.PLT0: pushl   4&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;%ebx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;    /&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; GOT表的地址保存在寄存器ebx中 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-       jmp     &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;8&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;%ebx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-       nop; nop
-       nop; nop
-.PLT1: jmp     &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;name1@GOT&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;%ebx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-       pushl   &lt;span class=&quot;nv&quot;&gt;$offset&lt;/span&gt;
-       jmp     .PLT0@PC
-.PLT2: jmp     &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;func@GOT&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;%ebx&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-       pushl   &lt;span class=&quot;nv&quot;&gt;$offset&lt;/span&gt;
-       jmp     .PLT0@PC
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;3：查看标号.PLT2的语句,实际上是跳转到符号func在GOT表中对应的条目。&lt;/p&gt;
-
-&lt;p&gt;4：在符号没有重定位前，GOT表中此符号对应的地址为标号.PLT2的下一条语句，即是pushl $offset，其中$offset是符号func的重定位偏移量。注意到这是一个二次跳转。&lt;/p&gt;
-
-&lt;p&gt;5：在符号func的重定位偏移量压栈后,控制跳到PLT表的第一条目，把GOT[1]的内容压栈，并跳转到GOT[2]对应的地址。&lt;/p&gt;
-
-&lt;p&gt;6：GOT[2]对应的实际上是动态符号解析函数的代码，在对符号func的地址解析后，会把func在内存中的地址设置到GOT表中此符号对应的条目中。&lt;/p&gt;
-
-&lt;p&gt;7：当第二次调用此符号时，GOT表中对应的条目已经包含了此符号的地址，就可直接调用而不需要利用PLT表进行跳转。&lt;/p&gt;
-
-&lt;p&gt;动态连接是比较复杂的，但为了获得灵活性的代价通常就是复杂性。其最终目的是把GOT表中条目的值修改为符号的真实地址，这也可解释节.got包含在可读可写段中。&lt;/p&gt;
-
-&lt;p&gt;动 态连接是一个非常重要的进步，这意味着库文件可以被升级、移动到其他目录等等而不需要重新编译程序（当然，这不意味库可以任意修改，如函数入参的个数、数 据类型应保持兼容性）。从很大程度上说，动态连接机制是ELF格式代替a.out格式的决定性原因。如果说面对对象的编程本质是面对接口 （interface）的编程，那么动态连接机制则是这种思想的地一个非常典型的应用，具体的讲，动态连接机制与设计模式中的桥接（BRIDGE）方法比 较类似，而它的LAZY特性则与代理（PROXY）方法非常相似。动态连接操作的细节描述请参阅参考资料 8，9，10，11。通过阅读命令readelf、objdump 的源代码以及参考资料14中所提及的相关软件源代码，可以对ELF文件的格式有更彻底的了解。&lt;/p&gt;
-
-&lt;p&gt;总结
-不同时期的可执行文件格式深刻的反映了技术进步的过程，技术进 步通常是针对解决存在的问题和适应新的环境。早期的UNIX系统使用a.out格式，随着操作系统和硬件系统的进步，a.out格式的局限性越来越明显。 新的可执行文件格式COFF在UNIX System VR3中出现，COFF格式相对a.out格式最大变化是多了一个节头表（section headtable），能够在包含基础的文本段、数据段、BSS段之外包含更多的段，但是COFF对动态连接和C++程序的支持仍然比较困难。为了解决上 述问题，UNIX系统实验室(UNIX SYSTEM Laboratories USL)开发出ELF文件格式，它被作为应用程序二进制接口（Application binary InterfaceABI）的一部分，其目的是替代传统的a.out格式。例如，ELF文件格式中引入初始化段.init和结束段.fini（分别对应构 造函数和析构函数）则主要是为了支持C++程序。1994年6月ELF格式出现在LINUX系统上，现在ELF格式作为UNIX/LINUX最主要的可执 行文件格式。当然我们完全有理由相信，在将来还会有新的可执行文件格式出现。&lt;/p&gt;
-
-&lt;p&gt;上 述三种可执行文件格式都很好的体现了设计思想中分层的概念，由一个总的头部刻画了文件的基本要素，再由若干子头部/条目刻画了文件的若干细节。比较一下可 执行文件格式和以太数据包中以太头、IP头、TCP头的设计，我想我们能很好的感受分层这一重要的设计思想。参考资料 21从全局的角度讨论了各种文件的格式，并提出一个比较夸张的结论：Everything Is Byte!&lt;/p&gt;
-
-&lt;p&gt;最后的题外话：大多数资料中对a.out格式的评价较低，常见的词语有黑暗年代（darkages）、丑陋（ugly）等等，当然，从现代的观点来看，的确是比较简单，但是如果没有曾经的简单何来今天的精巧？正如我们今天可以评价石器时代的技术是ugly,那么将来的人们也可以嘲讽今天的技术是非常ugly。我想我们也许应该用更平和的心态来对曾经的技术有一个公正的评价。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/linux-file-system.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/linux-file-system.html</guid>
-        
-        <category>linux</category>
-        
-        
-        <category>服务端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>游戏开发须知</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;. 1.函数体运行的时间大于函数调用所需的时间。这是由于参数压入和弹出堆栈造成的。在这种情况下，更好的方法可能是创建一个全局变量，然后在调用前进行赋值&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 2.尽量使用32位变量而不用8位变量或16位变量，Pentium和之后的处理器全部都是32位的，这就意味着它们并不喜欢8位或16位的数据字符，实际上，更小的数据可能会由于超高速缓存和其他相关的内存寻址异常而使速度下降&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 3.如果真想稳妥地话，应当将所有的结构都变为32字节的倍数。由于Pentium家庭处理器芯片上标准缓存线长度是32倍数，因而这是一个最佳长度，浪费内存但是提高运行速度。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 4.更多的使用简单指令，这样会使计算机使用更多的处理单元并行的处理程序。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 5.优化代码时候，乘法尽量使用移位算法。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 6.视频游戏编程90%都是数据操作，游戏程序的数据应尽可能简单、可见，以便能够迅速地存取它、随意操作它或进行其他处理，确保你的数据结构按照这一原则进行处理。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 7.游戏设计中避免多重隶属关系。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;. 8.制定规范时,在开始你的游戏项目之前，进行一下组织工作，使用合理的文件名和目录名，提出一种一致的变量命名约定，尽量对图形和声音数据使用分开的目录，而不是将其全部都放置在一个目录中&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/knowledge-of-game-developper.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/knowledge-of-game-developper.html</guid>
-        
-        <category>游戏开发</category>
-        
-        
-        <category>服务端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>游戏设计规范要求</title>
-        <description>&lt;p&gt;由于采用游戏引擎为unity3d，固在游戏设计方面主要着重于对算法篇的要求&lt;/p&gt;
-
-&lt;p&gt;代码规范：&lt;/p&gt;
-
-&lt;p&gt;类行数要求：低于500行
-代码方法行数要求：低于80行。
-引包规范，所有包都放在util文件夹中&lt;/p&gt;
-
-&lt;p&gt;命名规范，变量用驼峰命名法则，getModel，方法首字母大写
-文件夹统一小写&lt;/p&gt;
-
-&lt;p&gt;变量使用规范：
-凡是有可能超过int32最大值的数，例如时间类型，全部使用long对于不存在负数类型的数，都采用unsigned long， 统一用宏定义为UINT64 INT64等
-对于不存在负数的int，统一用unsigned int,不允许由于变量过小，而去采用byte等，只允许使用bool。32位cpu存储规范。&lt;/p&gt;
-
-&lt;p&gt;类内单次使用数据结构，统一用struct，不允许用class，对于可能被统一调用的数据，采用class存储&lt;/p&gt;
-
-&lt;p&gt;由于协议内不存在json等结构，不允许使用反射等消耗过大的内容&lt;/p&gt;
-
-&lt;p&gt;算法设计要求：
-多于50次循环需要提交讨论，不允许在设计中存在双重循环，程序内原则上不允许递归。数据结构选择优先级：数组&amp;gt;list&amp;gt;set&amp;gt;dic。&lt;/p&gt;
-
-&lt;p&gt;代码注释要求：
-每个类需要注释，方法有时间则写，没时间可避免。
-文档用功能分类，游戏数据结构一旦建立，变更需要结合游戏需求。&lt;/p&gt;
-
-&lt;p&gt;协议要求：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a.description(object);
-
-sendTo&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt; a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;sendTo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;sendTo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;i=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;0;i&amp;lt;n;i++)&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;sendTo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;sendTo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;sendToEnd&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;协议封装要求：&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;enum&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Proto&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;getPlayerName&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;version:内部版本
-code:协议是否正常(exception 用3位连数 ，999为最严重异常，负数为系统级别以及外挂级别异常，0代表正常)
-msgID:游戏设计中唯一的消息ID   通过 ,IDGenertor.GeneratorID()生成&lt;/p&gt;
-
-&lt;p&gt;协议数据结构以：为分割。匹配客户端及服务端：
-默认必须传得数据结构：
-server:
-//version:2,code:3,msgID:1 content:内容 time:serverTime
-client:
-//version:2,msgID:9
-content: Proto. getPlayerName&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/game-developper-code-desing.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/game-developper-code-desing.html</guid>
-        
-        <category>规范</category>
-        
-        <category>设计</category>
-        
-        <category>开发</category>
-        
-        <category>游戏</category>
         
         
         <category>服务端开发</category>
