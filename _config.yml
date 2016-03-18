@@ -19,8 +19,8 @@ github: amazingw
 # dribbble: username
 
 # avatar头像及Favicon
-avatar: /assets/icon/favicon.ico
-favicon: /assets/img/favicon.jpg
+avatar: /assets/img/fav.jpg
+favicon: /assets/icon/favicon.ico
 
 # disqus 设置
 disqus:
