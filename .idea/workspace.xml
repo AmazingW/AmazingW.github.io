@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12134abe-2015-4e3d-9269-a6a44d5dafc0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/book/2013-12-20-book-list-of-2013.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/book/2014-03-14-book-list-of-2014.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/tool/2013-08-04-something-about-tools-i-used.md" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/life/2013-08-01-the-importent-of-writing.md" afterPath="$PROJECT_DIR$/_posts/life/2013-08-01-program-and-life.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/19/php-session-security.html" afterPath="$PROJECT_DIR$/_site/2012/09/19/php-session-security.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/27/open-widown-in-javascript.html" afterPath="$PROJECT_DIR$/_site/2012/09/27/open-widown-in-javascript.html" />
@@ -60,7 +64,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-api.html" afterPath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-api.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-collector.html" afterPath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-collector.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/01/the-importent-of-writing.html" afterPath="$PROJECT_DIR$/_site/2013/08/01/the-importent-of-writing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/04/something-about-tools-i-used.html" afterPath="$PROJECT_DIR$/_site/2013/08/04/something-about-tools-i-used.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/06/tools-of-reading.html" afterPath="$PROJECT_DIR$/_site/2013/08/06/tools-of-reading.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/28/change-bootstrap-to-3.html" afterPath="$PROJECT_DIR$/_site/2013/08/28/change-bootstrap-to-3.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/10/01/deploy-ceilometer-of-openstack.html" afterPath="$PROJECT_DIR$/_site/2013/10/01/deploy-ceilometer-of-openstack.html" />
@@ -113,9 +116,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Objc-API-Thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Objc-API-Thread.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/OtherLinkerFlags-iOS-XCode.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/OtherLinkerFlags-iOS-XCode.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/RunTime-Swizzle.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/RunTime-Swizzle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/UITableViewCell-AutoHeight.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/UITableViewCell-AutoHeight.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/UITextInput-proto.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/UITextInput-proto.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/c++-extern-detail.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/c++-extern-detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/code-style-gnuc.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/code-style-gnuc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/crashlog-from-dump.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/crashlog-from-dump.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/error-of-cocopods.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/error-of-cocopods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/forever-background-ios.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/forever-background-ios.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/game-developper-code-desing.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/game-developper-code-desing.html" />
@@ -162,6 +167,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/using-of-UIActivityIndicatorView.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/using-of-UIActivityIndicatorView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/win7-service.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/win7-service.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/xcode-quickbutton.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/xcode-quickbutton.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/from-swift-2-oc.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/from-swift-2-oc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/swfit-server.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/swfit-server.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/tableview-controls.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/tableview-controls.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="$PROJECT_DIR$/_site/404.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/pages/feed.xml" afterPath="$PROJECT_DIR$/_site/pages/feed.xml" />
@@ -185,11 +193,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016-03-18-from-swift-2-oc.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/2016-03-18-from-swift-2-oc.md">
+      <file leaf-file-name="2013-04-22-add-svn-ignore-file.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-add-svn-ignore-file.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45062837">
-              <caret line="589" column="3" selection-start-line="589" selection-start-column="3" selection-end-line="589" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-04-22-highlight-of-jekyll.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-highlight-of-jekyll.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-04-22-ignore-password-in-git-push.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-ignore-password-in-git-push.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-04-22-wordpress-to-jekyll.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-wordpress-to-jekyll.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-05-22-change-to-zsh.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-05-22-change-to-zsh.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-05-23-install-mysql-and-mongo-web-admin.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-05-23-install-mysql-and-mongo-web-admin.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-08-01-program-and-life.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/life/2013-08-01-program-and-life.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016-03-18-book-list-of-2016.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/book/2016-03-18-book-list-of-2016.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6644068">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013-05-20-set-proxy-for-git-or-apt.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/tool/2013-05-20-set-proxy-for-git-or-apt.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,8 +291,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-socket-develop-knowledge.md" />
-        <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-const.md" />
         <option value="$PROJECT_DIR$/_posts/serve_tech/2016-03-17-server-design.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-17-use-of-bundle.md" />
         <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-bundle.md" />
@@ -254,6 +340,8 @@
         <option value="$PROJECT_DIR$/_posts/2016-03-18-tableview-controls.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-18-swfit-server.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-18-from-swift-2-oc.md" />
+        <option value="$PROJECT_DIR$/_posts/life/2013-08-01-program-and-life.md" />
+        <option value="$PROJECT_DIR$/_posts/book/2016-03-18-book-list-of-2016.md" />
       </list>
     </option>
   </component>
@@ -341,6 +429,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmazingW.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AmazingW.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="book" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -355,6 +461,7 @@
       <recent name="$PROJECT_DIR$/_posts/serve_tech" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_posts/book" />
       <recent name="$PROJECT_DIR$/_posts/client_tech" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/_posts/serve_tech" />
@@ -480,179 +587,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/serve_tech/2016-03-17-sql-design.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/serve_tech/2016-03-17-server-design.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26732674">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/server_design.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-GCD-Thread.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-using-of-UIActivityIndicatorView.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47524753">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-forever-background-ios.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-code-style-gnuc.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31683168">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Image-Crop-Graphics.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5841584">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-attribute-string.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-use-of-vfl.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="237" column="21" selection-start-line="237" selection-start-column="21" selection-end-line="237" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-OC-Singleton.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-static-librays.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-BlueTooth_develop.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Alpha-hidden-opaque.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-ActionSheet-problem.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-output-format.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-xcode-quickbutton.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Animations.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Base-Knowledge.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Image-Dealing.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-use-NSInvocation.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Photo-memory.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -877,10 +811,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2016-03-18-from-swift-2-oc.md">
+    <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-03-18-from-swift-2-oc.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45062837">
-          <caret line="589" column="3" selection-start-line="589" selection-start-column="3" selection-end-line="589" selection-end-column="3" />
+        <state vertical-scroll-proportion="-9.242424">
+          <caret line="592" column="4" selection-start-line="592" selection-start-column="4" selection-end-line="592" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-08-06-tools-of-reading.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2015-01-10-use-dropzone-and-qiniu-to-store-blog-images.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2016-03-17-error-of-cocopods.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2016-03-17-issues-when-using-github.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2016-03-17-win7-service.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2012-12-30-share-windows-and-linux.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-01-09-remote-access-of-mysql.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-01-16-create-remote-resp.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-02-25-quick-open-in-windows.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-03-25-open-tcp-port-of-libvirt.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-03-25-tools-of-sever-deployment.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-21-add-snippet.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-add-svn-ignore-file.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-highlight-of-jekyll.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-ignore-password-in-git-push.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-04-22-wordpress-to-jekyll.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-05-20-set-proxy-for-git-or-apt.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-05-22-change-to-zsh.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/tool/2013-05-23-install-mysql-and-mongo-web-admin.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/life/2013-08-01-program-and-life.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/book/2016-03-18-book-list-of-2016.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6644068">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding />
         </state>
       </provider>
