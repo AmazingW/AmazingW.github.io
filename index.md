@@ -9,9 +9,3 @@ layout: post
 通过github pages，我建立了我想持久的呆下去的个人的博客类目，我希望通过这个博客类目让更多的人了解我，也希望大家也能喜欢分享更多的想法在github上面。
 
 博客的记录分成这几类：客户端开发、服务端开发、工具、生活、读书和旅游等等类目。
-
-## BLOG平台
-
-这个博客通过 [Jekyll](http://jekyllrb.com/) 生成，部署在 [Github](https://pages.github.com)，主题基于 [3-Jekyll](https://github.com/P233/3-Jekyll) 修改生成，非常感谢 [Su Yan](https://github.com/suyan) 开发出这么漂亮的主题，我保留了 Su Yan的一些文章，自己也会不断的去更新自己的文章。
-
-我博客的源码托管在[Github](https://github.com/suyan/suyan.github.io)上，如果有任何改进意见，欢迎讨论。
