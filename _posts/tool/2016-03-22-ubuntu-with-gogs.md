@@ -8,7 +8,7 @@ keywords: gogs,ubuntu
 ---
 
 
-升级你的软件及系统
+同步索引，升级软件包
 
 ```bash
 sudo apt-get update;

@@ -6,13 +6,13 @@
 </description>
     <link>http://amazingw.github.com/</link>
     <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2016 10:32:12 +0800</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 10:32:12 +0800</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2016 11:00:29 +0800</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2016 11:00:29 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>在ubuntu上安装gogs</title>
-        <description>&lt;p&gt;升级你的软件及系统&lt;/p&gt;
+        <description>&lt;p&gt;同步索引，升级软件包&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update;
 sudo apt-get upgrade;
