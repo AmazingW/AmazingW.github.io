@@ -6,9 +6,147 @@
 </description>
     <link>http://amazingw.github.com/</link>
     <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Mar 2016 10:38:01 +0800</pubDate>
-    <lastBuildDate>Fri, 18 Mar 2016 10:38:01 +0800</lastBuildDate>
+    <pubDate>Tue, 22 Mar 2016 10:32:12 +0800</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2016 10:32:12 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>在ubuntu上安装gogs</title>
+        <description>&lt;p&gt;升级你的软件及系统&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update;
+sudo apt-get upgrade;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;创建用户&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo adduser gogs;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装git&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装mysql&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mysql-server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;创建gogs数据库&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;database&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gogs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;切换用户&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;su gogs;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装golang环境
+可以在http://www.golangtc.com/ 这里查询到最新的包下载地址&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz;
+tar -xzvf go1.6.linux-amd64.tar.gz -C /var/opt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;配置gogs环境&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOROOT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/opt/go &amp;gt;&amp;gt; .bashrc;
+
+&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOBIN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$GOROOT&lt;/span&gt;/bin &amp;gt;&amp;gt; .bashrc;
+
+&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOARCH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;amd64 &amp;gt;&amp;gt; .bashrc;
+
+&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOOS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;linux &amp;gt;&amp;gt; .bashrc;
+
+&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/home/gogs/goapp &amp;gt;&amp;gt; .bashrc;
+
+&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;.:&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;:&lt;span class=&quot;nv&quot;&gt;$GOBIN&lt;/span&gt; &amp;gt;&amp;gt; .bashrc;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;使你配置的环境生效&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .bashrc;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;检查golang是否安装成功,如果不成功，则vi .bashrc,看一下gopath是不是配置的有问题&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;go env；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;建立仓库目录&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir repositories;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;建立gogs的安装目录&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir goapp;
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;goapp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装gogs
+在这里 https://gogs.io/docs/installation/install_from_binary 找到最新的gogs的包下载地址&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo wget https://dl.gogs.io/gogs_v0.9.13_linux_amd64.zip;
+
+unzip gogs_v0.9.13_linux_amd64.zip;
+
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;gogs;
+
+mkdir custom;
+
+mkdir custom/conf;#创建自定义配置文件目录
+
+sudo chmod -R 777 custom;#修改custom文件夹权限
+
+mkdir log;#创建日志目录
+
+sudo chmod -R 777 log;#修改log文件夹权限
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;启动gogs&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/gogs/goapp/gogs;
+./gogs  web;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;然后访问http://localhost:3000;完成配置&lt;/p&gt;
+
+&lt;p&gt;如果想配置永久启动,可以用tmux等等，或者参考我 《nodejs守护进程的启动方法》 这篇文章;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Mar 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/03/22/ubuntu-with-gogs.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/03/22/ubuntu-with-gogs.html</guid>
+        
+        <category>gogs</category>
+        
+        <category>ubuntu</category>
+        
+        
+        <category>工具</category>
+        
+      </item>
     
       <item>
         <title>类型化却不失灵活的 Table View Controller</title>
@@ -2698,25 +2836,6 @@ http://wenku.baidu.com/view/f57c7041be1e650e52ea9985.html
         <category>优化</category>
         
         <category>设计</category>
-        
-        
-        <category>服务端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>coc服务器设计图</title>
-        <description>&lt;p&gt;&lt;img src=&quot;../../../assets/img/server_design.png&quot; alt=&quot;服务器设计图&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/server-design.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/server-design.html</guid>
-        
-        <category>设计</category>
-        
-        <category>开发</category>
-        
-        <category>服务端</category>
         
         
         <category>服务端开发</category>

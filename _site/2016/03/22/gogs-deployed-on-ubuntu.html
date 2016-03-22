@@ -1,0 +1,130 @@
+<hr />
+<p>layout: post
+title: ubuntu上部署gogs
+description: “”
+category: 工具
+tags: “”
+——–</p>
+
+<p>升级你的软件及系统</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get update;
+sudo apt-get upgrade;
+</code></pre>
+</div>
+
+<p>创建用户</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo adduser gogs;
+</code></pre>
+</div>
+
+<p>安装git</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install git;
+</code></pre>
+</div>
+
+<p>安装mysql</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install mysql-server
+</code></pre>
+</div>
+
+<p>创建gogs数据库</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span><span class="p">;</span>
+<span class="k">create</span> <span class="k">database</span> <span class="n">gogs</span><span class="p">;</span>
+<span class="k">show</span> <span class="n">databases</span><span class="p">;</span>
+<span class="n">quit</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>切换用户</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>su gogs;
+<span class="nb">cd</span> ~;
+</code></pre>
+</div>
+
+<p>安装golang环境
+可以在http://www.golangtc.com/ 这里查询到最新的包下载地址</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz;
+tar -xzvf go1.6.linux-amd64.tar.gz -C /var/opt;
+</code></pre>
+</div>
+
+<p>配置gogs环境</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">echo export </span><span class="nv">GOROOT</span><span class="o">=</span>/var/opt/go &gt;&gt; .bashrc;
+
+<span class="nb">echo export </span><span class="nv">GOBIN</span><span class="o">=</span><span class="nv">$GOROOT</span>/bin &gt;&gt; .bashrc;
+
+<span class="nb">echo export </span><span class="nv">GOARCH</span><span class="o">=</span>amd64 &gt;&gt; .bashrc;
+
+<span class="nb">echo export </span><span class="nv">GOOS</span><span class="o">=</span>linux &gt;&gt; .bashrc;
+
+<span class="nb">echo export </span><span class="nv">GOPATH</span><span class="o">=</span>/home/gogs/goapp &gt;&gt; .bashrc;
+
+<span class="nb">echo export </span><span class="nv">PATH</span><span class="o">=</span>.:<span class="nv">$PATH</span>:<span class="nv">$GOBIN</span> &gt;&gt; .bashrc;
+</code></pre>
+</div>
+
+<p>使你配置的环境生效</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">source</span> .bashrc;
+</code></pre>
+</div>
+
+<p>检查golang是否安装成功,如果不成功，则vi .bashrc,看一下gopath是不是配置的有问题</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>go env；
+</code></pre>
+</div>
+
+<p>建立仓库目录</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mkdir repositories;
+</code></pre>
+</div>
+
+<p>建立gogs的安装目录</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mkdir goapp;
+<span class="nb">cd </span>goapp;
+</code></pre>
+</div>
+
+<p>安装gogs
+在这里 https://gogs.io/docs/installation/install_from_binary 找到最新的gogs的包下载地址</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo wget https://dl.gogs.io/gogs_v0.9.13_linux_amd64.zip;
+
+unzip gogs_v0.9.13_linux_amd64.zip;
+
+<span class="nb">cd </span>gogs;
+
+mkdir custom;
+
+mkdir custom/conf;#创建自定义配置文件目录
+
+sudo chmod -R 777 custom;#修改custom文件夹权限
+
+mkdir log;#创建日志目录
+
+sudo chmod -R 777 log;#修改log文件夹权限
+
+</code></pre>
+</div>
+
+<p>启动gogs</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> /home/gogs/goapp/gogs;
+./gogs  web;
+</code></pre>
+</div>
+
+<p>然后访问http://localhost:3000;完成配置</p>
+
+<p>如果想配置永久启动,可以用tmux等等，或者参考我 《nodejs守护进程的启动方法》 这篇文章;</p>
