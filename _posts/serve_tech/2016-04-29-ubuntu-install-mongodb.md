@@ -24,6 +24,8 @@ sudo apt-get install mongodb
 ```bash
 sudo service mongodb stop;
 sudo service mongodb start;
+#后台启动 设置fork＝true
+sudo mongo --dbpath=/data/db --fork --logpath=/data/log/mongodb.log --logappend
 ```
 
 4.设置数据库密码
