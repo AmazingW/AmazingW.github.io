@@ -6,9 +6,1130 @@
 </description>
     <link>http://amazingw.github.com/</link>
     <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2016 11:00:29 +0800</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 11:00:29 +0800</lastBuildDate>
-    <generator>Jekyll v3.1.2</generator>
+    <pubDate>Wed, 18 May 2016 13:22:14 +0800</pubDate>
+    <lastBuildDate>Wed, 18 May 2016 13:22:14 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>个人的简介</title>
+        <description>&lt;h4 id=&quot;section&quot;&gt;写给读者&lt;/h4&gt;
+
+&lt;p&gt;因为最近公司的一些琐事,迫使我也做出了,将要离开的这个举动.所以加了一份个人的简介,在这里,希望大家见谅.
+大部分内容用markdown写的,所以可能没有word那么完美.请见谅.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;个人简介&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;年龄: 26&lt;/td&gt;
+      &lt;td&gt;email: wqf_525@live.cn&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;毕业学校: 四川大学&lt;/td&gt;
+      &lt;td&gt;工作年限: 4年&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;地址：四川省成都市&lt;/td&gt;
+      &lt;td&gt;学历: 工学学士&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;个人经历&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;公司&lt;/th&gt;
+      &lt;th&gt;职位&lt;/th&gt;
+      &lt;th&gt;时间&lt;/th&gt;
+      &lt;th&gt;成绩&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;成都子昂网络科技有限公司&lt;/td&gt;
+      &lt;td&gt;项目主管&lt;/td&gt;
+      &lt;td&gt;2015-07-01 ~ 至今&lt;/td&gt;
+      &lt;td&gt;1.IM开源SDK架构 ; 2.where am i 游戏社交app前后端架构;3.项目管理,管理平台搭建.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;成都刺猬科技有限公司&lt;/td&gt;
+      &lt;td&gt;客户端主管&lt;/td&gt;
+      &lt;td&gt;2014-09-01 ~ 2015-06-01&lt;/td&gt;
+      &lt;td&gt;1.客户端项目架构&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;monstar-lab&lt;/td&gt;
+      &lt;td&gt;开发工程师&lt;/td&gt;
+      &lt;td&gt;2012-09-01 ~ 2014-08-01&lt;/td&gt;
+      &lt;td&gt;1.项目业务实现;2.项目维护&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;专业技能&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;section-4&quot;&gt;客户端&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;1.熟悉swift以及object-c开发&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2.熟悉coredata，sqlite等本地化存储，熟悉UIKIT,CALayer以及animation&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;3.熟悉TCP、UDP、HTTP等网络协议，熟悉多线程、xmpp协议，Socket网络编程&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;4.掌握react-native开发,以及部分组件&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;section-5&quot;&gt;服务端&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;1.熟悉nodejs开发&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;2.熟悉socket-io，express&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;section-6&quot;&gt;项目经验&lt;/h4&gt;
+
+&lt;p&gt;有部分项目跟我需求的工作不符,故不填写.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目名称：where am i&lt;/li&gt;
+  &lt;li&gt;项目描述：6.1上线&lt;/li&gt;
+  &lt;li&gt;一个基于游戏的社交软件,包括猜图,im,朋友圈等.&lt;/li&gt;
+  &lt;li&gt;职责范围: 整体项目架构,包括前后端&lt;/li&gt;
+  &lt;li&gt;相关技术：swift,node-js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目名称：IM开源项目开发&lt;/li&gt;
+  &lt;li&gt;项目描述：http://47.88.19.66:3000/wqf/chatview&lt;/li&gt;
+  &lt;li&gt;个人提出的开源项目,包括im客户端服务端,目前只有两个人开发,我主要负责客户端的架构和服务端编写.&lt;/li&gt;
+  &lt;li&gt;项目开发完成之后,会完全开源,让大家可以一键集成到自己的项目中,不需要再为收费的友盟,即时通讯烦恼.&lt;/li&gt;
+  &lt;li&gt;职责范围: 整体项目架构,包括前后端&lt;/li&gt;
+  &lt;li&gt;相关技术：swift,node-js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目名称：属信&lt;/li&gt;
+  &lt;li&gt;项目描述：https://appsto.re/cn/Xu97-.i&lt;/li&gt;
+  &lt;li&gt;一个基于个人数据的社交APP,包括im以及朋友圈。&lt;/li&gt;
+  &lt;li&gt;通过个人的一些喜好,和个人的信息数据,给app推送一些用户喜好的信息。&lt;/li&gt;
+  &lt;li&gt;职责范围：客户端架构&lt;/li&gt;
+  &lt;li&gt;相关技术：object-c&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目名称：NEARLY（购物app）&lt;/li&gt;
+  &lt;li&gt;项目描述：http://www.ipoca.jp/nearly/&lt;/li&gt;
+  &lt;li&gt;一个日本商场的购物网站。&lt;/li&gt;
+  &lt;li&gt;通过商场终端在app开启的情况下可以给app推送一些用户喜好的商品、以及打开一些内置的小游戏。&lt;/li&gt;
+  &lt;li&gt;在声波获取到的用户中，给用户推送一些用户会喜欢的东西。&lt;/li&gt;
+  &lt;li&gt;在每次用户交易时会有金币积累，金币可以用来玩游戏，以及交换购物券和一些优惠活动。&lt;/li&gt;
+  &lt;li&gt;职责范围：iOS开发&lt;/li&gt;
+  &lt;li&gt;相关技术：object-c，声波通讯&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目名称：スタディギア（英语学习）&lt;/li&gt;
+  &lt;li&gt;项目描述：http://www.ei-navi.jp/&lt;/li&gt;
+  &lt;li&gt;一个日本学生学习英语的项目网站。&lt;/li&gt;
+  &lt;li&gt;项目采用angularjs作为前端开发框架，php作为后台框架，nginx做负载均衡以及页面缓存，其中用flash作为音频播放。&lt;/li&gt;
+  &lt;li&gt;职责范围：前端开发&lt;/li&gt;
+  &lt;li&gt;相关技术：angular-js&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;section-7&quot;&gt;个人评价&lt;/h4&gt;
+
+&lt;p&gt;从一个普通程序到项目架构,我知道自己的不足,知道自己的长处,我会努力的把自己的不足,变为自己的长处.
+不善于与人相处,做事还ok,能力ok.&lt;/p&gt;
+
+&lt;p&gt;简介制作时间不长,&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 May 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/05/18/personal-details.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/05/18/personal-details.html</guid>
+        
+        <category>程序</category>
+        
+        <category>生活</category>
+        
+        
+        <category>生活</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS项目中的蓝牙通信</title>
+        <description>&lt;p&gt;最近碰到了一个蓝牙通信的项目,虽然不难,也花费了不少时间.&lt;/p&gt;
+
+&lt;h4 id=&quot;corebluetooth&quot;&gt;1.核心框架:CoreBluetooth&lt;/h4&gt;
+
+&lt;p&gt;他的api是基于BLE4.0,兼容的机型也是4s以上&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;2.相关的类&lt;/h4&gt;
+
+&lt;p&gt;在corebluetooth中,有两个主要的角色,周围和中央(peripheral和central),整个框架也是在围绕这两个角色设计的.所有iOS设备既可以作为中央角色也可以作为周围角色,但不能同时拥有两个角色.&lt;/p&gt;
+
+&lt;p&gt;周围和中央这两个角色在CoreBluetooth中,CBPeripheralManager代表周围,CBCentralManager代表中央.&lt;/p&gt;
+
+&lt;p&gt;中央请求连接周围,以获取周围的数据.这些数据在实用过程中被结构化,每个服务拥有不同的特征(Characteristics),这些特征是包含一个单一逻辑的属性类型.&lt;/p&gt;
+
+&lt;p&gt;在中央:CBService,代表服务,CBCharacteristic代表特征,在周边则用CBMutableService代表服务,CBMutableCharacteristic代笔特征&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/iOS-bluetooth1.jpeg&quot; alt=&quot;图&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;3.操作流程&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;1.建立中心&lt;/li&gt;
+  &lt;li&gt;2.扫描设备&lt;/li&gt;
+  &lt;li&gt;3.连接设备&lt;/li&gt;
+  &lt;li&gt;4.扫描设备服务与特征&lt;/li&gt;
+  &lt;li&gt;5.交互读写&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;在第四步中,peripheral必须查找服务,才毁掉用didDisCoverService,发现服务之后,需要去查找特征,来确定是否有需要与周围通信的uuid.&lt;/p&gt;
+
+&lt;p&gt;源码在&lt;a href=&quot;https://github.com/AmazingW/bluetooth/tree/master&quot;&gt;https://github.com/AmazingW/bluetooth/tree/master&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 May 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/05/12/ios-bluetooth-connect.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/05/12/ios-bluetooth-connect.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>蓝牙</category>
+        
+        <category>通信</category>
+        
+        
+        <category>客户端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>在ubuntu配置安装mongodb</title>
+        <description>&lt;p&gt;1.更新系统&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2.安装mongodb&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.关闭或启动mongodb&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service mongodb stop;
+sudo service mongodb start;
+&lt;span class=&quot;c&quot;&gt;#后台启动 设置fork＝true&lt;/span&gt;
+sudo mongo --dbpath&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/data/db --fork --logpath&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/data/log/mongodb.log --logappend
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;4.设置数据库密码
+数据库启动后&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mongo
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;use admin
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;db.addUser&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;root&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;123&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit
+&lt;/span&gt;sudo service mongodb stop;
+sudo service mongodb start;
+mongo -auth
+...
+&amp;gt;db.auth&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;root&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;123&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;#验证用户&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;5.mongodb 配置文件&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/mongodb.conf
+//修改 &lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt;—ip,配制成你需要通过的远程服务器的ip,就可以远程连接了.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/04/29/ubuntu-install-mongodb.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/04/29/ubuntu-install-mongodb.html</guid>
+        
+        <category>mongodb</category>
+        
+        <category>ubuntu</category>
+        
+        <category>配置</category>
+        
+        <category>安装</category>
+        
+        
+        <category>服务端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>redis master/slave 模式</title>
+        <description>&lt;h4 id=&quot;slave-servermaster-server&quot;&gt;主从复制:让多个slave server拥有和master server相同的数据库副本。&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;section&quot;&gt;特点&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1.master可以有多个slave
+2.除了多个slave连到相同的master外，slave也可以连接其他slave形成图状结构
+3.主从复制不会阻塞master。也就是说当一个或多个slave与master进行初次同步数据时，master可以继续处理client发来的请求。
+相反slave在初次同步数据时则会阻塞不能处理client的请求。
+4.主从复制可以用来提高系统的可伸缩性,我们可以用多个slave 专门用于client的读请求，
+如sort操作可以使用slave来处理。也可以用来做简单的数据冗余
+5.可以在master禁用数据持久化，只需要注释掉master 配置文件中的所有save配置，然后只在slave上配置数据持久化&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h5 id=&quot;section-1&quot;&gt;主从复制的过程&lt;/h5&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;当设置好slave服务器后，slave会建立和master的连接，然后发送sync命令。
+无论是第一次同步建立的连接还是连接断开后的重新连 接，master都会启动一个后台进程，将数据库快照保存到文件中，同时master主进程会开始收集新的写命令并缓存起来。后台进程完成写文件 后，master就发送文件给slave，slave将文件保存到磁盘上，然后加载到内存恢复数据库快照到slave上。接着master就会把缓存的命 令转发给slave。而且后续master收到的写命令都会通过开始建立的连接发送给slave。
+从master到slave的同步数据的命令和从 client发送的命令使用相同的协议格式。当master和slave的连接断开时slave可以自动重新建立连接。
+如果master同时收到多个 slave发来的同步连接命令，只会使用启动一个进程来写数据库镜像，然后发送给所有slave。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;文件配置&lt;/h4&gt;
+
+&lt;p&gt;先进入redis的config文件夹下&lt;/p&gt;
+
+&lt;p&gt;创建不同的端口的redis文件&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+cp redis.config backup.reidis.config;#拷贝备份
+
+cp redis.config 6379.config;#master config
+
+cp redis.config 6380.config;#slave config
+
+cp redis.config 6381.config;#slave config
+
+rm redis.config; &lt;span class=&quot;c&quot;&gt;# Y&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;修改master配置文件&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi 6379.config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;1.默认后台启动&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;daemonize no
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2.修改绑定的主机地址
+想让其他的服务器访问你的redis,server,最好配置这里的bind&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.设置Redis连接密码&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;requirepass mypassword
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;修改slave&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi 6380.config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;1.默认后台启动&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;daemonize no
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2.修改绑定的主机地址
+想让其他的服务器访问你的redis,server,最好配置这里的bind&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.设置Redis连接密码&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;requirepass mypassword
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;4.修改端口号&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port 6380
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;5.设置隶属的master的redis&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;slaveof 127.0.0.1 6379
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;6.如果 master 需要密码认证，就在这里设置&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;masterauth mypassword
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;notice--&quot;&gt;notice : 主从的数据库总量要相同,否则无法启动&lt;/h4&gt;
+
+&lt;p&gt;最后,启动redis&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;redis-server /usr/local/etc/6379.conf
+redis-server /usr/local/etc/6381.conf
+redis-server /usr/local/etc/6380.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/04/29/redis-master-slave.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/04/29/redis-master-slave.html</guid>
+        
+        <category>redis</category>
+        
+        <category>主从</category>
+        
+        
+        <category>服务端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>redis配置文件记录</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;Redis默认不是以守护进程的方式运行，可以通过该配置项修改，使用yes启用守护进程&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    daemonize no
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;当Redis以守护进程方式运行时，Redis默认会把pid写入/var/run/redis.pid文件，可以通过pidfile指定&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    pidfile /var/run/redis.pid
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定Redis监听端口，默认端口为6379，作者在自己的一篇博文中解释了为什么选用6379作为默认端口，因为6379在手机按键上MERZ对应的号码，而MERZ取自意大利歌女Alessia Merz的名字&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    port 6379
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;绑定的主机地址&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    bind 127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;5.当 客户端闲置多长时间后关闭连接，如果指定为0，表示关闭该功能&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    timeout 300
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定日志记录级别，Redis总共支持四个级别：debug、verbose、notice、warning，默认为verbose&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    loglevel verbose
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;日志记录方式，默认为标准输出，如果配置Redis为守护进程方式运行，而这里又配置为日志记录方式为标准输出，则日志将会发送给/dev/null&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    logfile stdout
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置数据库的数量，默认数据库为0，可以使用SELECT &lt;dbid&gt;命令在连接上指定数据库id&lt;/dbid&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    databases 16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定在多长时间内，有多少次更新操作，就将数据同步到数据文件，可以多个条件配合&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    save &amp;lt;seconds&amp;gt; &amp;lt;changes&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Redis默认配置文件中提供了三个条件：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    save 900 1
+
+    save 300 10
+
+    save 60 10000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;分别表示900秒（15分钟）内有1个更改，300秒（5分钟）内有10个更改以及60秒内有10000个更改。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定存储至本地数据库时是否压缩数据，默认为yes，Redis采用LZF压缩，如果为了节省CPU时间，可以关闭该选项，但会导致数据库文件变的巨大&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    rdbcompression yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定本地数据库文件名，默认值为dump.rdb&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    dbfilename dump.rdb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定本地数据库存放目录&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    dir ./
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置当本机为slav服务时，设置master服务的IP地址及端口，在Redis启动时，它会自动从master进行数据同步&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    slaveof &amp;lt;masterip&amp;gt; &amp;lt;masterport&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;当master服务设置了密码保护时，slav服务连接master的密码&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    masterauth &amp;lt;master-password&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置Redis连接密码，如果配置了连接密码，客户端在连接Redis时需要通过AUTH &lt;password&gt;命令提供密码，默认关闭&lt;/password&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    requirepass foobared
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置同一时间最大客户端连接数，默认无限制，Redis可以同时打开的客户端连接数为Redis进程可以打开的最大文件描述符数，如果设置 maxclients 0，表示不作限制。当客户端连接数到达限制时，Redis会关闭新的连接并向客户端返回max number of clients reached错误信息&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    maxclients 128
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定Redis最大内存限制，Redis在启动时会把数据加载到内存中，达到最大内存后，Redis会先尝试清除已到期或即将到期的Key，当此方法处理 后，仍然到达最大内存设置，将无法再进行写入操作，但仍然可以进行读取操作。Redis新的vm机制，会把Key存放内存，Value会存放在swap区&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    maxmemory &amp;lt;bytes&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定是否在每次更新操作后进行日志记录，Redis在默认情况下是异步的把数据写入磁盘，如果不开启，可能会在断电时导致一段时间内的数据丢失。因为 redis本身同步数据文件是按上面save条件来同步的，所以有的数据会在一段时间内只存在于内存中。默认为no&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    appendonly no
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定更新日志文件名，默认为appendonly.aof&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     appendfilename appendonly.aof
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定更新日志条件，共有3个可选值：
+no：表示等操作系统进行数据缓存同步到磁盘（快）
+always：表示每次更新操作后手动调用fsync()将数据写到磁盘（慢，安全）
+everysec：表示每秒同步一次（折衷，默认值）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    appendfsync everysec
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定是否启用虚拟内存机制，默认值为no，简单的介绍一下，VM机制将数据分页存放，由Redis将访问量较少的页即冷数据swap到磁盘上，访问多的页面由磁盘自动换出到内存中（在后面的文章我会仔细分析Redis的VM机制）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     vm-enabled no
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;虚拟内存文件路径，默认值为/tmp/redis.swap，不可多个Redis实例共享&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     vm-swap-file /tmp/redis.swap
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;将所有大于vm-max-memory的数据存入虚拟内存,无论vm-max-memory设置多小,所有索引数据都是内存存储的(Redis的索引数据 就是keys),也就是说,当vm-max-memory设置为0的时候,其实是所有value都存在于磁盘。默认值为0&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     vm-max-memory 0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Redis swap文件分成了很多的page，一个对象可以保存在多个page上面，但一个page上不能被多个对象共享，vm-page-size是要根据存储的 数据大小来设定的，作者建议如果存储很多小对象，page大小最好设置为32或者64bytes；如果存储很大大对象，则可以使用更大的page，如果不 确定，就使用默认值&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     vm-page-size 32
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置swap文件中的page数量，由于页表（一种表示页面空闲或使用的bitmap）是在放在内存中的，，在磁盘上每8个pages将消耗1byte的内存。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     vm-pages 134217728
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置访问swap文件的线程数,最好不要超过机器的核数,如果设置为0,那么所有对swap文件的操作都是串行的，可能会造成比较长时间的延迟。默认值为4&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     vm-max-threads 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;设置在向客户端应答时，是否把较小的包合并为一个包发送，默认为开启&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    glueoutputbuf yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定在超过一定的数量或者最大的元素超过某一临界值时，采用一种特殊的哈希算法&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    hash-max-zipmap-entries 64
+
+    hash-max-zipmap-value 512
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定是否激活重置哈希，默认为开启（后面在介绍Redis的哈希算法时具体介绍）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    activerehashing yes
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;指定包含其它的配置文件，可以在同一主机上多个Redis实例之间使用同一份配置文件，而同时各个实例又拥有自己的特定配置文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    include /path/to/local.conf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/04/29/redis-config.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/04/29/redis-config.html</guid>
+        
+        <category>redis</category>
+        
+        <category>config</category>
+        
+        
+        <category>服务端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>ubuntu上nginx的安装与socketio配置</title>
+        <description>&lt;p&gt;1.更新系统&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2.安装nginx&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;ubuntu安装Nginx之后的文件结构大致为：&lt;/p&gt;
+
+&lt;p&gt;所有的配置文件都在/etc/nginx下，并且每个虚拟主机已经安排在了/etc/nginx/sites-available下&lt;/p&gt;
+
+&lt;p&gt;启动程序文件在/usr/sbin/nginx&lt;/p&gt;
+
+&lt;p&gt;日志放在了/var/log/nginx中，分别是access.log和error.log&lt;/p&gt;
+
+&lt;p&gt;并已经在/etc/init.d/下创建了启动脚本nginx&lt;/p&gt;
+
+&lt;p&gt;默认的虚拟主机的目录设置在了/usr/share/nginx/www&lt;/p&gt;
+
+&lt;p&gt;3.启动Nginx&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; /etc/init.d/nginx start
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;4.例子&lt;/p&gt;
+
+&lt;p&gt;nginx 对socketio的配置&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c&quot;&gt;#user  nobody;&lt;/span&gt;
+worker_processes  4;
+
+&lt;span class=&quot;c&quot;&gt;#error_log  logs/error.log;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#error_log  logs/error.log  notice;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#error_log  logs/error.log  info;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#pid        logs/nginx.pid;&lt;/span&gt;
+
+
+events &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    worker_connections  200;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+
+http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    sendfile        on;
+
+    keepalive_timeout  65;
+
+    &lt;span class=&quot;c&quot;&gt;# 配置负载的后端&lt;/span&gt;
+        upstream socket_nodes &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            ip_hash;
+            server 192.168.0.51:3000 &lt;span class=&quot;nv&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;5;
+            server 192.168.0.27:5678;
+            keepalive 64;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    server &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        listen 8080;
+        server_name localhost;
+
+        location /socket.io/ &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+            proxy_set_header X-Real-IP &lt;span class=&quot;nv&quot;&gt;$remote_addr&lt;/span&gt;;
+            proxy_set_header X-Forwarded-For &lt;span class=&quot;nv&quot;&gt;$proxy_add_x_forwarded_for&lt;/span&gt;;
+            proxy_set_header Host &lt;span class=&quot;nv&quot;&gt;$http_host&lt;/span&gt;;
+            proxy_set_header X-NginX-Proxy &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;;
+
+            proxy_pass http://socket_nodes;
+            proxy_redirect off;
+
+            &lt;span class=&quot;c&quot;&gt;# Socket.IO Support&lt;/span&gt;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade &lt;span class=&quot;nv&quot;&gt;$http_upgrade&lt;/span&gt;;
+            proxy_set_header Connection &lt;span class=&quot;s2&quot;&gt;&quot;upgrade&quot;&lt;/span&gt;;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    include servers/&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/04/29/nginx-install-on-ubuntu.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/04/29/nginx-install-on-ubuntu.html</guid>
+        
+        <category>ubuntu</category>
+        
+        <category>nginx</category>
+        
+        <category>安装</category>
+        
+        <category>配置</category>
+        
+        <category>socketio</category>
+        
+        
+        <category>服务端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>indexOf/filter/forEach/map/reduce详解</title>
+        <description>&lt;p&gt;在ES5中，一共有9个Array方法 &lt;a href=&quot;http://kangax.github.io/compat-table/es5/&quot;&gt;http://kangax.github.io/compat-table/es5/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;注* 九个方法&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.indexOf&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.lastIndexOf&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.every&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.some&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.forEach&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.map&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.filter&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.reduce&lt;/p&gt;
+
+&lt;p&gt;Array.prototype.reduceRight&lt;/p&gt;
+
+&lt;h4 id=&quot;section&quot;&gt;以下5个方法是比较实用的5种方法&lt;/h4&gt;
+
+&lt;p&gt;1) indexOf&lt;/p&gt;
+
+&lt;p&gt;indexOf()方法返回在该数组中第一个找到的元素位置，如果它不存在则返回-1。&lt;/p&gt;
+
+&lt;p&gt;不使用indexOf时&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;found:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;found&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;使用后&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;found:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2) filter&lt;/p&gt;
+
+&lt;p&gt;该filter()方法创建一个新的匹配过滤条件的数组。&lt;/p&gt;
+
+&lt;p&gt;不用 filter() 时&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+       &lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Filter results:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;用了 filter():&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Filter results:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3) forEach()&lt;/p&gt;
+
+&lt;p&gt;forEach为每个元素执行对应的方法&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Uses the usual &quot;for&quot; loop to iterate&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;========================&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//Uses forEach to iterate&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;forEach是用来替换for循环的&lt;/p&gt;
+
+&lt;p&gt;4) map()&lt;/p&gt;
+
+&lt;p&gt;map()对数组的每个元素进行一定操作（映射）后，会返回一个新的数组，&lt;/p&gt;
+
+&lt;p&gt;不使用map&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Colin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Toh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Addy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Osmani&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Yehuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Katz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getNewArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[];&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;newArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getNewArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;使用map后&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Colin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Toh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Addy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Osmani&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Yehuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Katz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getNewArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;full_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getNewArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;map()是处理服务器返回数据时是一个非常实用的函数。&lt;/p&gt;
+
+&lt;p&gt;5) reduce()&lt;/p&gt;
+
+&lt;p&gt;reduce()可以实现一个累加器的功能，将数组的每个值（从左到右）将其降低到一个值。&lt;/p&gt;
+
+&lt;p&gt;说实话刚开始理解这句话有点难度，它太抽象了。&lt;/p&gt;
+
+&lt;p&gt;场景： 统计一个数组中有多少个不重复的单词&lt;/p&gt;
+
+&lt;p&gt;不使用reduce时&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getWordCnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getWordCnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;使用reduce()后&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getWordCnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},{});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getWordCnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;让我先解释一下我自己对reduce的理解。reduce(callback, initialValue)会传入两个变量。回调函数(callback)和初始值(initialValue)。假设函数它有个传入参数，prev和next,index和array。prev和next你是必须要了解的。&lt;/p&gt;
+
+&lt;p&gt;一般来讲prev是从数组中第一个元素开始的，next是第二个元素。但是当你传入初始值(initialValue)后，第一个prev将是initivalValue，next将是数组中的第一个元素。&lt;/p&gt;
+
+&lt;p&gt;比如：&lt;/p&gt;
+
+&lt;p&gt;/*
+* 二者的区别，在console中运行一下即可知晓
+*/&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;noPassValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;prev:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;next:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;passValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;prev:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;next:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},{});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;No Additional parameter:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;noPassValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;----------------&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;With {} as an additional parameter:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;passValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/04/29/new-method-in-jsarray.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/04/29/new-method-in-jsarray.html</guid>
+        
+        <category>indexOf</category>
+        
+        <category>filter</category>
+        
+        <category>forEach</category>
+        
+        <category>map</category>
+        
+        <category>reduce</category>
+        
+        <category>详解</category>
+        
+        
+        <category>服务端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>在mac上部署redis-server服务器</title>
+        <description>&lt;h3 id=&quot;homebrew&quot;&gt;1.安装homebrew&lt;/h3&gt;
+
+&lt;p&gt;确保已经安装了xCode&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/ruby -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;打开terminal,将上面的一段粘贴到terminal,然后执行,等待2分钟左右,brew就安装成功了&lt;/p&gt;
+
+&lt;h3 id=&quot;redis&quot;&gt;2.安装redis&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install redis
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装完成后你会看到&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#To have launchd start redis at login:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#Then to load redis now:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#Or, if you don&#39;t want/need launchctl, you can just run:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#  redis-server /usr/local/etc/redis.conf&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;上面是redis配置文件所在的目录.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 29 Apr 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/04/29/create-redis-on-mac.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/04/29/create-redis-on-mac.html</guid>
+        
+        <category>redis</category>
+        
+        <category>mac</category>
+        
+        
+        <category>服务端开发</category>
+        
+      </item>
     
       <item>
         <title>在ubuntu上安装gogs</title>
@@ -529,2316 +1650,6 @@ extension ImageTableViewCell: Updatable {
         
         
         <category>客户端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>服务端 Swift</title>
-        <description>&lt;p&gt;自从苹果官方发布了一个 Swift 的 Linux 开源版本之后，服务端 Swift 终于迎来了一个令人激动的前景。我的好奇心终于无法克制，是时候尝试一下服务端 Swift 了！&lt;/p&gt;
-
-&lt;p&gt;除了用过几个 Baas 以外，我没有任何后端编程经验，但幸运的是开源社区已经提供了现成的框架。我试了一下 Tanner Nelson 推荐的 Vapor 框架。它的使用非常简单，非常适合我当前的任务，在这篇文档中还会使用到 Heroku。我决定使用 Heroku 的原因是我们的后端团队在使用它，它对于前端来说非常友好。&lt;/p&gt;
-
-&lt;p&gt;写到这里的时候，为了解决 Heroku 框架运行中的几个小问题，我专门提交了一个 pull request 。如果代码还没被合并的话，请设置你的包管理器从 这里 下载。&lt;/p&gt;
-
-&lt;h3 id=&quot;section&quot;&gt;安装&lt;/h3&gt;
-
-&lt;p&gt;要继续本教程，首先，你需要一个 Heroku 账号 ，并安装好 Swift Development Snapshot 。写到这里的时候，在它的正式版中还未包含 swift 包管理器。因此为了使用这个工具，你必须下载开发版的 snapshot。&lt;/p&gt;
-
-&lt;h3 id=&quot;section-1&quot;&gt;开始&lt;/h3&gt;
-
-&lt;p&gt;我们的目标是创建一个简单的 Swift 服务器并运行在 Heroku 上。这不需要在 linux 环境下进行，就像是你在使用本地服务器。你只消创建一个本地的 Xcode 项目，对项目进行一些设置，然后就可以在 Swift 包管理器 中运行它。整过过程分为 4 个步骤：&lt;/p&gt;
-
-&lt;p&gt;将 main.swift 拷贝根目录下的 Sources 目录&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server1.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;创建一个 Package.swift 文件&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server2.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;将 .build 目录添加到 import paths&lt;/p&gt;
-
-&lt;p&gt;要使用自动补全和语法加亮功能，需要将 Swift 包管理器的 build 目录提交到 import paths 中。注意，在 import paths 的 Debug 中设置的 debug 目录，而 Release 项则输入 release 目录。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server3.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;用 toolchain 运行 Xcode&lt;/p&gt;
-
-&lt;p&gt;如果你使用 Xcode 7.3，你可以用 Xcode &amp;gt; Toolchains 菜单开启一个Xcode 实例，用于打开 swift snapshot。因为我们不能在 Xcode 中进行编译，我们只能以命令行的方式进行编译。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server4.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;编写服务器&lt;/p&gt;
-
-&lt;p&gt;令我高兴的是，为了进行概念验证，我需要编写的代码其实只有寥寥数行。我启动和运行服务器的代码甚至不到 10 行。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server5.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;要启动服务器，只需在终端中输入一句命令，：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server6.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;好了，让我们打开浏览器。我的浏览器安装了 json 插件，你的画面或许会有不同。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server7.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;迁移到云上&lt;/p&gt;
-
-&lt;p&gt;服务器在本地顺利运行起来了，但如果放到云端则更好。我迫不及待地想将 App 在云上跑起来。对于我来说这是一个全新的挑战，幸运的是，我得到了 Vincent Toms 的悉心指导。&lt;/p&gt;
-
-&lt;p&gt;Heroku 的安装是一件非常愉悦的体验，几分钟后我就创建了一个 Heroku App，接下来我就要上传我的项目了。&lt;/p&gt;
-
-&lt;p&gt;出错啦&lt;/p&gt;
-
-&lt;p&gt;这只是今天的诸多错误中的一个。我已经预计到事情不可能一帆风顺，因此我查看了 Vapor 的文档，最终发现问题出在所谓的 buildpacks 上。Heorku 提供了一些标准的 buildpacks，但完全没有针对 Swift 的 buildpacks。无奈之下求救于开源社区，刚好看到 Kyle Fuller 的 buildpack 。集成它就简单得多了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server8.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;用这个 buildpack 启动后，App 成功加载，接下来就是访问它的 URL。&lt;/p&gt;
-
-&lt;p&gt;再次出错&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server9.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;事情不会那么顺利的，是吧？经过 google 一番，仔细查看了一些例子，我发现我还差一个 Procfile。浏览一下这个文件的内容，你就能明白这个文件是干什么用的了。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server10.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;buildpack 创建了可执行文件，但 Heroku 并不知道。通过 Procfile，我们告诉 Heroku 去运行 SwiftServerIO 可执行文件。上传这个 Procfile。&lt;/p&gt;
-
-&lt;p&gt;仍然出错&lt;/p&gt;
-
-&lt;p&gt;Heroku 编译的 2 分支仿佛变得无比漫长。我重新打开了浏览器，发现仍然报错。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server11.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;我以为 Heroku 可能还未启动完成（实际不是），因此我又等了一小会，终于发现出错了。可执行文件生成了， process file 也就绪，一定是别的什么地方出问题了。再次 google，一直到我最终发现我需要设置 App 的规模(scale up)。这要使用到 Heroku 的 toolbelt 中的一个简单命令。&lt;/p&gt;
-
-&lt;p&gt;heroku ps:scale web=1&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server12.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Heroku 在免费情况下只有一个 dyno（Heroku 计费单位，10~50 个请求/秒）。但对于我们的简单服务器来说，这也够了。因此，在我们将 scale web 设置为 1 个 dyno 之后，再次用浏览器查看。&lt;/p&gt;
-
-&lt;p&gt;成功了！&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server13.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;成功了！服务器启动，出现了万能的 hello world！经过一番欢呼雀跃之后，让我们真正来问一声好吧！&lt;/p&gt;
-
-&lt;p&gt;响应请求&lt;/p&gt;
-
-&lt;p&gt;在 main.swfit 文件中添加一小段代码，让服务器在问好的同时能够因人而异。就微微偷一下懒，新加一个路由，让服务器根据输入输出不同的问候语。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server14.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;一切正常，但根据一般规律，我仍然做好了出错的心理准备。提交修改，push 代码到 Heroku。&lt;/p&gt;
-
-&lt;p&gt;Say Hello!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/swift-server15.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;大约一份多钟的编译之后，在浏览器中访问 URL，服务器返回了问候语。你可以在这里查看效果 。&lt;/p&gt;
-
-&lt;p&gt;接下来是什么？&lt;/p&gt;
-
-&lt;p&gt;可以说，服务端 Swift 的今天离不开社区强大支持。对于我来说，能够从云端获取 JSON 是一个令人兴奋的开始，我已经迫不及待地想看看接下来还会发生什么。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/18/swfit-server.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/swfit-server.html</guid>
-        
-        <category>Swift</category>
-        
-        <category>server</category>
-        
-        
-        <category>客户端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>从Objective-C到Swift</title>
-        <description>&lt;p&gt;这篇文章是自己学习Swift的笔记与深化。希望这篇文章能够帮助已经有Objective-C经验的开发者更快地学习Swift。同时也品味到Swift的精妙之处。&lt;/p&gt;
-
-&lt;p&gt;结论放在开头:我认为Swift比Objective-C更优雅,更安全同时也更现代,更性感。&lt;/p&gt;
-
-&lt;p&gt;文章组织脉络：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;从Objective-C到Swift的语法差异。我们熟悉的Objective-C特性在Swift中如何展现。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;从Objective-C到Swift的进步改进。研究对比Swift在安全性,易用性上的提升,给我们带来的新编程范式。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;目录：&lt;/p&gt;
-
-&lt;p&gt;1.属性(property)和实例变量(instance variable)&lt;/p&gt;
-
-&lt;p&gt;2.控制流&lt;/p&gt;
-
-&lt;p&gt;3.函数&lt;/p&gt;
-
-&lt;p&gt;4.类与初始化(Initializers)&lt;/p&gt;
-
-&lt;p&gt;5.枚举与结构体&lt;/p&gt;
-
-&lt;p&gt;6.协议(Protocols)&lt;/p&gt;
-
-&lt;p&gt;7.Swift与Cocoa&lt;/p&gt;
-
-&lt;p&gt;8.总结&lt;/p&gt;
-
-&lt;p&gt;1.属性(property)和实例变量(instance variable)&lt;/p&gt;
-
-&lt;p&gt;Objective-C property in Swift world&lt;/p&gt;
-
-&lt;p&gt;在Cocoa世界开发的过程中,我们最常打交道的是property.&lt;/p&gt;
-
-&lt;p&gt;典型的声明为:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift当中,摆脱了C的包袱后,变得更为精炼,我们只需直接在类中声明即可&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Shape {
-    var name = &quot;shape&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;注意到这里,我们不再需要@property指令,而在Objective-C中,我们可以指定property的attribute,例如strong,weak,readonly等。&lt;/p&gt;
-
-&lt;p&gt;而在Swift的世界中,我们通过其他方式来声明这些property的性质。&lt;/p&gt;
-
-&lt;p&gt;需要注意的几点:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;strong: 在Swift中是默认的&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;weak: 通过weak关键词申明&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;1&lt;/p&gt;
-
-&lt;p&gt;weak var delegate: UITextFieldDelegate?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;readonly,readwrie 直接通过声明常量let,声明变量var的方式来指明&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;copy 通过@NSCopying指令声明。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;值得注意的是String,Array和Dictionary在Swift是以值类型(value type)而不是引用类型(reference type)出现,因此它们在赋值,初始化,参数传递中都是以拷贝的方式进行（简单来说,String,Array,Dictionary在Swift中是通过struct实现的）&lt;/p&gt;
-
-&lt;p&gt;延伸阅读：Value and Reference Types&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;nonatomic,atomic 所有的Swift properties 都是nonatomic。但是我们在线程安全上已经有许多机制,例如NSLock,GCD相关API等。个人推测原因是苹果想把这一个本来就用的很少的特性去掉,线程安全方面交给平时我们用的更多的机制去处理。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;然后值得注意的是,在Objective-C中,我们可以跨过property直接与instance variable打交道,而在Swift是不可以的。&lt;/p&gt;
-
-&lt;p&gt;例如：我们可以不需要将someString声明为property,直接使用即可。即使我们将otherString声明为property,我们也可以直接用_otherString来使用property背后的实例变量。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SomeClass&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;someString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;otherString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift中,我们不能直接与instance variable打交道。也就是我们声明的方式简化为简单的一种,简单来说在Swift中,我们只与property打交道。&lt;/p&gt;
-
-&lt;p&gt;A Swift property does not have a corresponding instance variable, and the backing store for a property is not accessed directly&lt;/p&gt;
-
-&lt;p&gt;小结&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;因此之前使用OC导致的像巧哥指出的开发争议就不再需要争执了,在Swift的世界里,我们只与property打交道。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;并且我们在OC中init和dealloc不能使用属性self.property = XXX来进行设置的情况得以解决和统一。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;(不知道这一条规定,在init直接用self.property = value 的同学请自觉阅读iOS夯实：内存管理)&lt;/p&gt;
-
-&lt;p&gt;个人觉得这看似小小一点变动使Swift开发变得更加安全以及在代码的风格更为统一与稳定。&lt;/p&gt;
-
-&lt;p&gt;Swift property延伸：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Stored Properties和Computed properties&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在Swift中,property被分为两类：Stored Properties和Computed properties 简单来说,就是stored properties 能够保存值,而computed properties只提供getter与setter,利用stored properties来生成自己的值。个人感觉Computed properties更像方法,而不是传统意义的属性。但是这样一个特性存在,使得我们更容易组织我们的代码。&lt;/p&gt;
-
-&lt;p&gt;延伸阅读：computed property vs function&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Type Properties&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Swift提供了语言级别定义类变量的方法。&lt;/p&gt;
-
-&lt;p&gt;In C and Objective-C, you define static constants and variables associated with a type as global static variables.In Swift, however, type properties are written as part of the type’s definition, within the type’s outer curly braces, and each type property is explicitly scoped to the type it supports.&lt;/p&gt;
-
-&lt;p&gt;在Objective-C中,我们只能通过单例,或者static变量加类方法来自己构造类变量：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Model&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Model&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@synchronized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@synchronized&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// Foo.h
-@interface Foo {
-}
-
-+(NSDictionary*) dictionary;
-
-// Foo.m
-+(NSDictionary*) dictionary
-{
-  static NSDictionary* fooDict = nil;
-
-  static dispatch_once_t oncePredicate;
-
-  dispatch_once(&amp;amp;oncePredicate, ^{
-        // create dict
-    });
-
-  return fooDict;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift中我们通过清晰的语法便能定义类变量：&lt;/p&gt;
-
-&lt;p&gt;通过static定义的类变量无法在子类重写,通过class定义的类变量则可在子类重写。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct SomeStructure {
-    static var storedTypeProperty = &quot;Some value.&quot;
-    static var computedTypeProperty: Int {
-        return 1
-    }
-    class var overrideableComputedTypeProperty: Int {
-        return 107
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;同时利用类变量我们也有了更优雅的单例模式实现：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class singletonClass {
-    static let sharedInstance = singletonClass()
-    private init() {} // 这就阻止其他对象使用这个类的默认的&#39;()&#39;初始化方法
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Swift单例模式探索：The Right Way to Write a Singleton&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;延伸：目前Swift支持的type propertis中的Stored Properties类型不是传统意义上的类变量(class variable)，暂时不能通过class 关键词定义,通过static定义的类变量类似java中的类变量,是无法被继承的,父类与子类的类变量指向的都是同一个静态变量。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;延伸阅读： Class variables not yet supported&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class SomeStructure {
-    class var storedTypeProperty = &quot;Some value.&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;//Swift 2.0
-Error: Class stored properties not yet supported in classes&lt;/p&gt;
-
-&lt;p&gt;通过编译器抛出的错误信息,相信在未来的版本中会完善Type properties。&lt;/p&gt;
-
-&lt;p&gt;2.控制流&lt;/p&gt;
-
-&lt;p&gt;Swift与Objective-C在控制流的语法上关键词基本是一致的,但是扩展性和安全性得到了很大的提升。&lt;/p&gt;
-
-&lt;p&gt;主要有三种类型的语句&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;if,switch和新增的guard&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;for,while&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;break,continue&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;主要差异有：&lt;/p&gt;
-
-&lt;p&gt;关于if&lt;/p&gt;
-
-&lt;p&gt;语句里的条件不再需要使用()包裹了。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let number = 23
-if number &amp;lt; 10 {
-    print(&quot;The number is small&quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;但是后面判断执行的的代码必须使用{}包裹住。&lt;/p&gt;
-
-&lt;p&gt;为什么呢,在C,C++等语言中,如果后面执行的语句只有语句,我们可以写成:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  int number = 23
-    if (number &amp;lt; 10)
-        NSLog(&quot;The number is small&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;但是如果有时要在后面添加新的语句,忘记添加{},灾难就很可能发送。&lt;/p&gt;
-
-&lt;p&gt;：） 像苹果公司自己就犯过这样的错误。下面这段代码就是著名的goto fail错误,导致了严重的安全性问题。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  if ((err = SSLHashSHA1.update(&amp;amp;hashCtx, &amp;amp;signedParams)) != 0)
-    goto fail;
-    goto fail;  // :)注意 这不是Python的缩减
-  ... other checks ...
-  fail:
-    ... buffer frees (cleanups) ...
-    return err;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;最终在Swift,苹果终于在根源上消除了可能导致这种错误的可能性。&lt;/p&gt;
-
-&lt;p&gt;if 后面的条件必须为Boolean表达式&lt;/p&gt;
-
-&lt;p&gt;也就是不会隐式地与0进行比较,下面这种写法是错误的,因为number并不是一个boolean表达式,number != 0才是。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;int number = 0
-if number{
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;关于for&lt;/p&gt;
-
-&lt;p&gt;for循环在Swift中变得更方便,更强大。&lt;/p&gt;
-
-&lt;p&gt;得益于Swift新添加的范围操作符…与…&amp;lt;&lt;/p&gt;
-
-&lt;p&gt;我们能够将之前繁琐的for循环：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for (int i = 1; i &amp;lt;= 5; i++)
-{
-    NSLog(@&quot;%d&quot;, i);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;改写为：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for index in 1...5 {
-    print(index)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;当然,熟悉Python的亲们知道Python的range函数很方便,我们还能自由选择步长。 像这样：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;range(1,5) #代表从1到5(不包含5)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;[1, 2, 3, 4]&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;range(1,5,2) #代表从1到5，间隔2(不包含5)&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;[1, 3]&lt;/p&gt;
-
-&lt;p&gt;虽然在《The Swift Programming Language》里面没有提到类似的用法,但是在Swift中我们也有优雅的方法办到。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-`&quot;&gt;for index in stride(from: 1, through: 5, by: 2) {
-    print(index)
-}// through是包括5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;然后对字典的遍历也增强了.在Objective-c的快速枚举中我们只能对字典的键进行枚举。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSString *key;
-for (key in someDictionary){
-     NSLog(@&quot;Key: %@, Value %@&quot;, key, [someDictionary objectForKey: key]);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift中,通过tuple我们可以同时枚举key与value:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let dictionary = [&quot;firstName&quot;:&quot;Mango&quot;,&quot;lastName&quot;:&quot;Fang&quot;]
-for (key,value) in dictionary{
-    print(key+&quot; &quot;+value)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;关于Switch&lt;/p&gt;
-
-&lt;p&gt;Swich在Swift中也得到了功能的增强与安全性的提高。&lt;/p&gt;
-
-&lt;p&gt;不需要Break来终止往下一个Case执行&lt;/p&gt;
-
-&lt;p&gt;也就是下面这两种写法是等价的。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let character = &quot;a&quot;
-switch character{
-    case &quot;a&quot;:
-        print(&quot;A&quot;)
-    break
-    case &quot;b&quot;:
-        print(&quot;B&quot;)
-    break
-default: print(&quot;character&quot;)
-
-let character = &quot;a&quot;
-switch character{
-    case &quot;a&quot;:
-        print(&quot;A&quot;)
-    case &quot;b&quot;:
-        print(&quot;B&quot;)
-default: print(&quot;character&quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这种改进避免了忘记写break造成的错误,自己深有体会,曾经就是因为漏写了break而花了一段时间去debug。&lt;/p&gt;
-
-&lt;p&gt;如果我们想不同值统一处理,使用逗号将值隔开即可。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;switch some value to consider {
-case value 1,value 2:
-    statements
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Switch支持的类型&lt;/p&gt;
-
-&lt;p&gt;在OC中,Swtich只支持int类型,char类型作为匹配。&lt;/p&gt;
-
-&lt;p&gt;而在Swift中,Switch支持的类型大大的拓宽了。实际上,苹果是这么说的。&lt;/p&gt;
-
-&lt;p&gt;A switch statement supports any kind of data&lt;/p&gt;
-
-&lt;p&gt;这意味在开发中我们能够能够对字符串,浮点数等进行匹配了。&lt;/p&gt;
-
-&lt;p&gt;之前在OC繁琐的写法就可以进行改进了:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if ([cardName isEqualToString:@&quot;Six&quot;]) {
-    [self setValue:6];
-} else if ([cardName isEqualToString:@&quot;Seven&quot;]) {
-    [self setValue:7];
-} else if ([cardName isEqualToString:@&quot;Eight&quot;]) {
-    [self setValue:8];
-} else if ([cardName isEqualToString:@&quot;Nine&quot;]) {
-    [self setValue:9];
-}
-
-switch carName{
-    case &quot;Six&quot;:
-        self.vaule = 6
-    case &quot;Seven&quot;:
-        self.vaule = 7
-    case &quot;Eight&quot;:
-        self.vaule = 8
-    case &quot;Night&quot;:
-        self.vaule = 9
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;3.函数&lt;/p&gt;
-
-&lt;p&gt;对于在OC中,方法有两种类型,类方法与实例方法。方法的组成由方法名,参数,返回值组成。&lt;/p&gt;
-
-&lt;p&gt;在Swift中函数的定义基本与OC一样。&lt;/p&gt;
-
-&lt;p&gt;主要区别为：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;通过func关键词定义函数
-
-返回值在-&amp;gt;关键词后标注
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;各举一个类方法与实例方法例子。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+ (UIColor*)blackColor
-- (void)addSubview:(UIView *)view
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;对应的swift版本&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    class func blackColor() -&amp;gt; UIColor //类方法, 通过 class func 关键词声明
-    func addSubview(view: UIView) //实例方法
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;改进：&lt;/p&gt;
-
-&lt;p&gt;在Swift中,函数的最重要的改进就是函数作为一等公民(first-class),和对象一样可以作为参数进行传递,可以作为返回值,函数式编程也成为了Swift支持的编程范式。&lt;/p&gt;
-
-&lt;p&gt;In computer science, a programming language is said to have first-class functions if it treats functions as first-class citizens. Specifically, this means the language supports passing functions as arguments to other functions, returning them as the values from other functions, and assigning them to variables or storing them in data structures&lt;/p&gt;
-
-&lt;p&gt;让我们初略感受一下函数式编程的魅力:&lt;/p&gt;
-
-&lt;p&gt;举一个例子,我们要筛选出一个数组里大于4的数字。&lt;/p&gt;
-
-&lt;p&gt;在OC中我们可能会用快速枚举来进行筛选。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   NSArray *oldArray = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@10];
-    NSMutableArray *newArray;
-    for (NSNumber* number in oldArray) {
-        if ([number compare:@4] == NSOrderedDescending ) {
-            [newArray addObject:number];
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift中,我们用两行代码解决这个问题：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let oldArray = [1,2,3,4,5,6,7,8,9,10]
-let newArray = oldArray.filter({$0 &amp;gt; 4})
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;进一步了解Swift的函数式编程可以通过这篇优秀的博客Functional Reactive Programming in Swift&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;个人觉得另外一个很棒的改进是：Default parameter values
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在我们的项目中,经常会不断进行功能的增添。为了新增特性,许多方法在开发的过程中不断变动。举一个例子：我们开始有一个tableViewCell,它的设置方法一开始简单地需要一个Model参数：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func configureCellWithModel(Model: model)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;不久之后,我们想对部分Cell增添一个设置背景颜色的功能。方法需要再接收多一个参数：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func configureCellWithModel(Model: model,color:UIColor)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这个时候方法改变,所以涉及到这些方法的地方都需要修改。给我们造成的困扰&lt;/p&gt;
-
-&lt;p&gt;一是：需要做许多重复修改的工作。&lt;/p&gt;
-
-&lt;p&gt;二是：无法做得很好的扩展和定制,有些地方的cell需要设置颜色,有些不需要。但是在OC里,我们只能对所有的cell都赋值。你可能觉得我们可以写两个方法,一个接收颜色参数,一个不接受。但是我们知道这不是一个很好的解决方法,会造成冗余的代码,维护起来也不方便。&lt;/p&gt;
-
-&lt;p&gt;而在Swift中,default parameter values的引入让我们能够这样修改我们的代码：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func configureCellWithModel(Model: model,color:UIColor = UIColor.whiteColor())
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这样的改进能让我们写出的代码更具向后兼容性,减少了我们的重复工作量,减少了犯错误的可能性。&lt;/p&gt;
-
-&lt;p&gt;4.类与初始化（Initializers）&lt;/p&gt;
-
-&lt;p&gt;文件结构与访问控制&lt;/p&gt;
-
-&lt;p&gt;在swift中,一个类不再分为interface（.h）与implementation(.m)两个文件实现,直接在一个.swift文件里进行处理。好处就是我们只需管理一份文件,以往两头奔波修改的情况就得到解放了,也减少了头文件与实现文件不同步导致的错误。&lt;/p&gt;
-
-&lt;p&gt;这时我们会想到,那么我们如何来定义私有方法与属性呢,在OC中我们通过在class extension中定义私有属性,在.m文件定义私有方法。&lt;/p&gt;
-
-&lt;p&gt;而在Swift中,我们通过Access Control来进行控制。&lt;/p&gt;
-
-&lt;p&gt;properties, types, functions等能够进行版本控制的统称为实体。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Public：可以访问自己模块或应用中源文件里的任何实体，别人也可以访问引入该模块中源文件里的所有实体。通常情况下，某个接口或Framework是可以被任何人使用时，你可以将其设置为public级别。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Internal：可以访问自己模块或应用中源文件里的任何实体，但是别人不能访问该模块中源文件里的实体。通常情况下，某个接口或Framework作为内部结构使用时，你可以将其设置为internal级别。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Private：只能在当前源文件中使用的实体，称为私有实体。使用private级别，可以用作隐藏某些功能的实现细节&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;一个小技巧,如果我们有一系列的私有方法,我们可以把它们组织起来,放进一个extension里,这样就不需要每个方法都标记private,同时也便于管理组织代码：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// MARK: Private
-private extension ViewController {
-    func privateFunction() {
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;创建对象与alloc和init&lt;/p&gt;
-
-&lt;p&gt;关于初始化,在Swift中创建一个对象的语法很简洁：只需在类名后加一对圆括号即可。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var shape = Shape()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift中,initializer也与OC有所区别,Swift的初始化方法不返回数据。而在OC中我们通常返回一个self指针。&lt;/p&gt;
-
-&lt;p&gt;Unlike Objective-C initializers, Swift initializers do not return a value. Their primary role is to ensure that new instances of a type are correctly initialized before they are used for the first time.&lt;/p&gt;
-
-&lt;p&gt;Swift的初始化方法让我们只关注对象的初始化。之前在OC世界中为什么要self = [super init]？。这种问题得以避免。Swift帮助我们处理了alloc的过程。也让我们的代码更简洁明确。&lt;/p&gt;
-
-&lt;p&gt;而在Swift中,init也有了更严格的规则。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;对于所有Stored Properties,都必须在对象被创建出来前设置好。也就是我们必须在init方法中赋好值,或是直接给属性提供一个默认值。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;如果有property可以被允许在初始出来时没有值,也就是需要在创建出来后再赋值,或是在程序运行过程都可能不会被赋值。那么这个property必须被声明为optional类型。该类型的属性会在init的时候初始化为nil.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;initializer严格分为Designated Initializer和Convenience Initializer 并且有语法定义。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;而在Objective-C中没有明确语法标记哪个初始化方式是convenience方法。关于Designated Initializer可参阅之前的:Objective-C 拾遗：designated initializer&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;init(parameters) {
-    statements
-}
-
-convenience init(parameters) {
-    statements
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;5.枚举与结构体&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;枚举&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;在Swift中,枚举是一等公民。(first-class)。能够拥有方法,computed properties等以往只有类支持的特性。&lt;/p&gt;
-
-&lt;p&gt;在C中,枚举为每个成员指定一个整型值。而在Swift中,枚举更强大和灵活。我们不必给枚举成员提供一个值。如果我们想要为枚举成员提供一个值(raw value),我们可以用字符串,字符,整型或浮点数类型。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enum CompassPoint {
-case North
-case South
-case East
-case West
-  }
-  var directionToHead = CompassPoint.West
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;结构体&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Struct在Swift中和类有许多相同的地方,可以定义属性,方法,初始化方法,可通过extension扩展等。&lt;/p&gt;
-
-&lt;p&gt;不同的地方在于struct是值类型.在传递的过程中都是通过拷贝进行。&lt;/p&gt;
-
-&lt;p&gt;在这里要提到在前面第一节处提到了String,Array和Dictionary在Swift是以值类型出现的。这背后的原因就是String,Array,Dictionary在Swift中是通过Struct实现的。而之前在Objective-C它们都是通过class实现的。&lt;/p&gt;
-
-&lt;p&gt;Swift中强大的Struct使得我们能够更多与值类型打交道。Swift的值类型增强了不可变性(Immutabiliity)。而不可变性提升了我们代码的稳定性,多线程并发的安全性。&lt;/p&gt;
-
-&lt;p&gt;在WWDC2014《Advanced iOS Application Architecture and Patterns》中就有一节的标题是Simplify with immutability。&lt;/p&gt;
-
-&lt;p&gt;延伸阅读：WWDC心得：Advanced iOS Application Architecture and Patterns&lt;/p&gt;
-
-&lt;p&gt;6.协议（Protocols）&lt;/p&gt;
-
-&lt;p&gt;语法:&lt;/p&gt;
-
-&lt;p&gt;在Objective-C中我们这么声明Protocol:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@protocol&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SampleProtocol&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;someMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;@end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;而在Swift中：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol SampleProtocol
-{
-    func someMethod()
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在Swift遵循协议:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class AnotherClass: SomeSuperClass, SampleProtocol
-{
-    func someMethod() {}
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;那么之前Objective-C的protocol中,我们可以标志optional。那在Swift中呢？&lt;/p&gt;
-
-&lt;p&gt;遗憾的是,目前纯Swift的protocol还不支持optional。但根据苹果官方论坛的一位员工的回答,未来Swift是会支持的。&lt;/p&gt;
-
-&lt;p&gt;Optional methods in protocols are limited to @objc protocols only because we haven’t implemented them in native protocols yet. This is something we plan to support. We’ve gotten a number of requests for abstract/pure virtual classes and methods too.&lt;/p&gt;
-
-&lt;p&gt;— Joe Groff&lt;/p&gt;
-
-&lt;p&gt;Source: https://devforums.apple.com/message/1051431#1051431&lt;/p&gt;
-
-&lt;p&gt;protocol和delegate是紧密联系的。那么我们在Swift中如何定义Delegate呢？&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol MyDelegate : class {
-}
-class MyClass {
-    weak var delegate : MyDelegate?
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;注意到上面的protocol定义后面跟着的class。这意味着该protocol只能被class类型所遵守。&lt;/p&gt;
-
-&lt;p&gt;并且只有遵守了class protocol的delegate才能定义为weak。这是因为在Swift中,除了class能够遵守协议,枚举和结构同样能够遵守协议。而枚举和结构是值类型,不存在内存管理的问题。因此只需要class类型的变量声明为weak即可。&lt;/p&gt;
-
-&lt;p&gt;利用Swift的optional chaining,我们能够很方便的检查delegate是否为Nil,是否有实现某个方法:&lt;/p&gt;
-
-&lt;p&gt;以前我们要在Objective-C这样检查：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; if (self.dataSource &amp;amp;&amp;amp; [self.dataSource respondsToSelector:@selector(titleForSegmentAtIndex:)]) {
-        thisSegmentTitle = [self.dataSource titleForSegmentAtIndex:index];
-    }
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在Swift中,非常的优雅简洁。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if let thisSementTitle = dataSource?.titleFroSegmentAtIndex?(index){
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;新特性:&lt;/p&gt;
-
-&lt;p&gt;1.在Swift中,protocol变得更加强大,灵活：&lt;/p&gt;
-
-&lt;p&gt;2.class,enum,structure都可以遵守协议。&lt;/p&gt;
-
-&lt;p&gt;Extension也能遵守协议。利用它,我们不需要继承,也能够让系统的类也遵循我们的协议。&lt;/p&gt;
-
-&lt;p&gt;例如：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol myProtocol {
- func hello() -&amp;gt; String
-}
-extension String:myProtocol{
- func hello() -&amp;gt; String {
-     return &quot;hello world!&quot;
- }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;我们还能够用这个特性来组织我们的代码结构,如下面的代码所示,将UITableViewDataSource的实现移到了Extension。使代码更清晰。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// MARK: - UITableViewDataSource
-extension MyViewcontroller: UITableViewDataSource {
-// table view data source methods
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;3.Protocol Oriented Programming&lt;/p&gt;
-
-&lt;p&gt;随着Swift2.0的发布,面向协议编程正式也加入到了Swift的编程范式。Cool.&lt;/p&gt;
-
-&lt;p&gt;这种编程方式通过怎样的语法特性支撑的呢？&lt;/p&gt;
-
-&lt;p&gt;那就是我们能够对协议进行扩展,也就是我们能够提供协议的默认实现,能够为协议添加新的方法与实现。&lt;/p&gt;
-
-&lt;p&gt;用前面的myProtocol为例子,我们在Swift里这样为它提供默认实现。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension myProtocol{
-    func hello() -&amp;gt; String {
-     return &quot;hello world!&quot;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;我们还能对系统原有的protocol进行扩展,大大增强了我们的想象空间。Swift2.0的实现也有很多地方用extension protocol的形式进行了重构。&lt;/p&gt;
-
-&lt;p&gt;面向协议编程能够展开说很多,在这里这简单地介绍了语法。有兴趣的朋友可以参考下面的资料：&lt;/p&gt;
-
-&lt;p&gt;Session 408: Protocol-Oriented Programming in Swift&lt;/p&gt;
-
-&lt;p&gt;IF YOU’RE SUBCLASSING, YOU’RE DOING IT WRONG.&lt;/p&gt;
-
-&lt;p&gt;7.Swift与Cocoa&lt;/p&gt;
-
-&lt;p&gt;一门语言的的强大与否,除了自身优秀的特性外,很大一点还得依靠背后的框架。Swift直接采用苹果公司经营了很久的Cocoa框架。现在我们来看看使用Swift和Cocoa交互一些需要注意的地方。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;id与AnyObject
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在Swift中,没有id类型,Swift用一个名字叫AnyObject的protocol来代表任意类型的对象。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; id myObject = [[UITableViewCell alloc]init];
-
- var myObject: AnyObject = UITableViewCell()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;我们知道id的类型直到运行时才能被确定,如果我们向一个对象发送一条不能响应的消息,就会导致crash。&lt;/p&gt;
-
-&lt;p&gt;我们可以利用Swift的语法特性来防止这样的错误:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;myObject.method?()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;如果myObject没有这个方法,就不会执行,类似检查delegate是否有实现代理方法。&lt;/p&gt;
-
-&lt;p&gt;在Swift中,在AnyObject上获取的property都是optional的。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;闭包&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;OC中的block在Swift中无缝地转换为闭包。函数实际上也是一种特殊的闭包。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;错误处理&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;之前OC典型的错误处理步骤:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;NSFileManager *fileManager = [NSFileManager defaultManager];
-NSURL *URL = [NSURL fileURLWithPath:@&quot;/path/to/file&quot;];
-NSError *error = nil;
-BOOL success = [fileManager removeItemAtURL:URL error:&amp;amp;error];
-if (!success) {
- NSLog(@&quot;Error: %@&quot;, error.domain);
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;在Swift中：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let fileManager = NSFileManager.defaultManager()
-let URL = NSURL.fileURLWithPath(&quot;/path/to/file&quot;)
-do {
- try fileManager.removeItemAtURL(URL)
-} catch let error as NSError {
- print(&quot;Error: \(error.domain)&quot;)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;KVO&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Swift支持KVO。但是KVO在Swift,个人觉得是不够优雅的,KVO在Swift只限支持继承NSObject的类,有其局限性,在这里就不介绍如何使用了。&lt;/p&gt;
-
-&lt;p&gt;网上也出现了一些开源库来解决这样的问题。有兴趣可以参考一下:&lt;/p&gt;
-
-&lt;p&gt;Observable-Swift&lt;/p&gt;
-
-&lt;p&gt;KVO 在OS X中有Binding的能力,也就是我们能够将两个属性绑定在一起,一个属性变化,另外一个属性也会变化。对与UI和数据的同步更新很有帮助,也是MVVM架构的需求之一。之前已经眼馋这个特性很久了,虽然Swift没有原生带来支持,Swift支持的泛型编程给开源界带来许多新的想法。下面这个库就是实现binding的效果。&lt;/p&gt;
-
-&lt;p&gt;Bond&lt;/p&gt;
-
-&lt;p&gt;8.总结&lt;/p&gt;
-
-&lt;p&gt;到这里就基本介绍完Swift当中最基本的语法和与Objective-C的对比和改进。&lt;/p&gt;
-
-&lt;p&gt;事实上Swift的世界相比OC的世界还有很多新鲜的东西等待我们去发现和总结,Swift带来的多范式编程也将给我们编程的架构和代码的组织带来更来的思考。而Swift也是一个不断变化,不断革新的语言。相信未来的发展和稳定性会更让我们惊喜。这篇文章也将随着Swift的更新而不断更新,同时限制篇幅,突出重点。&lt;/p&gt;
-
-&lt;p&gt;希望这篇文章能够给各位同行的小伙伴们快速了解和学习Swift提供一点帮助。有疏漏错误的地方欢迎直接提出。感谢。&lt;/p&gt;
-
-&lt;p&gt;参考：&lt;/p&gt;
-
-&lt;p&gt;《The Swift Programming Language》&lt;/p&gt;
-
-&lt;p&gt;Apple Swift Blog&lt;/p&gt;
-
-&lt;p&gt;Using Swift with Cocoa and Objective-C&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/18/from-swift-2-oc.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/from-swift-2-oc.html</guid>
-        
-        <category>Objective-C</category>
-        
-        <category>swift</category>
-        
-        
-        <category>客户端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>2016阅读书单</title>
-        <description>&lt;h2 id=&quot;nodejs&quot;&gt;深入浅出nodejs&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;status: 未读&lt;/li&gt;
-  &lt;li&gt;author: 朴灵&lt;/li&gt;
-  &lt;li&gt;publisher: 人民邮电出版社&lt;/li&gt;
-  &lt;li&gt;language: 中文&lt;/li&gt;
-  &lt;li&gt;link: http://vdisk.weibo.com/s/e41M8kWam1pX&lt;/li&gt;
-  &lt;li&gt;cover: http://f.hiphotos.baidu.com/baike/w%3D268/sign=85a2aa3d4e086e066aa8384d3a087b5a/730e0cf3d7ca7bcb377df123bc096b63f624a8b3.jpg&lt;/li&gt;
-  &lt;li&gt;description: 主要是为了提升自己服务端开发实力。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-little-mongodb-book&quot;&gt;The Little Mongodb Book&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;status: 未读&lt;/li&gt;
-  &lt;li&gt;author: Karl Seguin&lt;/li&gt;
-  &lt;li&gt;publisher: github&lt;/li&gt;
-  &lt;li&gt;language: English&lt;/li&gt;
-  &lt;li&gt;link: https://github.com/karlseguin/the-little-mongodb-book/blob/master/en/mongodb.markdown&lt;/li&gt;
-  &lt;li&gt;cover: http://7u2ho6.com1.z0.glb.clouddn.com/book-the-little-mongodb-book.png&lt;/li&gt;
-  &lt;li&gt;description: 这本书非常之简洁，读起来非常易懂，其实这还归功于MongoDB的简洁。NoSQL与MySQL最大的区别在于它是为一些特定的场景设计的，如MongoDB、Redis、Cassandra等。MongoDB是其中更加通用的一个方案，从MySQL往MongoDB转，几乎不需要太大变化。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;web&quot;&gt;白帽子讲Web安全&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;status: 未读&lt;/li&gt;
-  &lt;li&gt;author: 吴翰清&lt;/li&gt;
-  &lt;li&gt;publisher: 电子工业出版社&lt;/li&gt;
-  &lt;li&gt;language: 中文&lt;/li&gt;
-  &lt;li&gt;link: http://book.douban.com/subject/10546925/&lt;/li&gt;
-  &lt;li&gt;cover: http://7u2ho6.com1.z0.glb.clouddn.com/book-the-safety-of-web-by-white-hat.jpg&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;浪潮之巅&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;status: 未读&lt;/li&gt;
-  &lt;li&gt;author: 吴军&lt;/li&gt;
-  &lt;li&gt;publisher: 电子工业出版社&lt;/li&gt;
-  &lt;li&gt;language: 中文&lt;/li&gt;
-  &lt;li&gt;link: http://book.douban.com/subject/6709783/&lt;/li&gt;
-  &lt;li&gt;cover: http://7u2ho6.com1.z0.glb.clouddn.com/book-on-top-of-tides.jpg&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/18/book-list-of-2016.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/book-list-of-2016.html</guid>
-        
-        
-        <category>读书</category>
-        
-      </item>
-    
-      <item>
-        <title>win7服务</title>
-        <description>&lt;p&gt;這是依據個人電腦,家庭使用的windows7系統服務的一些優化,關閉一些系統自帶的防火牆和安全的服務，家庭電腦使用不錯。大家使用看看~基本上優化後系統開機和執行速度很快了！&lt;/p&gt;
-
-&lt;p&gt;Adaptive Brightness【禁用】&lt;/p&gt;
-
-&lt;p&gt;監視氛圍光傳感器，以檢測氛圍光的變化並調節顯示器的亮度。如果此服務停止或被禁用，顯示器亮度將不根據照明條件進行調節。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，如果你沒有使用觸摸屏一類的智能調節屏幕亮度的設備，該功能就可以放心禁用。&lt;/p&gt;
-
-&lt;p&gt;Application Experience【手動】&lt;/p&gt;
-
-&lt;p&gt;在應用程序啟動時為應用程序處理應用程序兼容性緩存請求。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是自動，建議手動。&lt;/p&gt;
-
-&lt;p&gt;Application Information【手動】&lt;/p&gt;
-
-&lt;p&gt;使用輔助管理權限便於交互式應用程序的執行。如果停止此服務，用戶將無法使用輔助管理權限啟動應用程序，而執行所需用戶任務可能需要這些權限。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，不建議更改。&lt;/p&gt;
-
-&lt;p&gt;Application Layer Gateway Service【禁用】【待測試結果】&lt;/p&gt;
-
-&lt;p&gt;為 Internet 連接共享提供第三方協議插件的支援，如果裝有第三方防火牆且不需要用ICS方式共享上網，完全可以禁用掉。&lt;/p&gt;
-
-&lt;p&gt;Application Management【禁用】&lt;/p&gt;
-
-&lt;p&gt;為通過組策略部署的軟件處理安裝、刪除以及枚舉請求。如果該服務被禁用，則用戶將不能安裝、刪除或枚舉通過組策略部署的軟件。如果此服務被禁用，則直接依賴於它的所有服務都將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;該服務預設的執行方式為手動，該功能主要適用於大型企業環境下的集中管理，因此家庭用戶可以放心禁用該服務。&lt;/p&gt;
-
-&lt;p&gt;Ati External Event Utility【手動】&lt;/p&gt;
-
-&lt;p&gt;裝了ATI顯卡驅動的就會有這個進程，建議手動。&lt;/p&gt;
-
-&lt;p&gt;Background Intelligent Transfer Service【手動】&lt;/p&gt;
-
-&lt;p&gt;使用空閒網路帶寬在後台傳送文件。如果該服務被禁用，則依賴於 BITS 的任何應用程序(如 Windows Update 或 MSN Explorer)將無法自動下載程序和其他信息。&lt;/p&gt;
-
-&lt;p&gt;這個服務的主要用途還是用於 進行WindowsUpdate或者自動更新，如果是採用更新包來更新的話，完全可以禁用。&lt;/p&gt;
-
-&lt;p&gt;Base Filtering Engine【禁用】【待測試結果】&lt;/p&gt;
-
-&lt;p&gt;基本篩選引擎(BFE)是一種管理防火牆和 Internet 協議安全(IPsec)策略以及實施用戶模式篩選的服務。停止或禁用 BFE 服務將大大降低系統的安全。還將造成 IPsec 管理和防火牆應用程序產生不可預知的行為。&lt;/p&gt;
-
-&lt;p&gt;同樣為系統防火牆，VPN以及IPsec提供依賴服務，同時也是系統安全方面的服務，如果使用第三方VPN撥號軟件並且不用系統的防火牆以及ICS共享上網，為了系統資源，關閉它吧，否則就別動它。&lt;/p&gt;
-
-&lt;p&gt;BitLocker Drive Encryption Service【禁用】&lt;/p&gt;
-
-&lt;p&gt;BDESVC 承載 BitLocker 驅動器加密服務。BitLocker 驅動器加密為操作系統提供安全啟動保障，並為 OS、固定卷和可移動卷提供全卷加密功能。使用此服務，BitLocker 可以提示用戶執行與已安裝卷相關的各種操作，並自動解鎖卷而無需用戶交互。此外，它還會將恢復信息存儲至 Active Directory (如果這種方法可用並且需要這樣做)，並確保使用最近的恢復證書。停止或禁用該服務可以防止用戶使用此功能。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，如果你沒有使用BitLocker設備，該功能就可以放心禁用。&lt;/p&gt;
-
-&lt;p&gt;Block Level Backup Engine Service【手動】&lt;/p&gt;
-
-&lt;p&gt;執行塊級備份和恢復的引擎。估計是和備份恢復方面用的服務，無任何依賴關係，預設是手動，也從來沒有看他啟動過。就放那吧，不用管了。&lt;/p&gt;
-
-&lt;p&gt;Bluetooth Support Service【禁用】&lt;/p&gt;
-
-&lt;p&gt;Bluetooth 服務支援發現和關聯遠端 Bluetooth 設備。停止或禁用此服務可能導致已安裝的 Bluetooth 設備無法正確操作，還會阻止發現和關聯新設備。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，如果你沒有使用藍牙設備，該功能就可以放心禁用。&lt;/p&gt;
-
-&lt;p&gt;Certificate Propagation【禁用】&lt;/p&gt;
-
-&lt;p&gt;為智能卡提供證書。該服務的預設執行方式是手動。如果你沒有使用智能卡，那麼可以放心禁用該服務。&lt;/p&gt;
-
-&lt;p&gt;CNG Key Isolation【手動】&lt;/p&gt;
-
-&lt;p&gt;CNG 密鑰隔離服務宿主在 LSA 進程中。如一般原則所要求，該服務為私鑰和相關加密操作提供密鑰進程隔離。該服務在與一般原則要求相一致的安全進程中存儲和使用生存期長的密鑰。如果 Wired AutoConfig/WLAN AutoConfig 兩個服務被打開，而且使用了 EAP(ExtensibleAuthentication Protocol)，那麼這個服務將被使用，建議不使用自動有線網路配置和無線網路的可以關掉。&lt;/p&gt;
-
-&lt;p&gt;COM+ Event System【自動】&lt;/p&gt;
-
-&lt;p&gt;支援系統事件通知服務 (SENS)，此服務為訂閱的組件對像模型 (COM) 組件提供自動分佈事件功能。如果停止此服務，SENS 將關閉，而且不能提供登錄和註銷通知。&lt;/p&gt;
-
-&lt;p&gt;如果禁用此服務，顯式依賴此服務的其他服務都將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;一個很原始的古老服務，該服務的預設執行方式為自動，這是一個重要的系統服務，設為手動也會自動執行，設為禁用好像也沒什麼影響，但是日誌中會出現大量的錯誤。&lt;/p&gt;
-
-&lt;p&gt;我們最好不要亂動。&lt;/p&gt;
-
-&lt;p&gt;COM+ System Application【手動】&lt;/p&gt;
-
-&lt;p&gt;管理基於組件對像模型 (COM+) 的組件的配置和跟蹤。如果停止該服務，則大多數基於COM+ 的組件將不能正常工作。如果禁用該服務，則任何明確依賴它的服務都將無法啟動。搞開發的比較清楚，以前的COM+程序甚至IIS/.NET中的應用都會用到這個服務。&lt;/p&gt;
-
-&lt;p&gt;只要不設置為禁用就行了，基本上也是很少執行的服務。&lt;/p&gt;
-
-&lt;p&gt;Computer Browser【禁用】&lt;/p&gt;
-
-&lt;p&gt;維護網路上電腦的更新列表，並將列表提供給電腦指定瀏覽。如果服務停止，列表不會被更新或維護。如果服務被禁用，任何直接依賴於此服務的服務將無法啟動。該服務的預設執行方式為自動，不過如果你沒有使用局域網，這項服務可以設為禁用。就算要在局域網內使用，也只設為手動，因為說不准什麼時候會要用上，用的時候它會自個啟動。&lt;/p&gt;
-
-&lt;p&gt;Credential Manager【手動】&lt;/p&gt;
-
-&lt;p&gt;為用戶、應用程序和安全服務包提供憑據的安全存儲和檢索。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，建議保持預設。&lt;/p&gt;
-
-&lt;p&gt;Cryptographic Services【自動】&lt;/p&gt;
-
-&lt;p&gt;提供四種管理服務: 目錄數據庫服務，用於確認 Windows 文件的簽名和允許安裝新程序；受保護的根服務，用於從該電腦中添加與刪除受信任根證書頒發機構的證書；自動根證書更新服務，用於從 Windows Update 中檢索根證書和啟用 SSL 等方案；密鑰服務，用於協助註冊此電腦以獲取證書。如果此服務已停止，這些管理服務將無法正常執行。如果此服務已禁用，任何明確依賴它的服務將無法啟動。維護和管理系統的所有證書，密鑰以及安全數據庫。另外訪問一些網站所需要的服務，比如微軟的網站，WindowsUpdate，或者DRM的網站，很多時候它會提供和確認Windows文件的簽名信息。&lt;/p&gt;
-
-&lt;p&gt;強烈建議也是必須不能去動它，永遠別想禁用這個服務。&lt;/p&gt;
-
-&lt;p&gt;DCOM Server Process Launcher【自動】&lt;/p&gt;
-
-&lt;p&gt;DCOMLAUNCH 服務可啟動響應對像激活請求的 COM 和 DCOM 服務器。如果此服務停止或禁用，則使用 COM 或 DCOM 的程序將無法正常工作。強烈建議您執行DCOMLAUNCH 服務。該服務的預設執行方式是自動，最好不要亂動。以前的DCOM服務，也就是遠端服務，是比COM+更基本的服務，看看註冊表就知道Windows系統中有多少DCOM組件，雖然禁用也沒什麼問題，但是臨時用到的設為手動的服務會無法自動啟動，而且任務欄的圖標也會消失不見，所以最好不要修改這個選項。&lt;/p&gt;
-
-&lt;p&gt;Desktop Window Manager Session Manager【自動】&lt;/p&gt;
-
-&lt;p&gt;提供桌面窗口管理器啟動和維護服務Aero風格必須的，所有AeroGlass和Flip3D效果均依賴這個服務。&lt;/p&gt;
-
-&lt;p&gt;如果喜歡這個風格就要設為自動，否則就禁用吧。&lt;/p&gt;
-
-&lt;p&gt;DHCP Client【自動】&lt;/p&gt;
-
-&lt;p&gt;為此電腦註冊並更新 IP 地址。如果此服務停止，電腦將不能接收動態 IP 地址和DNS 更新。如果此服務被禁用，所有明確依賴它的服務都將不能啟動。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是自動，如果是手動指定的IP，完全可以禁用。&lt;/p&gt;
-
-&lt;p&gt;Diagnostic Policy Service【禁用】&lt;/p&gt;
-
-&lt;p&gt;診斷策略服務啟用了 Windows 組件的問題檢測、疑難解答和解決方案。如果該服務被停止，診斷將不再執行。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是自動，Vista或IE7有時會彈出對話框問你是否需要讓它幫忙找到故障的原因，只有1%的情況下它會幫忙修復Internet斷線的問題，建議禁用。&lt;/p&gt;
-
-&lt;p&gt;Diagnostic Service Host【禁用】&lt;/p&gt;
-
-&lt;p&gt;診斷服務主機被診斷策略服務用來承載需要在本地系統上下文中執行的診斷。如果停止該服務，則依賴於該服務的任何診斷將不再執行。&lt;/p&gt;
-
-&lt;p&gt;這就是幫上面Diagnostic Policy Service 做具體事情的服務，會隨著上面的服務啟動，可以一起禁用。&lt;/p&gt;
-
-&lt;p&gt;Diagnostic System Host【禁用】&lt;/p&gt;
-
-&lt;p&gt;診斷系統主機被診斷策略服務用來承載需要在本地系統上下文中執行的診斷。如果停止該服務，則依賴於該服務的任何診斷將不再執行。&lt;/p&gt;
-
-&lt;p&gt;基本和Diagnostic Policy Service/Diagnostic Service Host是同類，可以一起禁用。&lt;/p&gt;
-
-&lt;p&gt;Disk Defragmenter【手動】&lt;/p&gt;
-
-&lt;p&gt;提供磁盤碎片整理功能。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，建議保持預設。&lt;/p&gt;
-
-&lt;p&gt;Distributed Link Tracking Client【禁用】&lt;/p&gt;
-
-&lt;p&gt;維護某個電腦內或某個網路中的電腦的 NTFS 文件之間的鏈接。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是自動，不過這個功能一般都用不上，完全可以放心禁用。&lt;/p&gt;
-
-&lt;p&gt;Distributed Transaction Coordinator【手動】&lt;/p&gt;
-
-&lt;p&gt;協調跨多個數據庫、消息隊列、文件系統等資源管理器的事務。如果停止此服務，這些事務將會失敗。如果禁用此服務，顯式依賴此服務的其他服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;很多應用以及SQL，ExchangeBiztalk等服務器軟件都依賴這個服務，可以不啟動它，但不要禁用它，建議手動。&lt;/p&gt;
-
-&lt;p&gt;DNS Client【禁用】【待測試結果】&lt;/p&gt;
-
-&lt;p&gt;DNS 客戶端服務(dnscache)緩存域名系統(DNS)名稱並註冊該電腦的完整電腦名稱。&lt;/p&gt;
-
-&lt;p&gt;如果該服務被停止，將繼續解析 DNS 名稱。然而，將不緩存DNS 名稱的查詢結果，且不註冊電腦名稱。如果該服務被禁用，則任何明確依賴於它的服務都將無法啟動。該服務的預設執行方式是自動，如果是在域的環境中要設置為自動，但是這個服務可以洩露你瀏覽過哪些網站，所以一般用戶出於安全考慮，禁用了吧。&lt;/p&gt;
-
-&lt;p&gt;Encrypting File System (EFS)【手動】&lt;/p&gt;
-
-&lt;p&gt;提供用於在 NTFS 文件系統捲上存儲加密文件的核心文件加密技術。如果停止或禁用此服務，則應用程序將無法訪問加密的文件。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是手動，建議保持預設。&lt;/p&gt;
-
-&lt;p&gt;Extensible Authentication Protocol【手動】&lt;/p&gt;
-
-&lt;p&gt;可擴展的身份驗證協議(EAP)服務在以下情況下提供網路身份驗證: 802.1x 有線和無線、VPN 和網路訪問保護(NAP)。EAP 在身份驗證過程中也提供網路訪問客戶端使用的應用程序編程接口(API)，包括無線客戶端和 VPN 客戶端。如果禁用此服務，該電腦將無法訪問需要 EAP 身份驗證的網路。如果禁用此服務，該電腦將無法訪問&lt;/p&gt;
-
-&lt;p&gt;需要EAP身份驗證的網路。&lt;/p&gt;
-
-&lt;p&gt;不用802.1x認證、無線網路或VPN可以不啟動它，不要禁用它，建議保持手動。&lt;/p&gt;
-
-&lt;p&gt;Function Discovery Provider Host【禁用】&lt;/p&gt;
-
-&lt;p&gt;FDPHOST 服務承載功能發現(FD)網路發現提供程序。這些 FD 提供程序為簡單服務發現協議(SSDP)和 Web 服務發現(WS-D)協議提供網路發現服務。使用 FD 時停止或禁用 FDPHOST 服務將禁用這些協議的網路發現。當該服務不可用時，使用 FD 和依靠這些發現協議的網路服務將無法找到網路服務或資源。&lt;/p&gt;
-
-&lt;p&gt;PnP-X和SSDP相關，如果無相關設備就禁用了吧。&lt;/p&gt;
-
-&lt;p&gt;Function Discovery Resource Publication【禁用】&lt;/p&gt;
-
-&lt;p&gt;發佈該電腦以及連接到該電腦的資源，以便能夠在網路上發現這些資源。如果該服務被停止，將不再發佈網路資源，網路上的其他電腦將無法發現這些資源。&lt;/p&gt;
-
-&lt;p&gt;PnP-X和SSDP相關，如果無相關設備就關了吧。&lt;/p&gt;
-
-&lt;p&gt;Group Policy Client【自動】&lt;/p&gt;
-
-&lt;p&gt;該服務負責通過組策略組件應用管理員為電腦和用戶配置的設置。如果停止或禁用該服務，將無法應用設置，並且將無法通過組策略管理應用程序和組件。如果停止或禁用該服務，依賴於組策略的任何組件或應用程序都將無法正常執行。&lt;/p&gt;
-
-&lt;p&gt;系統重要服務，保持自動不變。&lt;/p&gt;
-
-&lt;p&gt;Health Key and Certificate Management【手動】&lt;/p&gt;
-
-&lt;p&gt;為網路訪問保護代理(NAPAgent)提供 X.509 證書和密鑰管理服務。使用 X.509 證書的強制技術在沒有此服務的情況下可能無法正常工作推測是NAP的一個服務，其中提到要實現一個HealthRegistrationAuthority機制，預設手動即可。&lt;/p&gt;
-
-&lt;p&gt;HomeGroup Provider【禁用】&lt;/p&gt;
-
-&lt;p&gt;執行與主組的配置和維護相關的網路任務。如果停止或禁用此服務，您的電腦將無法檢測到其他主組，且您的主組可能無法正常工作。建議您保持此服務的執行狀態。&lt;/p&gt;
-
-&lt;p&gt;如果你不使用家庭群組來共享圖片視頻及文檔,那麼該服務可以禁用。&lt;/p&gt;
-
-&lt;p&gt;Human Interface Device Access【手動】&lt;/p&gt;
-
-&lt;p&gt;啟用對智能界面設備(HID)的通用輸入訪問，它激活並保存鍵盤、遠端控制和其它多媒體設備上的預先定義的熱按鈕。如果此服務被終止，由此服務控制的熱按鈕將不再執行。如果此服務被禁用，任何依賴它的服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;如果你不想你機器或筆記本鍵盤上面的那些特別的附加按鍵起作用、不用遊戲手柄之類,可以禁用這個服務。&lt;/p&gt;
-
-&lt;p&gt;IKE and AuthIP IPsec Keying Modules【禁用】&lt;/p&gt;
-
-&lt;p&gt;IKEEXT 服務托管 Internet 密鑰交換(IKE)和身份驗證 Internet 協議(AuthIP)鍵控模塊。這些鍵控模塊用於 Internet 協議安全(IPSec)中的身份驗證和密鑰交換。停止或禁用 IKEEXT 服務將禁用與對等電腦的IKE/AuthIP 密鑰交換。通常將 IPSec 配置為使用 IKE 或 AuthIP，因此停止或禁用 IKEEXT 服務將導致 IPSec 故障並且危及系統的安全。強烈建議執行 IKEEXT 服務。&lt;/p&gt;
-
-&lt;p&gt;主要是針對VPN等網路環境的進行認證。不用VPN或用第三方VPN撥號的話可以禁用。&lt;/p&gt;
-
-&lt;p&gt;[未完]&lt;/p&gt;
-
-&lt;p&gt;Windows 7系統服務詳解及優化方法(中)&lt;/p&gt;
-
-&lt;p&gt;Interactive Services Detection【手動】&lt;/p&gt;
-
-&lt;p&gt;啟用交互式服務的用戶輸入的用戶通知，這樣當交互式服務創建的對話框出現時可以訪問這些對話框。如果此服務已停止，將不再有新的交互式服務對話框通知，而且可能再也無法訪問交互式服務對話框。如果此服務已禁用，則不再有新的交互式服務對話框通知，也無法訪問這些對話框。&lt;/p&gt;
-
-&lt;p&gt;我也不清楚什麼算交互式服務，預設也是手動，保持預設吧。&lt;/p&gt;
-
-&lt;p&gt;Internet Connection Sharing (ICS)【禁用】&lt;/p&gt;
-
-&lt;p&gt;為家庭和小型辦公網路提供網路地址轉換、尋址、名稱解析和/或入侵保護服務。該服務的預設執行方式是禁用，如果你不打算讓這台電腦充當ICS主機，那麼該服務可以禁用，否則需要啟用。&lt;/p&gt;
-
-&lt;p&gt;IP Helper【禁用】&lt;/p&gt;
-
-&lt;p&gt;在 IPv4 網路上提供自動的 IPv6 連接。如果停止此服務，則在電腦連接到本地 IPv6 網路時，該電腦將只具有 IPv6 連接。主要是提供IPv6的支援，說白了就是讓IPv4和IPv6相互兼容，現在的情況下不是特別需要，其實設置成禁用也無妨。&lt;/p&gt;
-
-&lt;p&gt;IPsec Policy Agent【禁用】&lt;/p&gt;
-
-&lt;p&gt;Internet 協議安全(IPSec)支援網路級別的對等身份驗證、數據原始身份驗證、數據完整性、數據機密性(加密)以及重播保護。此服務強制執行通過 IP 安全策略管理單元或命令行工具 “netsh ipsec” 創建的 IPSec 策略。停止此服務時，如果策略需要連接使用 IPSec，可能會遇到網路連接問題。同樣，此服務停止時，Windows 防火牆的遠端管理也不再可用。此服務強制執行通過 IP 安全策略管理單元或命令行工具 “netshipsec” 創建的 IPSec策略。停止此服務時，如果策略需要連接使用 IPSec，可能會遇到網路連接問題。同樣，此服務停止時，Windows 防火牆的遠端管理也不再可用。&lt;/p&gt;
-
-&lt;p&gt;某些公司的網路環境要求必須打開，它提供一個TCP/IP網路上客戶端和服務器之間端到端的安全連接。其他的情況建議設置成禁用。&lt;/p&gt;
-
-&lt;p&gt;KtmRm for Distributed Transaction Coordinator【手動】&lt;/p&gt;
-
-&lt;p&gt;協調分佈式事務處理協調器(MSDTC)和內核事務管理器(KTM)之間的事務。如果不需要，建議保持該服務的停止狀態。如果需要，MSDTC 和 KTM 將自動啟動該服務。&lt;/p&gt;
-
-&lt;p&gt;如果此服務已禁用，任何與內核資源管理器交互的 MSDTC 事務將失敗，並且任何顯式依賴它的服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;協調 MSDTC 和核心事務管理器(KTM)之間的事務。Vista提供的另外一種事務服務，對開發人員來說是比較有用，對於一般的用戶或者非開發人員來說，設置成手動。&lt;/p&gt;
-
-&lt;p&gt;Link-Layer Topology Discovery Mapper【手動】&lt;/p&gt;
-
-&lt;p&gt;創建網路映射，它由 PC 和設備拓撲(連接)信息以及說明每個 PC 和設備的元數據組成。如果禁用此服務，則網路映射將不能正常工作。&lt;/p&gt;
-
-&lt;p&gt;應該是支援LLTD(LinkLayerTopologyDiscovery) 技術，可以精確地顯示支援LLTD的設備在網路結構中的位置，比如Vista的無線地圖 ，保持預設手動。&lt;/p&gt;
-
-&lt;p&gt;Microsoft .NET Framework NGEN v2.0.50727_X86【手動】&lt;/p&gt;
-
-&lt;p&gt;Microsoft .NET Framework NGEN&lt;/p&gt;
-
-&lt;p&gt;NET開發人員都知道 NGEN的用法，保持預設的手動即可，以後會有很多基於.NET FX3的應用，那麼這個服務會有用的。&lt;/p&gt;
-
-&lt;p&gt;Microsoft iSCSI Initiator Service【禁用】&lt;/p&gt;
-
-&lt;p&gt;管理從這台電腦到遠端 iSCSI 目標設備的 Internet SCSI (iSCSI)會話。如果該服務已停止，則該電腦將無法登錄或訪問 iSCSI 目標設備。如果該服務已禁用，則所有顯式依賴於該服務的服務將不會啟動。&lt;/p&gt;
-
-&lt;p&gt;如果本機沒有iSCSI設備也不需要連接和訪問遠端iSCSI設備，設置成禁用。&lt;/p&gt;
-
-&lt;p&gt;Microsoft Software Shadow Copy Provider【禁用】&lt;/p&gt;
-
-&lt;p&gt;管理卷影復***務製作的基於軟件的卷影副本。如果該服務被停止，將無法管理基於軟件的卷影副本。如果該服務被禁用，任何依賴它的服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;卷影拷貝，如果不需要就可以設為禁用，一般用戶基本都不會用到。&lt;/p&gt;
-
-&lt;p&gt;Multimedia Class Scheduler【自動】&lt;/p&gt;
-
-&lt;p&gt;基於系統範圍內的任務優先級啟用工作的相對優先級。這主要適用於多媒體應用程序。如果此服務停止，個別任務將使用其預設的優先級。主要是針對一些多媒體應用的音／視頻流設置優先級，禁用可能會導致聲卡功能出現問題，建議打開這個服務，設成手動一般也會自動啟動。&lt;/p&gt;
-
-&lt;p&gt;Net.Tcp Port Sharing Service【禁用】&lt;/p&gt;
-
-&lt;p&gt;提供通過 net.tcp 協議共享 TCP 端口的功能。&lt;/p&gt;
-
-&lt;p&gt;WCF要用的，一般用戶和非開發人員，還是禁用就行了。&lt;/p&gt;
-
-&lt;p&gt;Netlogon【手動】&lt;/p&gt;
-
-&lt;p&gt;為用戶和服務身份驗證維護此電腦和域控制器之間的安全通道。如果此服務被停用，電腦可能無法驗證用戶和服務身份並且域控制器無法註冊DNS 記錄。如果此服務被禁用，任何依賴它的服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;登陸活動目錄時，和域服務通訊驗證的一個服務，一般驗證通過之後，域服務器會註冊你的DNS記錄，推送軟件補丁和策略等等，登陸域會用到它。工作組環境可以設為禁用。&lt;/p&gt;
-
-&lt;p&gt;Network Access Protection Agent【手動】&lt;/p&gt;
-
-&lt;p&gt;網路訪問保護(NAP)代理服務收集和管理網路上客戶端電腦的健康信息。NAP 代理收集的信息用於確保客戶端電腦具有所需的軟件和設置。如果客戶端電腦與健康策略不兼容，則可以為其提供受限的網路訪問權限，直至更新其配置。根據健康策略的配置，可能自動更新客戶端電腦，以便用戶可以迅速重新獲取完全網路訪問權限，無須手動更新他們的電腦。&lt;/p&gt;
-
-&lt;p&gt;在客戶端電腦上啟用網路訪問保護(NAP)功能，這是NAP架構中的客戶端，預設設置手動即可。&lt;/p&gt;
-
-&lt;p&gt;Network Connections【手動】&lt;/p&gt;
-
-&lt;p&gt;管理「網路和撥號連接」文件夾中對象，在其中您可以查看局域網和遠端連接。當你點擊網路和撥號連接時這個服務就開始工作，主要是獲得局域網和遠端連接的對象&lt;/p&gt;
-
-&lt;p&gt;，只要你聯網這個服務就會啟動。不要關閉它。&lt;/p&gt;
-
-&lt;p&gt;Network List Service【手動】&lt;/p&gt;
-
-&lt;p&gt;識別電腦已連接的網路，收集和存儲這些網路的屬性，並在更改這些屬性時通知應用程序。&lt;/p&gt;
-
-&lt;p&gt;這個服務是列舉現有的網路，展示目前的連接狀態。關閉它會導致網路不正常，所以不要去動它。&lt;/p&gt;
-
-&lt;p&gt;Network Location Awareness【自動】&lt;/p&gt;
-
-&lt;p&gt;收集和存儲網路的配置信息，並在此信息被修改時向程序發出通知。如果停止此服務，則配置信息可能不可用；如果禁用此服務，則顯式依賴此服務的所有服務都將無法啟動。就是NLA，能夠很好的支援和標示多網卡，或者是你從家庭、個人、公司的網路中進行切換和變化時，給你提供增強的功能，大多數情況會隨著&lt;/p&gt;
-
-&lt;p&gt;NetworkConnections自動啟動。&lt;/p&gt;
-
-&lt;p&gt;和XP的NLA不同，關閉它網路正常但是會提示沒插網線，最好別去動它。&lt;/p&gt;
-
-&lt;p&gt;Network Store Interface Service【自動】&lt;/p&gt;
-
-&lt;p&gt;此服務向用戶模式客戶端發送網路通知(例如，添加/刪除接口等)。停止此服務將導致丟失網路連接。如果禁用此服務，則顯式依賴此服務的所有其他服務都將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;這是支援NLA的一個服務，比如保存每個網路的 Profile，所以它的執行狀態會和NLA相同，最好別去動它。&lt;/p&gt;
-
-&lt;p&gt;Offline Files【禁用】&lt;/p&gt;
-
-&lt;p&gt;脫機文件服務在脫機文件緩存中執行維護活動，響應用戶登錄和註銷事件，實現公共 API 的內部部分，並將相關的事件分配給關心脫機文件活動和緩存更改的用戶。&lt;/p&gt;
-
-&lt;p&gt;脫機文件服務，使用這個功能系統會將網路上的共享內容在本地進行緩存，可以禁用。&lt;/p&gt;
-
-&lt;p&gt;Peer Name Resolution Protocol【手動】&lt;/p&gt;
-
-&lt;p&gt;使用對等名稱解析協議(PNRP)在 Internet 上啟用無服務器對等名稱解析。如果禁用該功能，則某些對等應用程序和協作應用程序(如遠端協助)可能無法執行。&lt;/p&gt;
-
-&lt;p&gt;如果你不嘗試WCF的P2P功能或開發，那麼連同下面兩個服務都可以禁用。&lt;/p&gt;
-
-&lt;p&gt;Peer Networking Grouping&lt;/p&gt;
-
-&lt;p&gt;Peer Networking Identity Manager&lt;/p&gt;
-
-&lt;p&gt;Performance Logs &amp;amp; Alerts【手動】&lt;/p&gt;
-
-&lt;p&gt;性能日誌和警報根據預配置的計劃參數從本地或遠端電腦收集性能數據，然後將該數據寫入日誌或觸發警報。如果停止此服務，將不收集性能信息。如果禁用此服務，則明確依賴它的所有服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;EventLog和任務調度器等多個服務會用到它，個人認為它也是比較耗費資源的，但不建議設置成禁用，手動即可。&lt;/p&gt;
-
-&lt;p&gt;Plug and Play【自動】&lt;/p&gt;
-
-&lt;p&gt;使電腦在極少或沒有用戶輸入的情況下能識別並適應硬件的更改。終止或禁用此服務會造成系統不穩定。&lt;/p&gt;
-
-&lt;p&gt;即插即用，最基本的服務之一，想關也關不了。&lt;/p&gt;
-
-&lt;p&gt;PnP-X IP Bus Enumerator【禁用】&lt;/p&gt;
-
-&lt;p&gt;PnP-X 總線枚舉器服務管理虛擬網路總線。該服務使用 SSDP/WS 發現協議來發現網路連接設備並使其存在於 PnP 中。如果停止或禁用此服務，則NCD 設備將不會繼續保持在 PnP 中。所有基於 pnpx 的方案都將停止執行。PnP-X 總線枚舉服務器-Windows ConnectNow(WCN)，即微軟網路和裝置平台的組件之一，它是即插即用&lt;/p&gt;
-
-&lt;p&gt;的擴展，支援某些聯網的智能家電裝置(比如能聯網的電飯鍋、冰箱)連接到你的 PC上面。&lt;/p&gt;
-
-&lt;p&gt;目前還用不上， 禁用它！&lt;/p&gt;
-
-&lt;p&gt;PNRP Machine Name Publication Service【手動】&lt;/p&gt;
-
-&lt;p&gt;此服務使用對等名稱解析協議發佈電腦名稱。配置是通過 Netsh 上下文「p2p pnrp peer」管理的。&lt;/p&gt;
-
-&lt;p&gt;這個是用來對P2P網路中發佈服務器進行命名解析的，一般不需要它。預設即可。&lt;/p&gt;
-
-&lt;p&gt;Portable Device Enumerator Service【禁用】&lt;/p&gt;
-
-&lt;p&gt;強制可移動大容量存儲設備的組策略。使應用程序(如 Windows Media Player 和圖像導入嚮導)能夠使用可移動大容量存儲設備傳輸和同步內容。&lt;/p&gt;
-
-&lt;p&gt;如不需要同步建議關閉。&lt;/p&gt;
-
-&lt;p&gt;Power【自動】&lt;/p&gt;
-
-&lt;p&gt;管理電源策略和電源策略通知傳遞。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是自動，保持預設。&lt;/p&gt;
-
-&lt;p&gt;Print Spooler【禁用】&lt;/p&gt;
-
-&lt;p&gt;將文件加載到內存供稍後打印&lt;/p&gt;
-
-&lt;p&gt;不用多說了，有打印機（包括虛擬的）就開，沒有就關。&lt;/p&gt;
-
-&lt;p&gt;Problem Reports and Solutions Control Panel Support【禁用】&lt;/p&gt;
-
-&lt;p&gt;此服務為查看、發送和刪除「問題報告和解決方案」控制面板的系統級問題報告提供支援。&lt;/p&gt;
-
-&lt;p&gt;開了它基本也解決不了你電腦出的問題。禁用吧。&lt;/p&gt;
-
-&lt;p&gt;Program Compatibility Assistant Service【自動】&lt;/p&gt;
-
-&lt;p&gt;此服務為程序兼容性助手(PCA)提供支援。PCA 監視由用戶安裝和執行的程序，並檢測已知兼容性問題。如果停止此服務，PCA 將無法正常執行。&lt;/p&gt;
-
-&lt;p&gt;如果你使用到 Program CompatibilityAssistant或者需要將你的程序設置成兼容模式執行，比如執行在Win98 或 Windows2000的方式下，就修改成自動，強烈建議設置為自動。&lt;/p&gt;
-
-&lt;p&gt;Protected Storage【手動】&lt;/p&gt;
-
-&lt;p&gt;為敏感數據(如密碼)提供保護存儲，以防止未授權的服務、進程或用戶訪問。&lt;/p&gt;
-
-&lt;p&gt;2000/XP流傳 下來的服務，儘管用處不大，但為了安全還是保留著吧，禁用或手動均可。&lt;/p&gt;
-
-&lt;p&gt;Quality Windows Audio Video Experience【禁用】&lt;/p&gt;
-
-&lt;p&gt;優質 Windows 音頻視頻體驗(qWave)是用於 IP 家庭網路上的音頻視頻***流應用程序的網路平台。通過確保 AV 應用程序的網路服務質量(QoS)，qWave 增強了 AV 流的性能和可靠性。它提供了許可控制機制、執行時監視和實施、應用程序反饋以及流量優先順序。&lt;/p&gt;
-
-&lt;p&gt;主要用於改善和加強IP網路上的音頻視頻流的傳輸和播放質量，控制流量，個人感覺這個不起什麼作用，支援這樣技術的網路服務也不多。還是系統資源比較重要，禁用它。&lt;/p&gt;
-
-&lt;p&gt;Remote Access Auto Connection Manager【手動】&lt;/p&gt;
-
-&lt;p&gt;只要程序引用遠端 DNS 或 NetBIOS 名稱或地址，就創建一個到遠端網路的連接。一般ADSL拔號和VPN接入都會用到這個服務。&lt;/p&gt;
-
-&lt;p&gt;如果設置成禁用，就建不了連 接了。還是手動比較好。&lt;/p&gt;
-
-&lt;p&gt;Remote Access Connection Manager【手動】&lt;/p&gt;
-
-&lt;p&gt;管理從這台電腦到 Internet 或其他遠端網路的撥號和虛擬專用網路(VPN)連接。如果禁用該項服務，則明確依賴該服務的任何服務都將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;創建連接的時候使用， ADSL/VPN/其他什麼撥號網路都會用到這個服務。關了的話就不能上網了，保持預設。&lt;/p&gt;
-
-&lt;p&gt;Remote Procedure Call (RPC)【自動】&lt;/p&gt;
-
-&lt;p&gt;RPCSS 服務是 COM 和 DCOM 服務器的服務控制管理器。它執行 COM 和 DCOM 服務器的對象激活請求、對像導出程序解析和分佈式垃圾收集。如果此服務被停用或禁用，則使用 COM 或 DCOM 的程序將無法正常工作。強烈建議您讓 RPCSS 服務執行別動這個，系統重要服務。&lt;/p&gt;
-
-&lt;p&gt;Remote Procedure Call (RPC) Locator【手動】&lt;/p&gt;
-
-&lt;p&gt;在 Windows 2003 和 Windows 的早期版本中，遠端過程調用(RPC)定位器服務可管理 RPC 名稱服務數據庫。在 Windows Vista 和 Windows 的更新版本中，此服務不提供任何功能，但可用於應用程序兼容性。&lt;/p&gt;
-
-&lt;p&gt;配合RPC的服務，可以設置手動，但不建議設置成禁用。&lt;/p&gt;
-
-&lt;p&gt;Remote Registry【禁用】&lt;/p&gt;
-
-&lt;p&gt;使遠端用戶能修改此電腦上的註冊表設置。如果此服務被終止，只有此電腦上的用戶才能修改註冊表。如果此服務被禁用，任何依賴它的服務將無法啟動。&lt;/p&gt;
-
-&lt;p&gt;家庭個人用戶最好禁用 此服務，公司管理就需要打開了。&lt;/p&gt;
-
-&lt;p&gt;Routing and Remote Access【禁用】&lt;/p&gt;
-
-&lt;p&gt;在局域網以及廣域網環境中為企業提供路由服務。&lt;/p&gt;
-
-&lt;p&gt;提供路由服務的。不用就關。&lt;/p&gt;
-
-&lt;p&gt;RPC Endpoint Mapper【自動】&lt;/p&gt;
-
-&lt;p&gt;解析 RPC 接口標識符以傳輸端點。如果此服務被停止或禁用，使用遠端過程調用(RPC)服務的程序將無法正常執行。&lt;/p&gt;
-
-&lt;p&gt;該服務的預設執行方式是自動，不要去改動它。&lt;/p&gt;
-
-&lt;p&gt;Secondary Logon【禁用】&lt;/p&gt;
-
-&lt;p&gt;在不同憑據下啟用啟動過程。如果此服務被停止，這種類型的登錄訪問將不可用。如果此服務被禁用，任何明確依賴它的服務都將不能啟動。&lt;/p&gt;
-
-&lt;p&gt;允許一台機器同時有兩個用戶登錄，個人 應用基本不需要，禁用。&lt;/p&gt;
-
-&lt;p&gt;Secure Socket Tunneling Protocol Service【手動】&lt;/p&gt;
-
-&lt;p&gt;提供使用 VPN 連接到遠端電腦的安全套接字隧道協議(SSTP)的支援。如果該服務被禁用，則用戶將無法使用 SSTP 訪問遠端服務器。&lt;/p&gt;
-
-&lt;p&gt;這個服務主要是VPN連接服務的，如果用 第三方VPN客戶端，可以關閉，但是RemoteAccessConnectionManager這個服務依賴這個服務，還是別動吧。&lt;/p&gt;
-
-&lt;p&gt;Security Accounts Manager【自動】&lt;/p&gt;
-
-&lt;p&gt;啟動此服務將向其他服務發出信號: 安全帳戶管理器(SAM)已準備就緒，可以接受請求。禁用此服務將導致在 SAM 準備就緒時，無法通知系統中的其他服務，從而可能導致這些服務無法正確啟動。不應禁用此服務。禁 用此服務將導致在 SAM 準備就緒時，無法通知系統中的其他服務，從而可能導致這些服 務無法正確啟動。不應禁用此服務。&lt;/p&gt;
-
-&lt;p&gt;系統的安全賬戶管理服務，關了就不能添加用戶，修改 用戶密碼等用戶操作了，建議預設別動它&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/win7-service.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/win7-service.html</guid>
-        
-        <category>win7</category>
-        
-        <category>service</category>
-        
-        
-        <category>工具</category>
-        
-      </item>
-    
-      <item>
-        <title>github遇到问题及解决</title>
-        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;如果输入
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ git remote add origin git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;提示出错信息：
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    fatal: remote origin already exists.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;解决办法如下：
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ git remote rm origin
-    $ git remote add origin git@github.com:djqiang/gitdemo.git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;如果输入
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ git remote rm origin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;还是报错的话
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    error: Could not remove config section &#39;remote.origin&#39;.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;我们需要修改gitconfig文件的内容&lt;/p&gt;
-
-&lt;p&gt;找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc&lt;/p&gt;
-
-&lt;p&gt;找到一个名为gitconfig的文件，打开它把里面的[remote “origin”]那一行删掉就好了！&lt;/p&gt;
-
-&lt;p&gt;如果输入$ ssh -T git@github.com
-出现错误提示：Permission denied (publickey).因为新生成的key不能加入ssh就会导致连接不上github。&lt;/p&gt;
-
-&lt;p&gt;id_rsa.pub 在~/.ssh这个文件夹下&lt;/p&gt;
-
-&lt;p&gt;解决办法如下：&lt;/p&gt;
-
-&lt;p&gt;1、先输入$ ssh-agent，再输入$ ssh-add ~/.ssh/id_key，这样就可以了。&lt;/p&gt;
-
-&lt;p&gt;2、如果还是不行的话，输入ssh-add ~/.ssh/id_key 命令后出现报错Could not open a connection to your authentication agent.解决方法是key用Git Gui的ssh工具生成，这样生成的时候key就直接保存在ssh中了，不需要再ssh-add命令加入了，其它的user，token等配置都用命令行来做。&lt;/p&gt;
-
-&lt;p&gt;3、最好检查一下在你复制id_rsa.pub文件的内容时有没有产生多余的空格或空行，有些编辑器会帮你添加这些的。&lt;/p&gt;
-
-&lt;p&gt;如果输入$ git push origin master&lt;/p&gt;
-
-&lt;p&gt;提示出错信息：error:failed to push som refs to …….&lt;/p&gt;
-
-&lt;p&gt;解决办法如下：&lt;/p&gt;
-
-&lt;p&gt;1、先输入$ git pull origin master //先把远程服务器github上面的文件拉下来&lt;/p&gt;
-
-&lt;p&gt;2、再输入$ git push origin master&lt;/p&gt;
-
-&lt;p&gt;3、如果出现报错 fatal: Couldn’t find remote ref master或者fatal: ‘origin’ does not appear to be a git repository以及fatal: Could not read from remote repository.&lt;/p&gt;
-
-&lt;p&gt;4、则需要重新输入$ git remote add origingit@github.com:djqiang/gitdemo.git&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;使用git在本地创建一个项目的过程
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $ makdir ~/hello-world    //创建一个项目hello-world
-    $ cd ~/hello-world       //打开这个项目
-    $ git init             //初始化
-    $ touch README
-    $ git add README        //更新README文件
-    $ git commit -m &#39;first commit&#39;     //提交更新，并注释信息“first commit”
-    $ git remote add origin git@github.com:defnngj/hello-world.git     //连接远程github项目
-    $ git push -u origin master     //将本地项目更新到github项目上去
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;gitconfig配置文件&lt;/p&gt;
-
-&lt;p&gt;Git有一个工具被称为git config，它允许你获得和设置配置变量；这些变量可以控制Git的外观和操作的各个方面。这些变量可以被存储在三个不同的位置：
- 1./etc/gitconfig 文件：包含了适用于系统所有用户和所有库的值。如果你传递参数选项’–system’ 给 git config，它将明确的读和写这个文件。
- 2.~/.gitconfig 文件 ：具体到你的用户。你可以通过传递–global 选项使Git 读或写这个特定的文件。
- 3.位于git目录的config文件 (也就是 .git/config) ：无论你当前在用的库是什么，特定指向该单一的库。每个级别重写前一个级别的值。因此，在.git/config中的值覆盖了在/etc/gitconfig中的同一个值。
-    在Windows系统中，Git在$HOME目录中查找.gitconfig文件（对大多数人来说，位于C:\Documents and Settings$USER下）。它也会查找/etc/gitconfig，尽管它是相对于Msys 根目录的。这可能是你在Windows中运行安装程序时决定安装Git的任何地方。&lt;/p&gt;
-
-&lt;p&gt;配置相关信息：&lt;/p&gt;
-
-&lt;p&gt;当你安装Git后首先要做的事情是设置你的用户名称和e-mail地址。这是非常重要的，因为每次Git提交都会使用该信息。它被永远的嵌入到了你的提交中：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    　　$ git config --global user.name &quot;John Doe&quot;
-
-    　　$ git config --global user.email johndoe@example.com
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;你的编辑器(Your Editor)&lt;/p&gt;
-
-&lt;p&gt;现在，你的标识已经设置，你可以配置你的缺省文本编辑器，Git在需要你输入一些消息时会使用该文本编辑器。缺省情况下，Git使用你的系统的缺省编辑器，这通常可能是vi 或者 vim。如果你想使用一个不同的文本编辑器，例如Emacs，你可以做如下操作：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    　　$ git config --global core.editor emacs
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;检查你的设置(Checking Your Settings)&lt;/p&gt;
-
-&lt;p&gt;如果你想检查你的设置，你可以使用 git config –list 命令来列出Git可以在该处找到的所有的设置:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;　　$ git config --list
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;你也可以查看Git认为的一个特定的关键字目前的值，使用如下命令 git config {key}:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;　　$ git config user.name
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;获取帮助(Getting help)&lt;/p&gt;
-
-&lt;p&gt;如果当你在使用Git时需要帮助，有三种方法可以获得任何git命令的手册页(manpage)帮助信息:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    　　$ git help &amp;lt;verb&amp;gt;
-
-    　　$ git &amp;lt;verb&amp;gt; --help
-
-    　　$ man git-&amp;lt;verb&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;例如，你可以运行如下命令获取对config命令的手册页帮助:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;　　$ git help config
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/issues-when-using-github.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/issues-when-using-github.html</guid>
-        
-        <category>github</category>
-        
-        
-        <category>工具</category>
-        
-      </item>
-    
-      <item>
-        <title>cocopods 出现更新错误</title>
-        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;2015-09-18 10:39:02.521 ruby[3178:88741] [MT] DVTAssertions: ASSERTION FAILURE in /Library/Caches/com.apple.xbs/Sources/IDEFrameworks/IDEFrameworks-8227/IDEFoundation/Initialization/IDEInitialization.m:590
-Details:  Assertion failed: _initializationCompletedSuccessfully
-Function: BOOL IDEIsInitializedForUserInteraction()
-Thread:   &amp;lt;NSThread: 0x7f99f4dd77d0&amp;gt;{number = 1, name = main}
-Hints: None
-Backtrace:
-  0  0x000000010dcfea5c -[DVTAssertionHandler handleFailureInFunction:fileName:lineNumber:assertionSignature:messageFormat:arguments:] (in DVTFoundation)
-  1  0x000000010dcfe1e9 _DVTAssertionHandler (in DVTFoundation)
-  2  0x000000010dcfe455 _DVTAssertionFailureHandler (in DVTFoundation)
-  3  0x000000010dcfe3b7 _DVTAssertionFailureHandler (in DVTFoundation)
-  4  0x000000010f242f5c IDEIsInitializedForUserInteraction (in IDEFoundation)
-  5  0x0000000111e42eb9 +[PBXProject projectWithFile:errorHandler:readOnly:] (in DevToolsCore)
-  6  0x0000000111e44a3e +[PBXProject projectWithFile:errorHandler:] (in DevToolsCore)
-  7  0x00007fff93ef1f44 ffi_call_unix64 (in libffi.dylib)
-Abort trap: 6
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;解决办法1：
-先卸载cocopods&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem uninstall cocoapods
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;再安装&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install cocoapods
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;再&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pod install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/error-of-cocopods.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/error-of-cocopods.html</guid>
-        
-        <category>iOS</category>
-        
-        
-        <category>工具</category>
-        
-      </item>
-    
-      <item>
-        <title>mysql中explain用法详解</title>
-        <description>&lt;p&gt;如果在select语句前放上关键词explain，mysql将解释它如何处理select，提供有关表如何联接和联接的次序。&lt;/p&gt;
-
-&lt;p&gt;explain的每个输出行提供一个表的相关信息，并且每个行包括下面的列：&lt;/p&gt;
-
-&lt;p&gt;1，id   select识别符。这是select的查询序列号。&lt;/p&gt;
-
-&lt;p&gt;2，select_type 可以为一下任何一种类型
-    simple  简单select(不使用union或子查询)
-    primary   最外面的select
-    union    union中的第二个或后面的select语句
-    dependent union  union中的第二个或后面的select语句，取决于外面的查询
-    union result  union的结果。
-    subquery 子查询中的第一个select
-    dependent subquery  子查询中的第一个select，取决于外面的查询
-    derived    导出表的select(from子句的子查询)&lt;/p&gt;
-
-&lt;p&gt;3，table  输出的行所引用的表。&lt;/p&gt;
-
-&lt;p&gt;4，type  联接类型。下面给出各种联接类型，按照从最佳类型到最坏类型进行排序：
-    system  表仅有一行(=系统表)。这是const联接类型的一个特例。
-    const  表最多有一个匹配行，它将在查询开始时被读取。因为仅有一行，在这行的列值可被优化器剩余部分认为是常数。const表很快，因为它们只读取一次！
-    eq_ref 对于每个来自于前面的表的行组合，从该表中读取一行。这可能是最好的联接类型，除了const类型。它用在一个索引的所有部分被联接使用并且索引是unique或primary key
-    ref  对于每个来自于前面的表的行组合，所有有匹配索引值的行将从这张表中读取。如果联接只使用键的最左边的前缀，或如果键不是unique或primary key（换句话说，如果联接不能基于关键字选择单个行的话），则使用ref。如果使用的键仅仅匹配少量行，该联接类型是不错的。
-    ref可以用于使用=或&amp;lt;=&amp;gt;操作符的带索引的列。
-    possible_keys 如果该列是null，则没有相关的索引。在这种情况下，可以通过检查where子句看是否它引用某些列或适合索引的列来提高你的查询性能。如果是这样，创造一个适当的索引并且再次用explain检查查询key 列显示mysql实际决定使用的键（索引）。如果没有选择索引，键是null。要想强制mysql使用或忽视possible_keys列中的索引，在查询中使用force index、use index或者ignore index。&lt;/p&gt;
-
-&lt;p&gt;5，rows  rows列显示mysql认为它执行查询时必须检查的行数。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;以上简单介绍了mysql中explain语句的用法，希望对大家有所帮助。
-
-对mysql explain讲的比较清楚的
-
-在 explain的帮助下，您就知道什么时候该给表添加索引，以使用索引来查找记录从而让select 运行更快。
-如果由于不恰当使用索引而引起一些问题的话，可以运行 analyze table来更新该表的统计信息，例如键的基数，它能帮您在优化方面做出更好的选择。
-
-explain 返回了一行记录，它包括了 select语句中用到的各个表的信息。这些表在结果中按照mysql即将执行的查询中读取的顺序列出来。mysql用一次扫描多次连接（single- sweep,multi-join）的方法来解决连接。这意味着mysql从第一个表中读取一条记录，然后在第二个表中查找到对应的记录，然后在第三个表中查找，依次类推。当所有的表都扫描完了，它输出选择的字段并且回溯所有的表，直到找不到为止，因为有的表中可能有多条匹配的记录下一条记录将从该表读取，再从下一个表开始继续处理。
-在mysql version 4.1中，explain输出的结果格式改变了，使得它更适合例如 union语句、子查询以及派生表的结构。更令人注意的是，它新增了2个字段： id和 select_type。当你使用早于mysql4.1的版本就看不到这些字段了。
-explain结果的每行记录显示了每个表的相关信息，每行记录都包含以下几个字段：
-
-id
-本次 select 的标识符。在查询中每个 select都有一个顺序的数值。
-select_type
-select 的类型，可能会有以下几种：
-simple: 简单的 select （没有使用 union或子查询）
-
-primary: 最外层的 select。
-
-union: 第二层，在select 之后使用了 union。
-
-dependent union: union 语句中的第二个select，依赖于外部子查询
-
-subquery: 子查询中的第一个 select
-
-dependent subquery: 子查询中的第一个 subquery依赖于外部的子查询
-
-derived: 派生表 select（from子句中的子查询）
-
-table
-记录查询引用的表。
-
-type
-表连接类型。以下列出了各种不同类型的表连接，依次是从最好的到最差的：
-
-system:表只有一行记录（等于系统表）。这是 const表连接类型的一个特例。
-
-const:表中最多只有一行匹配的记录，它在查询一开始的时候就会被读取出来。由于只有一行记录，在余下的优化程序里该行记录的字段值可以被当作是一个恒定值。const表查询起来非常快，因为只要读取一次！const 用于在和 primary key 或unique 索引中有固定值比较的情形。下面的几个查询中，tbl_name 就是 c表了：
-select * from tbl_name where primary_key=1; select * from tbl_namewhere primary_key_part1=1 and primary_key_part2=2;
-
-eq_ref:从该表中会有一行记录被读取出来以和从前一个表中读取出来的记录做联合。与const类型不同的是，这是最好的连接类型。它用在索引所有部分都用于做连接并且这个索引是一个primary key 或 unique 类型。eq_ref可以用于在进行&quot;=&quot;做比较时检索字段。比较的值可以是固定值或者是表达式，表达示中可以使用表里的字段，它们在读表之前已经准备好了。以下的几个例子中，mysql使用了eq_ref 连接来处理 ref_table：
-
-
-select * from ref_table,other_table whereref_table.key_column=other_table.column; select * fromref_table,other_table whereref_table.key_column_part1=other_table.column andref_table.key_column_part2=1;
-
-ref: 该表中所有符合检索值的记录都会被取出来和从上一个表中取出来的记录作联合。ref用于连接程序使用键的最左前缀或者是该键不是 primary key 或 unique索引（换句话说，就是连接程序无法根据键值只取得一条记录）的情况。当根据键值只查询到少数几条匹配的记录时，这就是一个不错的连接类型。 ref还可以用于检索字段使用 =操作符来比较的时候。以下的几个例子中，mysql将使用 ref 来处理ref_table：
-select * from ref_table where key_column=expr; select * fromref_table,other_table whereref_table.key_column=other_table.column; select * fromref_table,other_table whereref_table.key_column_part1=other_table.column andref_table.key_column_part2=1;
-
-ref_or_null: 这种连接类型类似 ref，不同的是mysql会在检索的时候额外的搜索包含null 值的记录。这种连接类型的优化是从mysql4.1.1开始的，它经常用于子查询。在以下的例子中，mysql使用ref_or_null 类型来处理 ref_table：
-select * from ref_table where key_column=expr or key_column is null;
-
-
-unique_subquery: 这种类型用例如一下形式的 in 子查询来替换 ref：
-value in (select primary_key from single_table where some_expr)
-
-unique_subquery: 只是用来完全替换子查询的索引查找函数效率更高了。
-
-index_subquery: 这种连接类型类似 unique_subquery。它用子查询来代替in，不过它用于在子查询中没有唯一索引的情况下，例如以下形式：
-value in (select key_column from single_table where some_expr)
-
-range: 只有在给定范围的记录才会被取出来，利用索引来取得一条记录。key字段表示使用了哪个索引。key_len字段包括了使用的键的最长部分。这种类型时 ref 字段值是 null。range用于将某个字段和一个定植用以下任何操作符比较时 =, &amp;lt;&amp;gt;, &amp;gt;,&amp;gt;=, &amp;lt;, &amp;lt;=, is null, &amp;lt;=&amp;gt;, between, 或 in：
-select * from tbl_name where key_column = 10; select * fromtbl_name where key_column between 10 and 20; select * from tbl_namewhere key_column in (10,20,30); select * from tbl_name wherekey_part1= 10 and key_part2 in (10,20,30);
-
-index: 连接类型跟 all 一样，不同的是它只扫描索引树。它通常会比 all快点，因为索引文件通常比数据文件小。mysql在查询的字段知识单独的索引的一部分的情况下使用这种连接类型。
-
-all: 将对该表做全部扫描以和从前一个表中取得的记录作联合。这时候如果第一个表没有被标识为const的话就不大好了，在其他情况下通常是非常糟糕的。正常地，可以通过增加索引使得能从表中更快的取得记录以避免all。
-
-possible_keys
-
-possible_keys字段是指 mysql在搜索表记录时可能使用哪个索引。注意，这个字段完全独立于explain 显示的表顺序。这就意味着 possible_keys里面所包含的索引可能在实际的使用中没用到。如果这个字段的值是null，就表示没有索引被用到。这种情况下，就可以检查 where子句中哪些字段那些字段适合增加索引以提高查询的性能。就这样，创建一下索引，然后再用explain 检查一下。详细的查看章节&quot;14.2.2 alter tablesyntax&quot;。想看表都有什么索引，可以通过 show index from tbl_name来看。
-
-key
-
-key字段显示了mysql实际上要用的索引。当没有任何索引被用到的时候，这个字段的值就是null。想要让mysql强行使用或者忽略在 possible_keys字段中的索引列表，可以在查询语句中使用关键字force index, use index,或 ignore index。如果是 myisam 和 bdb 类型表，可以使用 analyzetable 来帮助分析使用使用哪个索引更好。如果是 myisam类型表，运行命令 myisamchk --analyze也是一样的效果。详细的可以查看章节&quot;14.5.2.1 analyze tablesyntax&quot;和&quot;5.7.2 table maintenance and crash recovery&quot;。
-
-key_len
-
-key_len 字段显示了mysql使用索引的长度。当 key 字段的值为 null时，索引的长度就是 null。注意，key_len的值可以告诉你在联合索引中mysql会真正使用了哪些索引。
-
-ref
-
-ref 字段显示了哪些字段或者常量被用来和 key配合从表中查询记录出来。
-
-rows
-rows 字段显示了mysql认为在查询中应该检索的记录数。
-
-extra
-
-本字段显示了查询中mysql的附加信息。以下是这个字段的几个不同值的解释：
-
-distinct:mysql当找到当前记录的匹配联合结果的第一条记录之后，就不再搜索其他记录了。
-
-not exists:mysql在查询时做一个 left join优化时，当它在当前表中找到了和前一条记录符合 left join条件后，就不再搜索更多的记录了。下面是一个这种类型的查询例子：
-select * from t1 left join t2 on t1.id=t2.id where t2.id isnull;
-
-假使 t2.id 定义为 not null。这种情况下，mysql将会扫描表 t1并且用 t1.id 的值在 t2 中查找记录。当在 t2中找到一条匹配的记录时，这就意味着 t2.id 肯定不会都是null，就不会再在 t2 中查找相同 id值的其他记录了。也可以这么说，对于 t1 中的每个记录，mysql只需要在t2 中做一次查找，而不管在 t2 中实际有多少匹配的记录。
-
-range checked for each record (index map: #)
-
-mysql没找到合适的可用的索引。取代的办法是，对于前一个表的每一个行连接，它会做一个检验以决定该使用哪个索引（如果有的话），并且使用这个索引来从表里取得记录。这个过程不会很快，但总比没有任何索引时做表连接来得快。
-
-using filesort: mysql需要额外的做一遍从而以排好的顺序取得记录。排序程序根据连接的类型遍历所有的记录，并且将所有符合 where条件的记录的要排序的键和指向记录的指针存储起来。这些键已经排完序了，对应的记录也会按照排好的顺序取出来。详情请看&quot;7.2.9how mysql optimizes order by&quot;。
-using index
-
-字段的信息直接从索引树中的信息取得，而不再去扫描实际的记录。这种策略用于查询时的字段是一个独立索引的一部分。
-
-using temporary: mysql需要创建临时表存储结果以完成查询。这种情况通常发生在查询时包含了groupby 和 order by 子句，它以不同的方式列出了各个字段。
-using where
-
-where子句将用来限制哪些记录匹配了下一个表或者发送给客户端。除非你特别地想要取得或者检查表种的所有记录，否则的话当查询的extra 字段值不是 using where 并且表连接类型是 all 或 index时可能表示有问题。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;如果你想要让查询尽可能的快，那么就应该注意 extra 字段的值为usingfilesort 和 using temporary 的情况。&lt;/p&gt;
-
-&lt;p&gt;你可以通过 explain 的结果中 rows字段的值的乘积大概地知道本次连接表现如何。它可以粗略地告诉我们mysql在查询过程中会查询多少条记录。如果是使用系统变量 max_join_size 来取得查询结果，这个乘积还可以用来确定会执行哪些多表select 语句。
-下面的例子展示了如何通过 explain提供的信息来较大程度地优化多表联合查询的性能。
-假设有下面的 select 语句，正打算用 explain 来检测：
-explain select tt.ticketnumber, tt.timein, tt.projectreference,tt.estimatedshipdate, tt.actualshipdate, tt.clientid,tt.servicecodes, tt.repetitiveid, tt.currentprocess,tt.currentdppers tt.recordvolume, tt.dpprinted, et.country,et_1.country, do.custname from tt, et, et as et_1, do wherett.submittime is null and tt.actualpc = et.employid andtt.assignedpc = et_1.employid and tt.clientid = do.custnmbr;&lt;/p&gt;
-
-&lt;p&gt;在这个例子中，先做以下假设：&lt;/p&gt;
-
-&lt;p&gt;要比较的字段定义如下：
-    table  column  columntype
-    tt  actualpc char(10)
-    tt  assignedpc char(10)
-    tt  clientid char(10)
-    et  employid char(15)
-    do  custnmbr char(15)&lt;/p&gt;
-
-&lt;p&gt;数据表的索引如下：
-    table  index
-    tt  actualpc
-    tt  assignedpc
-    tt  clientid
-    et  employid (primary key)
-    do  custnmbr (primary key)&lt;/p&gt;
-
-&lt;p&gt;tt.actualpc 的值是不均匀分布的。&lt;/p&gt;
-
-&lt;p&gt;在任何优化措施未采取之前，经过 explain分析的结果显示如下：
-    table type possible_keys key key_len ref rows extra
-    et all primarynull null null 74
-    do all primary null null null 2135
-    et_1 allprimary null null null 74
-    tt all assignedpc, null null null 3872 clientid, actualpc range checked for each record (key map: 35)&lt;/p&gt;
-
-&lt;p&gt;由于字段 type 的对于每个表值都是all，这个结果意味着mysql对所有的表做一个迪卡尔积；这就是说，每条记录的组合。这将需要花很长的时间，因为需要扫描每个表总记录数乘积的总和。在这情况下，它的积是74 * 2135 * 74 * 3872 = 45,268,558,720条记录。如果数据表更大的话，你可以想象一下需要多长的时间。
-在这里有个问题是当字段定义一样的时候，mysql就可以在这些字段上更快的是用索引（对isam类型的表来说，除非字段定义完全一样，否则不会使用索引）。在这个前提下，varchar和 char是一样的除非它们定义的长度不一致。由于 tt.actualpc 定义为char(10)，et.employid 定义为 char(15)，二者长度不一致。
-为了解决这个问题，需要用 alter table 来加大 actualpc的长度从10到15个字符：
-mysql&amp;gt; alter table tt modify actualpc varchar(15);&lt;/p&gt;
-
-&lt;p&gt;现在 tt.actualpc 和 et.employid 都是 varchar(15)了。再来执行一次 explain 语句看看结果：
-    table type possible_keys key key_len ref rows extra
-    tt allassignedpc, null null null 3872 using clientid, where actualpc
-    do all primary null null null 2135 range checked for each record (keymap: 1)
-    et_1 all primary null null null 74 range checked for eachrecord (key map: 1) et eq_ref primary primary 15 tt.actualpc 1&lt;/p&gt;
-
-&lt;p&gt;这还不够，它还可以做的更好：现在 rows值乘积已经少了74倍。这次查询需要用2秒钟。
-第二个改变是消除在比较 tt.assignedpc = et_1.employid 和 tt.clientid= do.custnmbr 中字段的长度不一致问题：
-mysql&amp;gt; alter table tt modify assignedpc varchar(15), -&amp;gt;modify clientid varchar(15);&lt;/p&gt;
-
-&lt;p&gt;现在 explain 的结果如下：
-table type possible_keys key key_len ref rows extra
-et all primary null null null 74
-tt ref assignedpc, actualpc 15 et.employid 52 using clientid, where actualpc
-et_1 eq_ref primary primary 15 tt.assignedpc 1
-do eq_ref primary primary 15 tt.clientid 1&lt;/p&gt;
-
-&lt;p&gt;这看起来已经是能做的最好的结果了。
-遗留下来的问题是，mysql默认地认为字段 tt.actualpc的值是均匀分布的，然而表 tt并非如此。幸好，我们可以很方便的让mysql分析索引的分布：
-mysql&amp;gt; analyze table tt;&lt;/p&gt;
-
-&lt;p&gt;到此为止，表连接已经优化的很完美了，explain 的结果如下：
-table type possible_keys key key_len ref rows extra
-tt all assignedpc null null null 3872 using clientid, where actualpc
-et eq_ref primary primary 15 tt.actualpc 1
-et_1 eq_ref primary primary 15 tt.assignedpc 1
-do eq_ref primary primary 15 tt.clientid 1&lt;/p&gt;
-
-&lt;p&gt;请注意，explain 结果中的 rows字段的值也是mysql的连接优化程序大致猜测的，请检查这个值跟真实值是否基本一致。如果不是，可以通过在select 语句中使用 straight_join 来取得更好的性能，同时可以试着在from分句中用不同的次序列出各个表。&lt;/p&gt;
-
-&lt;p&gt;以下为补充资料：&lt;/p&gt;
-
-&lt;p&gt;借助explain，可以知道：
-1)何时必须为表加入索引以得到一个使用索引找到记录的更快的SELECT。
-2)优化器是否以一个最佳次序联结表。为了强制优化器对一个SELECT语句使用一个特定联结次序，增加一个STRAIGHT_JOIN子句。
-官方的关于explain的文档在http://dev.mysql.com/doc/refman/5.1/en/using-explain.html（英文）&lt;/p&gt;
-
-&lt;p&gt;mysql explain详解&lt;/p&gt;
-
-&lt;p&gt;mysql explain 使用的方法&lt;/p&gt;
-
-&lt;p&gt;EXPLAIN tbl_name
-或：
-EXPLAIN [EXTENDED] SELECT select_options&lt;/p&gt;
-
-&lt;p&gt;前者可以得出一个表的字段结构等等，后者主要是给出相关的一些索引信息，而今天要讲述的重点是后者。&lt;/p&gt;
-
-&lt;p&gt;举例
-复制代码 代码如下:&lt;/p&gt;
-
-&lt;p&gt;mysql&amp;gt; explain select * from event;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;id&lt;/th&gt;
-      &lt;th&gt;select_type&lt;/th&gt;
-      &lt;th&gt;table&lt;/th&gt;
-      &lt;th&gt;type&lt;/th&gt;
-      &lt;th&gt;possible_keys&lt;/th&gt;
-      &lt;th&gt;key&lt;/th&gt;
-      &lt;th&gt;key_len&lt;/th&gt;
-      &lt;th&gt;ref&lt;/th&gt;
-      &lt;th&gt;rows&lt;/th&gt;
-      &lt;th&gt;Extra&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;SIMPLE&lt;/td&gt;
-      &lt;td&gt;event&lt;/td&gt;
-      &lt;td&gt;ALL&lt;/td&gt;
-      &lt;td&gt;NULL&lt;/td&gt;
-      &lt;td&gt;NULL&lt;/td&gt;
-      &lt;td&gt;NULL&lt;/td&gt;
-      &lt;td&gt;NULL&lt;/td&gt;
-      &lt;td&gt;13&lt;/td&gt;
-      &lt;td&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;1 row in set (0.00 sec)&lt;/p&gt;
-
-&lt;p&gt;各个属性的含义&lt;/p&gt;
-
-&lt;p&gt;id
-select查询的序列号&lt;/p&gt;
-
-&lt;p&gt;select_type
-select查询的类型，主要是区别普通查询和联合查询、子查询之类的复杂查询。&lt;/p&gt;
-
-&lt;p&gt;table
-输出的行所引用的表。&lt;/p&gt;
-
-&lt;p&gt;type
-联合查询所使用的类型。
-type显示的是访问类型，是较为重要的一个指标，结果值从好到坏依次是：
-system &amp;gt; const &amp;gt; eq_ref &amp;gt; ref &amp;gt; fulltext &amp;gt; ref_or_null &amp;gt; index_merge &amp;gt; unique_subquery &amp;gt; index_subquery &amp;gt; range &amp;gt; index &amp;gt; ALL
-一般来说，得保证查询至少达到range级别，最好能达到ref。&lt;/p&gt;
-
-&lt;p&gt;possible_keys
-指出MySQL能使用哪个索引在该表中找到行。如果是空的，没有相关的索引。这时要提高性能，可通过检验WHERE子句，看是否引用某些字段，或者检查字段不是适合索引。&lt;/p&gt;
-
-&lt;p&gt;key
-显示MySQL实际决定使用的键。如果没有索引被选择，键是NULL。&lt;/p&gt;
-
-&lt;p&gt;key_len
-显示MySQL决定使用的键长度。如果键是NULL，长度就是NULL。文档提示特别注意这个值可以得出一个多重主键里mysql实际使用了哪一部分。&lt;/p&gt;
-
-&lt;p&gt;ref
-显示哪个字段或常数与key一起被使用。&lt;/p&gt;
-
-&lt;p&gt;rows
-这个数表示mysql要遍历多少数据才能找到，在innodb上是不准确的。&lt;/p&gt;
-
-&lt;p&gt;Extra
-如果是Only index，这意味着信息只用索引树中的信息检索出的，这比扫描整个表要快。
-如果是where used，就是使用上了where限制。
-如果是impossible where 表示用不着where，一般就是没查出来啥。
-如果此信息显示Using filesort或者Using temporary的话会很吃力，WHERE和ORDER BY的索引经常无法兼顾，如果按照WHERE来确定索引，那么在ORDER BY时，就必然会引起Using filesort，这就要看是先过滤再排序划算，还是先排序再过滤划算。
-常见的一些名词解释&lt;/p&gt;
-
-&lt;p&gt;Using filesort
-MySQL需要额外的一次传递，以找出如何按排序顺序检索行。&lt;/p&gt;
-
-&lt;p&gt;Using index
-从只使用索引树中的信息而不需要进一步搜索读取实际的行来检索表中的列信息。&lt;/p&gt;
-
-&lt;p&gt;Using temporary
-为了解决查询，MySQL需要创建一个临时表来容纳结果。&lt;/p&gt;
-
-&lt;p&gt;ref
-对于每个来自于前面的表的行组合，所有有匹配索引值的行将从这张表中读取&lt;/p&gt;
-
-&lt;p&gt;ALL
-完全没有索引的情况，性能非常地差劲。&lt;/p&gt;
-
-&lt;p&gt;index
-与ALL相同，除了只有索引树被扫描。这通常比ALL快，因为索引文件通常比数据文件小。&lt;/p&gt;
-
-&lt;p&gt;SIMPLE
-简单SELECT(不使用UNION或子查询)&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/sql-use-of-explain.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/sql-use-of-explain.html</guid>
-        
-        <category>sql</category>
-        
-        <category>优化</category>
-        
-        <category>设计</category>
-        
-        <category>explain</category>
-        
-        
-        <category>服务端开发</category>
-        
-      </item>
-    
-      <item>
-        <title>优化之查询语句优化</title>
-        <description>&lt;p&gt;mysql的性能优化包罗甚广：
-索引优化，查询优化，查询缓存，服务器设置优化，操作系统和硬件优化，应用层面优化（web服务器，缓存）等等。这里的记录的优化技巧更适用于开发人员，都是从网络上收集和自己整理的，主要是查询语句上面的优化，其它层面的优化技巧在此不做记录。&lt;/p&gt;
-
-&lt;p&gt;查询的开销指标：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;执行时间
-检查的行数
-返回的行数
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;建立索引的几个准则：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1、合理的建立索引能够加速数据读取效率，不合理的建立索引反而会拖慢数据库的响应速度。
-2、索引越多，更新数据的速度越慢。
-3、尽量在采用MyIsam作为引擎的时候使用索引（因为MySQL以BTree存储索引），而不是InnoDB。但MyISAM不支持Transcation。
-4、当你的程序和数据库结构/SQL语句已经优化到无法优化的程度，而程序瓶颈并不能顺利解决，那就是应该考虑使用诸如memcached这样的分布式缓存系统的时候了。
-5、习惯和强迫自己用EXPLAIN来分析你SQL语句的性能。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;count&quot;&gt;1. count的优化&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;比如：计算id大于5的城市
-a. select count(*) from world.city where id &amp;gt; 5;
-b. select (select count(*) from world.city) – count(*) from world.city where id &amp;lt;= 5;
-a语句当行数超过11行的时候需要扫描的行数比b语句要多， b语句扫描了6行，此种情况下，b语句比a语句更有效率。当没有where语句的时候直接select count(*) from world.city这样会更快，因为mysql总是知道表的行数。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section&quot;&gt;2. 避免使用不兼容的数据类型。&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;例如float和int、char和varchar、binary和varbinary是不兼容的。数据类型的不兼容可能使优化器无法执行一些本来可以进行的优化操作。
-在程序中，保证在实现功能的基础上，尽量减少对数据库的访问次数；通过搜索参数，尽量减少对表的访问行数,最小化结果集，从而减轻网络负担；能够分开的操作尽量分开处理，提高每次的响应速度；在数据窗口使用SQL时，尽量把使用的索引放在选择的首列；算法的结构尽量简单；在查询时，不要过多地使用通配符如 SELECT * FROM T1语句，要用到几列就选择几列如：SELECT COL1,COL2 FROM T1；在可能的情况下尽量限制尽量结果集行数如：SELECT TOP 300 COL1,COL2,COL3 FROM T1,因为某些情况下用户是不需要那么多的数据的。不要在应用中使用数据库游标，游标是非常有用的工具，但比使用常规的、面向集的SQL语句需要更大的开销；按照特定顺序提取数据的查找。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-1&quot;&gt;3. 索引字段上进行运算会使索引失效。&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;尽量避免在WHERE子句中对字段进行函数或表达式操作，这将导致引擎放弃使用索引而进行全表扫描。如：
-
-SELECT * FROM T1 WHERE F1/2=100 应改为: SELECT * FROM T1 WHERE F1=100*2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;is-nullis-not-nullin-not-in&quot;&gt;4. 避免使用!=或＜＞、IS NULL或IS NOT NULL、IN ，NOT IN等这样的操作符.&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;因为这会使系统无法使用索引,而只能直接搜索表中的数据。例如: SELECT id FROM employee WHERE id != “B%” 优化器将无法通过索引来确定将要命中的行数,因此需要搜索该表的所有行。在in语句中能用exists语句代替的就用exists.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-2&quot;&gt;5. 尽量使用数字型字段.&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;一部分开发人员和数据库管理人员喜欢把包含数值信息的字段
-设计为字符型，这会降低查询和连接的性能，并会增加存储开销。这是因为引擎在处理查询和连接回逐个比较字符串中每一个字符，而对于数字型而言只需要比较一次就够了。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;existsnot-exists&quot;&gt;6. 合理使用EXISTS,NOT EXISTS子句。如下所示：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.SELECT SUM(T1.C1) FROM T1 WHERE (SELECT COUNT(*)FROM T2 WHERE T2.C2=T1.C2&amp;gt;0)
-2.SELECT SUM(T1.C1) FROM T1WHERE EXISTS(SELECT * FROM T2 WHERE T2.C2=T1.C2)
-
-两者产生相同的结果，但是后者的效率显然要高于前者。因为后者不会产生大量锁定的表扫描或是索引扫描。如果你想校验表里是否存在某条纪录，不要用count(*)那样效率很低，而且浪费服务器资源。可以用EXISTS代替。如：
-
-IF (SELECT COUNT(*) FROM table_name WHERE column_name = ‘xxx’)可以写成：IF EXISTS (SELECT * FROM table_name WHERE column_name = ‘xxx’)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;betweenin&quot;&gt;7. 能够用BETWEEN的就不要用IN&lt;/h4&gt;
-
-&lt;h4 id=&quot;distinctgroup-by&quot;&gt;8. 能够用DISTINCT的就不用GROUP BY&lt;/h4&gt;
-
-&lt;h4 id=&quot;select-intoselect-into-&quot;&gt;9. 尽量不要用SELECT INTO语句。SELECT INTO 语句会导致表锁定，阻止其他用户访问该表。&lt;/h4&gt;
-
-&lt;h4 id=&quot;section-3&quot;&gt;10. 必要时强制查询优化器使用某个索引&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT * FROM T1 WHERE nextprocess = 1 AND processid IN (8,32,45) 改成：
-SELECT * FROM T1 (INDEX = IX_ProcessID) WHERE nextprocess = 1 AND processid IN (8,32,45)
-则查询优化器将会强行利用索引IX_ProcessID 执行查询。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-4&quot;&gt;11. 消除对大型表行数据的顺序存取&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;尽管在所有的检查列上都有索引，但某些形式的WHERE子句强迫优化器使用顺序存取。如：
-SELECT * FROM orders WHERE (customer_num=104 AND order_num&amp;gt;1001) OR order_num=1008
-解决办法可以使用并集来避免顺序存取：
-SELECT * FROM orders WHERE customer_num=104 AND order_num&amp;gt;1001 UNION SELECT * FROM orders WHERE order_num=1008
-这样就能利用索引路径处理查询。【jacking 数据结果集很多，但查询条件限定后结果集不大的情况下，后面的语句快】
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-5&quot;&gt;12. 尽量避免在索引过的字符数据中，使用非打头字母搜索。这也使得引擎无法利用索引。&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;见如下例子：
-SELECT * FROM T1 WHERE NAME LIKE ‘%L%’
-SELECT * FROM T1 WHERE SUBSTING(NAME,2,1)=’L’
-SELECT * FROM T1 WHERE NAME LIKE ‘L%’
-即使NAME字段建有索引，前两个查询依然无法利用索引完成加快操作，引擎不得不对全表所有数据逐条操作来完成任务。而第三个查询能够使用索引来加快操作，不要习惯性的使用 ‘%L%’这种方式(会导致全表扫描)，如果可以使用`L%’相对来说更好;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;updatedeleteupdate&quot;&gt;13. 虽然UPDATE、DELETE语句的写法基本固定，但是还是对UPDATE语句给点建议：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a) 尽量不要修改主键字段。
-
-b) 当修改VARCHAR型字段时，尽量使用相同长度内容的值代替。
-
-c) 尽量最小化对于含有UPDATE触发器的表的UPDATE操作。
-
-d) 避免UPDATE将要复制到其他数据库的列。
-
-e) 避免UPDATE建有很多索引的列。
-
-f) 避免UPDATE在WHERE子句条件中的列。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;union-allunion&quot;&gt;14. 能用UNION ALL就不要用UNION&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;UNION ALL不执行SELECT DISTINCT函数，这样就会减少很多不必要的资源
-
-在跨多个不同的数据库时使用UNION是一个有趣的优化方法，UNION从两个互不关联的表中返回数据，这就意味着不会出现重复的行，同时也必须对数据进行排序，我们知道排序是非常耗费资源的，特别是对大表的排序。
-
-UNION ALL可以大大加快速度，如果你已经知道你的数据不会包括重复行，或者你不在乎是否会出现重复的行，在这两种情况下使用UNION ALL更适合。此外，还可以在应用程序逻辑中采用某些方法避免出现重复的行，这样UNION ALL和UNION返回的结果都是一样的，但UNION ALL不会进行排序。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-6&quot;&gt;15. 字段数据类型优化：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a. 避免使用NULL类型：NULL对于大多数数据库都需要特殊处理，MySQL也不例外，它需要更多的代码，更多的检查和特殊的索引逻辑，有些开发人员完全没有意识到，创建表时NULL是默认值，但大多数时候应该使用NOT NULL，或者使用一个特殊的值，如0，-1作为默认值。
-
-b. 尽可能使用更小的字段，MySQL从磁盘读取数据后是存储到内存中的，然后使用cpu周期和磁盘I/O读取它，这意味着越小的数据类型占用的空间越小，从磁盘读或打包到内存的效率都更好，但也不要太过执着减小数据类型，要是以后应用程序发生什么变化就没有空间了。修改表将需要重构，间接地可能引起代码的改变，这是很头疼的问题，因此需要找到一个平衡点。
-
-c. 优先使用定长型
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;limitlimit&quot;&gt;16. 关于大数据量limit分布的优化见下面链接（当偏移量特别大时，limit效率会非常低）：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://ariyue.iteye.com/blog/553541
-
-附上一个提高limit效率的简单技巧，在覆盖索引(覆盖索引用通俗的话讲就是在select的时候只用去读取索引而取得数据，无需进行二次select相关表)上进行偏移，而不是对全行数据进行偏移。可以将从覆盖索引上提取出来的数据和全行数据进行联接，然后取得需要的列，会更有效率，看看下面的查询：
-
-mysql&amp;gt; select film_id, description from sakila.film order by title limit 50, 5;
-
-如果表非常大，这个查询最好写成下面的样子：
-
-mysql&amp;gt; select film.film_id, film.description from sakila.film
-
-inner join(select film_id from sakila.film order by title liimit 50,5) as film usinig(film_id);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-7&quot;&gt;17. 程序中如果一次性对同一个表插入多条数据，比如以下语句：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;insert into person(name,age) values(‘xboy’, 14);
-
-insert into person(name,age) values(‘xgirl’, 15);
-
-insert into person(name,age) values(‘nia’, 19);
-
-把它拼成一条语句执行效率会更高.
-
-insert into person(name,age) values(‘xboy’, 14), (‘xgirl’, 15),(‘nia’, 19);
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;whereorder-by&quot;&gt;18. 不要在选择的栏位上放置索引，这是无意义的。应该在条件选择的语句上合理的放置索引，比如where，order by。&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SELECT id,title,content,cat_id FROM article WHERE cat_id = 1;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;上面这个语句，你在id/title/content上放置索引是毫无意义的，对这个语句没有任何优化作用。但是如果你在外键cat_id上放置一个索引，那作用就相当大了。&lt;/p&gt;
-
-&lt;h4 id=&quot;order-bymysql&quot;&gt;19. ORDER BY语句的MySQL优化：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a. ORDER BY + LIMIT组合的索引优化。如果一个SQL语句形如：
-
-SELECT [column1],[column2],…. FROM [TABLE] ORDER BY [sort] LIMIT [offset],[LIMIT];
-
-这个SQL语句优化比较简单，在[sort]这个栏位上建立索引即可。
-
-b. WHERE + ORDER BY + LIMIT组合的索引优化，形如：
-
-SELECT [column1],[column2],…. FROM [TABLE] WHERE [columnX] = [VALUE] ORDER BY [sort] LIMIT [offset],[LIMIT];
-
-这个语句，如果你仍然采用第一个例子中建立索引的方法，虽然可以用到索引，但是效率不高。更高效的方法是建立一个联合索引(columnX,sort)
-
-c. WHERE + IN + ORDER BY + LIMIT组合的索引优化，形如：
-
-SELECT [column1],[column2],…. FROM [TABLE] WHERE [columnX] IN ([value1],[value2],…) ORDER BY [sort] LIMIT [offset],[LIMIT];
-
-这个语句如果你采用第二个例子中建立索引的方法，会得不到预期的效果（仅在[sort]上是using index，WHERE那里是using where;using filesort），理由是这里对应columnX的值对应多个。
-目前哥还木有找到比较优秀的办法，等待高手指教。
-
-d.WHERE+ORDER BY多个栏位+LIMIT，比如:
-
-SELECT * FROM [table] WHERE uid=1 ORDER x,y LIMIT 0,10;
-
-对于这个语句，大家可能是加一个这样的索引:(x,y,uid)。但实际上更好的效果是(uid,x,y)。这是由MySQL处理排序的机制造成的。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;section-8&quot;&gt;20. 其它技巧：&lt;/h4&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://www.cnblogs.com/nokiaguy/archive/2008/05/24/1206469.html
-http://www.cnblogs.com/suchshow/archive/2011/12/15/2289182.html
-http://www.cnblogs.com/cy163/archive/2009/05/28/1491473.html
-http://www.cnblogs.com/younggun/articles/1719943.html
-http://wenku.baidu.com/view/f57c7041be1e650e52ea9985.html
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;最后，你可以使用explain关键字去判断和评测一个sql语句是否还有优化的可能性，关于它的详细使用请参考mysql手册。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 17 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/17/sql-design.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/17/sql-design.html</guid>
-        
-        <category>sql</category>
-        
-        <category>优化</category>
-        
-        <category>设计</category>
-        
-        
-        <category>服务端开发</category>
         
       </item>
     
