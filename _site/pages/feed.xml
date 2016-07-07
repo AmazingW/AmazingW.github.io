@@ -6,188 +6,222 @@
 </description>
     <link>http://amazingw.github.com/</link>
     <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 May 2016 18:40:26 +0800</pubDate>
-    <lastBuildDate>Fri, 20 May 2016 18:40:26 +0800</lastBuildDate>
-    <generator>Jekyll v3.1.3</generator>
+    <pubDate>Thu, 07 Jul 2016 15:03:10 +0800</pubDate>
+    <lastBuildDate>Thu, 07 Jul 2016 15:03:10 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>个人的简介</title>
-        <description>&lt;h4 id=&quot;section&quot;&gt;写给读者&lt;/h4&gt;
+        <title>在原生iOS应用中添加unity view</title>
+        <description>&lt;h4 id=&quot;section&quot;&gt;开发环境:&lt;/h4&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Unity 5.3.5f1
+Xcode 7.3.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;p&gt;因为最近公司的一些琐事,迫使我也做出了,将要离开的这个举动.所以加了一份个人的简介,在这里,希望大家见谅.
-大部分内容用markdown写的,所以可能没有word那么完美.请见谅.&lt;/p&gt;
+&lt;h4 id=&quot;section-1&quot;&gt;准备工作:&lt;/h4&gt;
 
-&lt;h3 id=&quot;section-1&quot;&gt;个人简介&lt;/h3&gt;
+&lt;p&gt;准备一个开发好的unity工程,如果没有,可以下载&lt;a href=&quot;https://github.com/xiayangqun/Unity535Demo&quot;&gt;https://github.com/xiayangqun/Unity535Demo&lt;/a&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;这个是我在网上随机找到的一个简单的unity 工程,对于此工程发生的任何XXXX,不负任何责任。&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;年龄: 26&lt;/td&gt;
-      &lt;td&gt;email: wqf_525@live.cn&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;毕业学校: 四川大学&lt;/td&gt;
-      &lt;td&gt;工作年限: 4年&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;地址：四川省成都市&lt;/td&gt;
-      &lt;td&gt;学历: 工学学士&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;h4 id=&quot;section-2&quot;&gt;开发&lt;/h4&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;1.导出unity的xcode工程。&lt;/p&gt;
 
-&lt;h4 id=&quot;section-2&quot;&gt;个人经历&lt;/h4&gt;
+&lt;p&gt;–(1).打开build settting。&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode1.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;公司&lt;/th&gt;
-      &lt;th&gt;职位&lt;/th&gt;
-      &lt;th&gt;时间&lt;/th&gt;
-      &lt;th&gt;成绩&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;成都子昂网络科技有限公司&lt;/td&gt;
-      &lt;td&gt;项目主管&lt;/td&gt;
-      &lt;td&gt;2015-07-01 ~ 至今&lt;/td&gt;
-      &lt;td&gt;1.IM开源SDK架构 ; 2.where am i 游戏社交app前后端架构;3.项目管理,管理平台搭建.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;成都刺猬科技有限公司&lt;/td&gt;
-      &lt;td&gt;客户端主管&lt;/td&gt;
-      &lt;td&gt;2014-09-01 ~ 2015-06-01&lt;/td&gt;
-      &lt;td&gt;1.客户端项目架构&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;monstar-lab&lt;/td&gt;
-      &lt;td&gt;开发工程师&lt;/td&gt;
-      &lt;td&gt;2012-09-01 ~ 2014-08-01&lt;/td&gt;
-      &lt;td&gt;1.项目业务实现;2.项目维护&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;–(2).设置playersetting&lt;/p&gt;
 
-&lt;h4 id=&quot;section-3&quot;&gt;专业技能&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode2.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;–(3).building导出,并选择你要导出的目录,并记录&lt;/p&gt;
 
-&lt;h5 id=&quot;section-4&quot;&gt;客户端&lt;/h5&gt;
+&lt;p&gt;2.设置xcode&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;1.熟悉swift以及object-c开发&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;2.熟悉coredata，sqlite等本地化存储，熟悉UIKIT,CALayer以及animation&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;3.熟悉TCP、UDP、HTTP等网络协议，熟悉多线程、xmpp协议，Socket网络编程&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;4.掌握react-native开发,以及部分组件&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;–(1).新建xcode工程与unity导出的项目在同一级目录下,例如:~/Document/unity ; ~/Document/iostest;&lt;/p&gt;
 
-&lt;h5 id=&quot;section-5&quot;&gt;服务端&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode3.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;1.熟悉nodejs开发&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;2.熟悉socket-io，express&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;–(2).删除storyboard以及删除plist文件相关设置&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode4.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;section-6&quot;&gt;项目经验&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode5.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;有部分项目跟我需求的工作不符,故不填写.&lt;/p&gt;
+&lt;p&gt;–(3).引入unity工程文件&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode6.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;项目名称：where am i&lt;/li&gt;
-  &lt;li&gt;项目描述：6.1上线&lt;/li&gt;
-  &lt;li&gt;一个基于游戏的社交软件,包括猜图,im,朋友圈等.&lt;/li&gt;
-  &lt;li&gt;职责范围: 整体项目架构,包括前后端&lt;/li&gt;
-  &lt;li&gt;相关技术：swift,node-js&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Classes以及Libraries文件夹选择如下引入方式&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode7.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;项目名称：IM开源项目开发&lt;/li&gt;
-  &lt;li&gt;项目描述：http://47.88.19.66:3000/wqf/chatview&lt;/li&gt;
-  &lt;li&gt;个人提出的开源项目,包括im客户端服务端,目前只有两个人开发,我主要负责客户端的架构和服务端编写.&lt;/li&gt;
-  &lt;li&gt;项目开发完成之后,会完全开源,让大家可以一键集成到自己的项目中,不需要再为收费的友盟,即时通讯烦恼.&lt;/li&gt;
-  &lt;li&gt;职责范围: 整体项目架构,包括前后端&lt;/li&gt;
-  &lt;li&gt;相关技术：swift,node-js&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Data选择如下引入方式&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode8.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;项目名称：属信&lt;/li&gt;
-  &lt;li&gt;项目描述：https://appsto.re/cn/Xu97-.i&lt;/li&gt;
-  &lt;li&gt;一个基于个人数据的社交APP,包括im以及朋友圈。&lt;/li&gt;
-  &lt;li&gt;通过个人的一些喜好,和个人的信息数据,给app推送一些用户喜好的信息。&lt;/li&gt;
-  &lt;li&gt;职责范围：客户端架构&lt;/li&gt;
-  &lt;li&gt;相关技术：object-c&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;4.清理无用文件引用&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;在xcode中删除,请这样删除,只删除引用&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;项目名称：NEARLY（购物app）&lt;/li&gt;
-  &lt;li&gt;项目描述：http://www.ipoca.jp/nearly/&lt;/li&gt;
-  &lt;li&gt;一个日本商场的购物网站。&lt;/li&gt;
-  &lt;li&gt;通过商场终端在app开启的情况下可以给app推送一些用户喜好的商品、以及打开一些内置的小游戏。&lt;/li&gt;
-  &lt;li&gt;在声波获取到的用户中，给用户推送一些用户会喜欢的东西。&lt;/li&gt;
-  &lt;li&gt;在每次用户交易时会有金币积累，金币可以用来玩游戏，以及交换购物券和一些优惠活动。&lt;/li&gt;
-  &lt;li&gt;职责范围：iOS开发&lt;/li&gt;
-  &lt;li&gt;相关技术：object-c，声波通讯&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode11.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;在Libraries中的libil2cpp这个文件夹&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;项目名称：スタディギア（英语学习）&lt;/li&gt;
-  &lt;li&gt;项目描述：http://www.ei-navi.jp/&lt;/li&gt;
-  &lt;li&gt;一个日本学生学习英语的项目网站。&lt;/li&gt;
-  &lt;li&gt;项目采用angularjs作为前端开发框架，php作为后台框架，nginx做负载均衡以及页面缓存，其中用flash作为音频播放。&lt;/li&gt;
-  &lt;li&gt;职责范围：前端开发&lt;/li&gt;
-  &lt;li&gt;相关技术：angular-js&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode9.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;在Classes中的Native这个文件夹下所有.h文件
+&lt;img src=&quot;../../../assets/img/unity_xcode10.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;section-7&quot;&gt;个人评价&lt;/h4&gt;
+&lt;p&gt;5.添加链接的库文件&lt;/p&gt;
 
-&lt;p&gt;从一个普通程序到项目架构,我知道自己的不足,知道自己的长处,我会努力的把自己的不足,变为自己的长处.
-不善于与人相处,做事还ok,能力ok.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode12.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;简介制作时间不长,因为更像专注于手头的事情,谢谢.&lt;/p&gt;
+&lt;p&gt;6.设置build settting&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode13.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode14.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode15.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode16.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode17.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode18.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode19.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode20.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;user defined ,在xcode中的build setting中添加。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode21.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7.添加文件&lt;/p&gt;
+
+&lt;p&gt;添加pch文件,并且将unity中Classes的Prefix.pch复制并替换到我们的pch文件中。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode22.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;修改我们自己的supporting files下面的main.m 为main.mm&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode23.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;删除在build phases的unity的main.mm文件&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode24.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;8.修改代码&lt;/p&gt;
+
+&lt;p&gt;appdelegate的代码
+&lt;img src=&quot;../../../assets/img/unity_xcode25.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/unity_xcode26.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;viewController的代码
+&lt;img src=&quot;../../../assets/img/unity_xcode27.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;UnityAppController.h的代码
+&lt;img src=&quot;../../../assets/img/unity_xcode28.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;9.编译运行,最好在真机调试。&lt;/p&gt;
 </description>
-        <pubDate>Wed, 18 May 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/05/18/personal-details.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/05/18/personal-details.html</guid>
+        <pubDate>Thu, 07 Jul 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/07/07/add-unityview-in-native-iOS-app.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/07/07/add-unityview-in-native-iOS-app.html</guid>
         
-        <category>程序</category>
+        <category>unity</category>
         
-        <category>生活</category>
+        <category>iOS</category>
+        
+        <category>xcode</category>
         
         
-        <category>生活</category>
+        <category>客户端开发</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS的原生热更新做法</title>
+        <description>&lt;h4 id=&quot;section&quot;&gt;简介&lt;/h4&gt;
+
+&lt;p&gt;framework是Cocoa/Cocoa Touch程序中使用的一种资源打包方式，可以将将代码文件、头文件、资源文件、说明文档等集中在一起，方便开发者使用，作为一名Cocoa/Cocoa Touch程序员每天都要跟各种各样的Framework打交道。Cocoa/Cocoa Touch开发框架本身提供了大量的Framework，比如Foundation.framework/UIKit.framework/AppKit.framework等。需要注意的是，这些framework无一例外都是动态库&lt;/p&gt;
+
+&lt;h4 id=&quot;ios&quot;&gt;iOS上动态库可以做什么&lt;/h4&gt;
+
+&lt;p&gt;和静态库在编译时和app代码链接并打进同一个二进制包中不同，动态库可以在运行时手动加载，这样就可以做很多事情，比如：&lt;/p&gt;
+
+&lt;h5 id=&quot;section-1&quot;&gt;应用插件化&lt;/h5&gt;
+
+&lt;p&gt;目前很多应用功能越做越多，软件显得越来越臃肿。因此插件化就成了很多软件发展的必经之路，比如支付宝这种平台级别的软件：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot1.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;首页上密密麻麻的功能，而且还在增多，照这个趋势发展下去，软件包的大小将会不可想象。目前常用的解决方案是使用web页面，但用户体验和Native界面是没法比的。&lt;/p&gt;
+
+&lt;p&gt;设想，如果每一个功能点都是一个动态库，在用户想使用某个功能的时候让其从网络下载，然后手动加载动态库，实现功能的的插件化，就再也不用担心功能点的无限增多了，这该是件多么美好的事！&lt;/p&gt;
+
+&lt;h5 id=&quot;section-2&quot;&gt;软件版本实时模块升级&lt;/h5&gt;
+
+&lt;p&gt;还在忍受苹果动辄一周，甚至更长的审核周期吗？有了动态库妈妈就再也不用担心你的软件升级了！&lt;/p&gt;
+
+&lt;p&gt;如果软件中的某个功能点出现了严重的bug，或者想在其中新增功能，你的这个功能点又是通过动态库实现的，这时候你只需要在适当的时候从服务器上将新版本的动态库文件下载到本地，然后在用户重启应用的时候即可实现新功能的展现。&lt;/p&gt;
+
+&lt;h5 id=&quot;section-3&quot;&gt;共享可执行文件&lt;/h5&gt;
+
+&lt;p&gt;在其它大部分平台上，动态库都可以用于不同应用间共享，这就大大节省了内存。从目前来看，iOS仍然不允许进程间共享动态库，即iOS上的动态库只能是私有的，因为我们仍然不能将动态库文件放置在除了自身沙盒以外的其它任何地方。&lt;/p&gt;
+
+&lt;p&gt;不过iOS8上开放了App Extension功能，可以为一个应用创建插件，这样主app和插件之间共享动态库还是可行的&lt;/p&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;创建动态库&lt;/h4&gt;
+
+&lt;h5 id=&quot;section-5&quot;&gt;1、创建动态库&lt;/h5&gt;
+
+&lt;h5 id=&quot;section-6&quot;&gt;创建工程文件&lt;/h5&gt;
+&lt;p&gt;在下图所示界面能够找到Cocoa Touch动态库的创建入口：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot2.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;section-7&quot;&gt;2.编写动态库&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot3.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;section-8&quot;&gt;3.暴露头文件&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot4.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;section-9&quot;&gt;4.执行&lt;/h5&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot5.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-10&quot;&gt;接下来是本地的操作过程,远程下载也是一样&lt;/h3&gt;
+
+&lt;p&gt;找到framework,放入你的工程中,用添加图片资源的方式放入&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot6.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在linklibray,删除可能被引入库。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-11&quot;&gt;执行&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;../../../assets/img/hot7.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;源码在&lt;a href=&quot;https://github.com/AmazingW/runlibtest&quot;&gt;https://github.com/AmazingW/runlibtest&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Jun 2016 00:00:00 +0800</pubDate>
+        <link>http://amazingw.github.com/2016/06/21/hot-update-iOS.html</link>
+        <guid isPermaLink="true">http://amazingw.github.com/2016/06/21/hot-update-iOS.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>热更新</category>
+        
+        
+        <category>客户端开发</category>
         
       </item>
     
@@ -243,19 +277,19 @@
         <title>在ubuntu配置安装mongodb</title>
         <description>&lt;p&gt;1.更新系统&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;2.安装mongodb&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;3.关闭或启动mongodb&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service mongodb stop;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo service mongodb stop;
 sudo service mongodb start;
 &lt;span class=&quot;c&quot;&gt;#后台启动 设置fork＝true&lt;/span&gt;
 sudo mongo --dbpath&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/data/db --fork --logpath&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/data/log/mongodb.log --logappend
@@ -265,7 +299,7 @@ sudo mongo --dbpath&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/data/db --fork
 &lt;p&gt;4.设置数据库密码
 数据库启动后&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mongo
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mongo
 &lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;use admin
 &lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;db.addUser&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;root&quot;&lt;/span&gt;,&lt;span class=&quot;s2&quot;&gt;&quot;123&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit
@@ -279,7 +313,7 @@ mongo -auth
 
 &lt;p&gt;5.mongodb 配置文件&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/mongodb.conf
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/mongodb.conf
 //修改 &lt;span class=&quot;nb&quot;&gt;bind&lt;/span&gt;—ip,配制成你需要通过的远程服务器的ip,就可以远程连接了.
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -335,7 +369,7 @@ mongo -auth
 
 &lt;p&gt;创建不同的端口的redis文件&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 cp redis.config backup.reidis.config;#拷贝备份
 
 cp redis.config 6379.config;#master config
@@ -350,69 +384,69 @@ rm redis.config; &lt;span class=&quot;c&quot;&gt;# Y&lt;/span&gt;
 
 &lt;p&gt;修改master配置文件&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi 6379.config
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi 6379.config
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;1.默认后台启动&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;daemonize no
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;daemonize no
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;2.修改绑定的主机地址
 想让其他的服务器访问你的redis,server,最好配置这里的bind&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;127.0.0.1
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;127.0.0.1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;3.设置Redis连接密码&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;requirepass mypassword
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;requirepass mypassword
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;修改slave&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi 6380.config
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi 6380.config
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;1.默认后台启动&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;daemonize no
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;daemonize no
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;2.修改绑定的主机地址
 想让其他的服务器访问你的redis,server,最好配置这里的bind&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;127.0.0.1
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;bind &lt;/span&gt;127.0.0.1
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;3.设置Redis连接密码&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;requirepass mypassword
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;requirepass mypassword
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;4.修改端口号&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port 6380
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;port 6380
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;5.设置隶属的master的redis&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;slaveof 127.0.0.1 6379
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;slaveof 127.0.0.1 6379
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;6.如果 master 需要密码认证，就在这里设置&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;masterauth mypassword
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;masterauth mypassword
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -717,13 +751,13 @@ everysec：表示每秒同步一次（折衷，默认值）&lt;/li&gt;
         <title>ubuntu上nginx的安装与socketio配置</title>
         <description>&lt;p&gt;1.更新系统&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;2.安装nginx&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mongodb
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -741,7 +775,7 @@ everysec：表示每秒同步一次（折衷，默认值）&lt;/li&gt;
 
 &lt;p&gt;3.启动Nginx&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; /etc/init.d/nginx start
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$sudo&lt;/span&gt; /etc/init.d/nginx start
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -749,7 +783,7 @@ everysec：表示每秒同步一次（折衷，默认值）&lt;/li&gt;
 
 &lt;p&gt;nginx 对socketio的配置&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;c&quot;&gt;#user  nobody;&lt;/span&gt;
 worker_processes  4;
 
@@ -859,7 +893,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;不使用indexOf时&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;found&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
@@ -874,7 +908,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;使用后&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;apple&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;orange&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;pear&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 
 &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;found:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -886,7 +920,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;不用 filter() 时&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
@@ -907,7 +941,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;用了 filter():&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;count&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
@@ -926,7 +960,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;forEach为每个元素执行对应的方法&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;// Uses the usual &quot;for&quot; loop to iterate&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
@@ -950,7 +984,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;不使用map&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Colin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Toh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Addy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Osmani&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Yehuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Katz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Colin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Toh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Addy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Osmani&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Yehuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Katz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getNewArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
 
@@ -971,7 +1005,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;使用map后&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Colin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Toh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Addy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Osmani&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Yehuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Katz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oldArr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Colin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Toh&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Addy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Osmani&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Yehuda&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;last_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Katz&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getNewArr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
 
@@ -998,7 +1032,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;不使用reduce时&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getWordCnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
@@ -1017,7 +1051,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;使用reduce()后&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pear&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getWordCnt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
@@ -1040,7 +1074,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 * 二者的区别，在console中运行一下即可知晓
 */&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apple&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;orange&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;noPassValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reduce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;prev&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
@@ -1093,7 +1127,7 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;p&gt;确保已经安装了xCode&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/ruby -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/usr/bin/ruby -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1101,13 +1135,13 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
 
 &lt;h3 id=&quot;redis&quot;&gt;2.安装redis&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install redis
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install redis
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;安装完成后你会看到&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#To have launchd start redis at login:&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#To have launchd start redis at login:&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#  ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#Then to load redis now:&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist&lt;/span&gt;
@@ -1135,32 +1169,32 @@ http &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
         <title>在ubuntu上安装gogs</title>
         <description>&lt;p&gt;同步索引，升级软件包&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get update;
 sudo apt-get upgrade;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;创建用户&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo adduser gogs;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo adduser gogs;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;安装git&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;安装mysql&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mysql-server
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mysql-server
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;创建gogs数据库&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;div class=&quot;language-sql highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;create&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;database&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gogs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;show&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;databases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;quit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1169,7 +1203,7 @@ sudo apt-get upgrade;
 
 &lt;p&gt;切换用户&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;su gogs;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;su gogs;
 &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -1177,14 +1211,14 @@ sudo apt-get upgrade;
 &lt;p&gt;安装golang环境
 可以在http://www.golangtc.com/ 这里查询到最新的包下载地址&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo wget http://www.golangtc.com/static/go/1.6/go1.6.linux-amd64.tar.gz;
 tar -xzvf go1.6.linux-amd64.tar.gz -C /var/opt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;配置gogs环境&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOROOT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/opt/go &amp;gt;&amp;gt; .bashrc;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOROOT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/var/opt/go &amp;gt;&amp;gt; .bashrc;
 
 &lt;span class=&quot;nb&quot;&gt;echo export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GOBIN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$GOROOT&lt;/span&gt;/bin &amp;gt;&amp;gt; .bashrc;
 
@@ -1200,25 +1234,25 @@ tar -xzvf go1.6.linux-amd64.tar.gz -C /var/opt;
 
 &lt;p&gt;使你配置的环境生效&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .bashrc;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; .bashrc;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;检查golang是否安装成功,如果不成功，则vi .bashrc,看一下gopath是不是配置的有问题&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;go env；
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;go env；
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;建立仓库目录&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir repositories;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir repositories;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;p&gt;建立gogs的安装目录&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir goapp;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir goapp;
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;goapp;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -1226,7 +1260,7 @@ tar -xzvf go1.6.linux-amd64.tar.gz -C /var/opt;
 &lt;p&gt;安装gogs
 在这里 https://gogs.io/docs/installation/install_from_binary 找到最新的gogs的包下载地址&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo wget https://dl.gogs.io/gogs_v0.9.13_linux_amd64.zip;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo wget https://dl.gogs.io/gogs_v0.9.13_linux_amd64.zip;
 
 unzip gogs_v0.9.13_linux_amd64.zip;
 
@@ -1247,7 +1281,7 @@ sudo chmod -R 777 log;#修改log文件夹权限
 
 &lt;p&gt;启动gogs&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/gogs/goapp/gogs;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home/gogs/goapp/gogs;
 ./gogs  web;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -1266,390 +1300,6 @@ sudo chmod -R 777 log;#修改log文件夹权限
         
         
         <category>工具</category>
-        
-      </item>
-    
-      <item>
-        <title>类型化却不失灵活的 Table View Controller</title>
-        <description>&lt;p&gt;对（几乎）所有的 iOS 开发者来说，UITableView 就像是面包和黄油一样必不可少。大部分情况下，我们用一个 UITableViewCell 展现一种数据类型，然后通过 Identifier 来重用单元格。在 objc.io 中介绍了这种技术。当我们想在一个 Table View 中使用多个不同类型的 cell 时，情况则复杂的多。cell 的不一致让我们很难处理。&lt;/p&gt;
-
-&lt;p&gt;本文介绍了解决这个问题的三种途径。每种方案都试图修复前一种方案中导致的问题。第一种方法在许多 O-C 代码库中都很常见。第二种方法利用了枚举，但仍然不是最好的解决办法。第三种方法的实现使用了协议和泛型——它们是 Swift 提供给我们的神兵利器。&lt;/p&gt;
-
-&lt;p&gt;基础&lt;/p&gt;
-
-&lt;p&gt;我会带你完成一个 demo 项目（github 地址)，在这个例子中，我们创建了一个包含两种不同 cell 的 Table View：一种 cell 用于显示文本，一种 cell 用于显示图片，如下图所示：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;../../../assets/img/table1.png&quot; alt=&quot;table_view&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;显示两种数据（文字和图片）的 UITableView&lt;/p&gt;
-
-&lt;p&gt;在渲染视图时，我喜欢用值类型来封装数据。我把这个称作 view data。这里，我们使用了两个 view data：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct TextCellViewData {
-    let title: String
-}
-
-struct ImageCellViewData {
-    let image: UIImage
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;（在真实项目中可能会有更多属性；image 属性应该声明为 NSURL ，以免对 UIKit 产生依赖）。对应地，我们也需要两种 cell 来展现这两种 view data：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class TextTableViewCell: UITableViewCell {
-    func updateWithViewData(viewData: TextCellViewData) {
-        textLabel?.text = viewData.title
-    }
-}
-
-class ImageTableViewCell: UITableViewCell {
-    func updateWithViewData(viewData: ImageCellViewData) {
-        imageView?.image = viewData.image
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;然后，我们开始进入 View Controller 中。&lt;/p&gt;
-
-&lt;p&gt;第一种方法:简单方法&lt;/p&gt;
-
-&lt;p&gt;我不喜欢一开始就讲很复杂的东西，一开始，先讲一个简单的实现，用于显示一点东西在屏幕上。&lt;/p&gt;
-
-&lt;p&gt;我们想让 Table View 受数组中的数据驱动（准确地说是 items 数组）。因为我们的数据是完全不同的两种结构体，所以数组的类型只能是 [Any]。在 registerCells() 方法中我们使用标准的 cell 重用机制提前注册了 cell。在 tableView(_:cellForRowAtIndexPath:) 方法中我们根据指定 IndexPath 所对应的 view data 的类型来创建 cell。我们的 View Controller 的完整实现非常简单（为简便起见，我们用 ViewController 作为 Table View 的数据源。在真实项目中，我们可能需要将数据源抽离到一个单独的对象中。）：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class ViewController: UIViewController {
-
-    @IBOutlet weak var tableView: UITableView!
-
-    var items: [Any] = [
-        TextCellViewData(title: &quot;Foo&quot;),
-        ImageCellViewData(image: UIImage(named: &quot;Apple&quot;)!),
-        ImageCellViewData(image: UIImage(named: &quot;Google&quot;)!),
-        TextCellViewData(title: &quot;Bar&quot;),
-    ]
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        tableView.dataSource = self
-        registerCells()
-    }
-
-    func registerCells() {
-        tableView.registerClass(TextTableViewCell.self, forCellReuseIdentifier: textCellIdentifier)
-        tableView.registerClass(ImageTableViewCell.self, forCellReuseIdentifier: imageCellIdentifier)
-    }
-}
-
-extension ViewController: UITableViewDataSource {
-
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -&amp;gt; Int {
-        return items.count
-    }
-
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
-        let viewData = items[indexPath.row]
-
-        if (viewData is TextCellViewData) {
-            let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as! TextTableViewCell
-            cell.updateWithViewData(viewData as! TextCellViewData)
-            return cell
-        } else if (viewData is ImageCellViewData) {
-            let cell = tableView.dequeueReusableCellWithIdentifier(imageCellIdentifier) as! ImageTableViewCell
-            cell.updateWithViewData(viewData as! ImageCellViewData)
-            return cell
-        }
-
-        fatalError()
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这个方法是可行的，但至少有以下几个原因让我不太满意:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;我们无法重用这个 ViewController。如果我们想再加入一种新的 cell，比如用于显示视频，我们不得不在三个地方修改代码：
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;加入一个新的可重用 Identifier&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改 registerCells() 方法&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;修改 tableView(_:cellForRowAtIndexPath:) 方法&lt;/p&gt;
-
-    &lt;p&gt;如果我们修改 items，提供给它一种 view data，而这种 view data 类型是我们无法处理的，则我们会触发 tableView(_:cellForRowAtIndexPath:) 方法中的 fatalError()。&lt;/p&gt;
-
-    &lt;p&gt;在 view data 和 cell 之间存在关联性，但在类型系统中却无法体现这种关联性。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;第二种方法：枚举&lt;/p&gt;
-
-&lt;p&gt;我们可以添加一个 TableViewItem 枚举类型来从某种程度上解决这些问题，在枚举中，我们将 view data 所支持的所有类型都列举进去：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;enum TableViewItem {
-    case Text(viewData: TextCellViewData)
-    case Image(viewData: ImageCellViewData)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;然后将 items 属性的类型修改为 [TableViewItem]：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var items: [TableViewItem] = [
-    .Text(viewData: TextCellViewData(title: &quot;Foo&quot;)),
-    .Image(viewData: ImageCellViewData(image: UIImage(named: &quot;Apple&quot;)!)),
-    .Image(viewData: ImageCellViewData(image: UIImage(named: &quot;Google&quot;)!)),
-    .Text(viewData: TextCellViewData(title: &quot;Bar&quot;)),
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;再修改 registerCells() 方法:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func registerCells() {
-    for item in items {
-        let cellClass: AnyClass
-        let identifier: String
-
-        switch(item) {
-        case .Text(viewData: _):
-            cellClass = TextTableViewCell.self
-            identifier = textCellIdentifier
-        case .Image(viewData: _):
-            cellClass = ImageTableViewCell.self
-            identifier = imageCellIdentifier
-        }
-
-        tableView.registerClass(cellClass, forCellReuseIdentifier: identifier)
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;最后，修改 tableView(_:cellForRowAtIndexPath:) 方法：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
-    let item = items[indexPath.row]
-
-    switch(item) {
-    case let .Text(viewData: viewData):
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier) as! TextTableViewCell
-        cell.updateWithViewData(viewData)
-        return cell
-    case let .Image(viewData: viewData):
-        let cell = tableView.dequeueReusableCellWithIdentifier(imageCellIdentifier) as! ImageTableViewCell
-        cell.updateWithViewData(viewData)
-        return cell
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;不可否认，这种方法比上一种方法更好：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;View Controller 只能提供枚举中指定的 view data 类型。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;用 switch 语句代替了烦人的 if 语句，同时可以去掉 fatalError()。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;然后我们还可以改进这个实现，比如将单元格的重用和设置修改为：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
-    let item = items[indexPath.row]
-
-    switch(item) {
-    case let .Text(viewData: viewData):
-        return tableView.dequeueCellWithViewData(viewData) as TextTableViewCell
-    case let .Image(viewData: viewData):
-        return tableView.dequeueCellWithViewData(viewData) as ImageTableViewCell
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;但是悲催的是，我们得在所有的地方都要加入这些 switch 语句。到目前为止，我们只在两个地方使用了 switch 语句，但不难想象绝不仅限于此。例如，当自动布局将变得不可用我们必须使用手动布局时，我们必须在 tableView(_:heightForRowAtIndexPath:) 中再使用一个 switch 语句。&lt;/p&gt;
-
-&lt;p&gt;这个方法不是不可以使用，但我始终对那些 switch 语句耿耿于怀，于是我打算更进一步。&lt;/p&gt;
-
-&lt;p&gt;第三种（终极）方法：协议和泛型&lt;/p&gt;
-
-&lt;p&gt;让我们彻底推翻前两种解决办法，另起炉灶。&lt;/p&gt;
-
-&lt;p&gt;声明 Updatable 协议&lt;/p&gt;
-
-&lt;p&gt;我们的 cell 是根据 view data 来呈现不同界面的，因此我们定义一个 Updatable 协议，同时让它和一个类型 ViewData 进行绑定：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol Updatable: class {
-    typealias ViewData
-
-    func updateWithViewData(viewData: ViewData)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;然后让我们的自定义单元格实现该协议：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension TextTableViewCell: Updatable {
-    typealias ViewData = TextCellViewData
-}
-
-extension ImageTableViewCell: Updatable {
-    typealias ViewData = ImageCellViewData
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;看过前两种方法之后，我们不难发现，对于 items 中的每个 view data 对象，我们都需要：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;找出要使用哪一种 cell 类&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;找出要使用哪一个重用 Identifier&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;用 veiw data 渲染 cell&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;定义 CellConfigurator 结构&lt;/p&gt;
-
-&lt;p&gt;因此，我们另外声明一个结构来包装 view data。用结构来提供更多的属性和功能。不妨把这个结构命名为 CellConfigurator:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;struct CellConfigurator {
-
-    let viewData: Cell.ViewData
-    let reuseIdentifier: String = NSStringFromClass(Cell)
-    let cellClass: AnyClass = Cell.self
-
-    ...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这个是一个泛型结构，使用类型参数 Cell。Cell 有两个约束：首先必须实现了 Updatable 协议，其次它必须是 UITableViewCell 子类。&lt;/p&gt;
-
-&lt;p&gt;CellConfigurator 有三个属性: viewData, reuseIdentifier 和 cellClass。viewData 的类型取决于 Cell 的类型，它没有默认值。其他两个属性的值则取决于 Cell 的具体类型（这是 Swift 中的新特性，它真的很棒！）。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    ...
-    // further part of CellConfigurator
-    func updateCell(cell: UITableViewCell) {
-        if let cell = cell as? Cell {
-            cell.updateWithViewData(viewData)
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;最后，我们将 UITableViewCell 实例传给 updateCell() 方法，就可以将 viewData 渲染到 cell 上。这里，我们不需要用到 Cell 的类型，因为 UITableViewCell 对象是通过 dequeueReusableCellWithIdentifier(_:forIndexPath:) 方法返回的。呼，这么短的实现，解释起来这么费劲。&lt;/p&gt;
-
-&lt;p&gt;然后，在 items 数组中生成 CellConfigurator 实例：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let items = [
-    CellConfigurator(viewData: TextCellViewData(title: &quot;Foo&quot;)),
-    CellConfigurator(viewData: ImageCellViewData(image: UIImage(named: &quot;Apple&quot;)!)),
-    CellConfigurator(viewData: ImageCellViewData(image: UIImage(named: &quot;Google&quot;)!)),
-    CellConfigurator(viewData: TextCellViewData(title: &quot;Bar&quot;)),
-]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;等等，怎么回事？居然出现一个编译时错误？&lt;/p&gt;
-
-&lt;p&gt;Type of expression is ambiguous without more context&lt;/p&gt;
-
-&lt;p&gt;那是因为 CellConfigurator 是泛型，但 Swift 数组只能保存相同类型，我们不能简单地把 CellConfigurator和 CellConfigurator放到同一个数组中。这是对的，但却不是我们想要的。&lt;/p&gt;
-
-&lt;p&gt;啊哈，稍等一会，马上搞定。Cell 类型参数实际上只在声明 viewData 的时候用到。因此，我们在 CellConfigurator 中可以不需要指明 Cell 的真实类型。新声明一个非泛型协议：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;protocol CellConfiguratorType {
-    var reuseIdentifier: String { get }
-    var cellClass: AnyClass { get }
-
-    func updateCell(cell: UITableViewCell)
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;修改 CellConfigurator，让它实现 CellConfiguratorType:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;extension CellConfigurator: CellConfiguratorType {
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;现在可以将 items 的类型声明为：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let items: [CellConfiguratorType]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;编译通过。&lt;/p&gt;
-
-&lt;p&gt;View Controller&lt;/p&gt;
-
-&lt;p&gt;我们现在开始修改 View Controller。 registerCells() 可以变得更简单:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func registerCells() {
-    for cellConfigurator in items {
-        tableView.registerClass(cellConfigurator.cellClass, forCellReuseIdentifier: cellConfigurator.reuseIdentifier)
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;tableView(_:cellForRowAtIndexPath:) 方法也变得更简单了，这真是一个好消息：&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -&amp;gt; UITableViewCell {
-    let cellConfigurator = items[indexPath.row]
-    let cell = tableView.dequeueReusableCellWithIdentifier(cellConfigurator.reuseIdentifier, forIndexPath: indexPath)
-    cellConfigurator.updateCell(cell)
-    return cell
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;为能重用 View Controller，我们还必须再做一些工作。比如让 items 能够从类外部修改。这里就不再多说了，你可以在 GitHub 上参考最终实现的这个框架和 demo：ConfigurableTableViewController&lt;/p&gt;
-
-&lt;p&gt;结束语&lt;/p&gt;
-
-&lt;p&gt;我们来看一下，最后一个方案和前两种方案相比有什么不同：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;当我们想增加一种新的 cell 时，不需要修改 View Controller&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;View Controller 是类型安全的。如果我们增加一种 cell 根本不支持的 view data 时，我们会得到一个编译错误。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;刷新 cell 时不需要 switch 语句。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Fri, 18 Mar 2016 00:00:00 +0800</pubDate>
-        <link>http://amazingw.github.com/2016/03/18/tableview-controls.html</link>
-        <guid isPermaLink="true">http://amazingw.github.com/2016/03/18/tableview-controls.html</guid>
-        
-        <category>tableview</category>
-        
-        <category>iOS</category>
-        
-        
-        <category>客户端开发</category>
         
       </item>
     
