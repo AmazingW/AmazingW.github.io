@@ -127,3 +127,6 @@ UnityAppController.h的代码
 ![POZWJg](../../../assets/img/unity_xcode28.png)
 
 9.编译运行,最好在真机调试。
+
+
+源码在[https://github.com/AmazingW/Unity5WithiOS](https://github.com/AmazingW/Unity5WithiOS)

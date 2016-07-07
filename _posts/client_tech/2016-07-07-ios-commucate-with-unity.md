@@ -124,4 +124,6 @@ UnitySendMessage("GameObjectName1", "MethodName1", "Message to send");
 ```
 参数1：gameobject名字；参数2：回调函数的名字；参数3：参数。同android开发中java回调c#一样，三个参数都是字符串类型！但android开发中的第三个参数不能是null（若没有参数，可以用空字符串""，因为使用null程序会崩掉），这里不知道能不能为null，还没测试过。
 
+源码在[https://github.com/AmazingW/Unity5WithiOS](https://github.com/AmazingW/Unity5WithiOS)
+
 
