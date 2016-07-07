@@ -2,181 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12134abe-2015-4e3d-9269-a6a44d5dafc0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/19/php-session-security.html" afterPath="$PROJECT_DIR$/_site/2012/09/19/php-session-security.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/27/open-widown-in-javascript.html" afterPath="$PROJECT_DIR$/_site/2012/09/27/open-widown-in-javascript.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/09/27/php-variable-variables.html" afterPath="$PROJECT_DIR$/_site/2012/09/27/php-variable-variables.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/11/08/openstack-nova-internal.html" afterPath="$PROJECT_DIR$/_site/2012/11/08/openstack-nova-internal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/12/30/share-windows-and-linux.html" afterPath="$PROJECT_DIR$/_site/2012/12/30/share-windows-and-linux.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2012/12/31/python-development-of-sae.html" afterPath="$PROJECT_DIR$/_site/2012/12/31/python-development-of-sae.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/01/09/remote-access-of-mysql.html" afterPath="$PROJECT_DIR$/_site/2013/01/09/remote-access-of-mysql.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/01/16/create-remote-resp.html" afterPath="$PROJECT_DIR$/_site/2013/01/16/create-remote-resp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/01/30/command-of-kanyun.html" afterPath="$PROJECT_DIR$/_site/2013/01/30/command-of-kanyun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/01/30/deploy-kanyun.html" afterPath="$PROJECT_DIR$/_site/2013/01/30/deploy-kanyun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/01/30/introduction-kanyun-server.html" afterPath="$PROJECT_DIR$/_site/2013/01/30/introduction-kanyun-server.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/01/30/introduction-of-kanyun-worker.html" afterPath="$PROJECT_DIR$/_site/2013/01/30/introduction-of-kanyun-worker.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/02/24/javascript-variable-domain.html" afterPath="$PROJECT_DIR$/_site/2013/02/24/javascript-variable-domain.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/02/25/quick-open-in-windows.html" afterPath="$PROJECT_DIR$/_site/2013/02/25/quick-open-in-windows.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/20/debug-and-modify-openstack-horizon.html" afterPath="$PROJECT_DIR$/_site/2013/03/20/debug-and-modify-openstack-horizon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/20/different-bewteen-kvm-xen-qemu.html" afterPath="$PROJECT_DIR$/_site/2013/03/20/different-bewteen-kvm-xen-qemu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/21/introduction-of-ceilometer.html" afterPath="$PROJECT_DIR$/_site/2013/03/21/introduction-of-ceilometer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/21/vnc-vs-rdp.html" afterPath="$PROJECT_DIR$/_site/2013/03/21/vnc-vs-rdp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/25/open-tcp-port-of-libvirt.html" afterPath="$PROJECT_DIR$/_site/2013/03/25/open-tcp-port-of-libvirt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/25/tools-of-sever-deployment.html" afterPath="$PROJECT_DIR$/_site/2013/03/25/tools-of-sever-deployment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/03/27/glossary-of-ceilometer.html" afterPath="$PROJECT_DIR$/_site/2013/03/27/glossary-of-ceilometer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/21/add-snippet.html" afterPath="$PROJECT_DIR$/_site/2013/04/21/add-snippet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/22/add-svn-ignore-file.html" afterPath="$PROJECT_DIR$/_site/2013/04/22/add-svn-ignore-file.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/22/highlight-of-jekyll.html" afterPath="$PROJECT_DIR$/_site/2013/04/22/highlight-of-jekyll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/22/ignore-password-in-git-push.html" afterPath="$PROJECT_DIR$/_site/2013/04/22/ignore-password-in-git-push.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/22/wordpress-to-jekyll.html" afterPath="$PROJECT_DIR$/_site/2013/04/22/wordpress-to-jekyll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/23/deploy-jeklly-blog.html" afterPath="$PROJECT_DIR$/_site/2013/04/23/deploy-jeklly-blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/23/general-bootstrap-resources.html" afterPath="$PROJECT_DIR$/_site/2013/04/23/general-bootstrap-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/23/opensource-licenses.html" afterPath="$PROJECT_DIR$/_site/2013/04/23/opensource-licenses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/25/conceptual-logical-physical.html" afterPath="$PROJECT_DIR$/_site/2013/04/25/conceptual-logical-physical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/25/some-concept-about-enterprise-storage.html" afterPath="$PROJECT_DIR$/_site/2013/04/25/some-concept-about-enterprise-storage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/04/26/create-windows-xp-image-for-openstack.html" afterPath="$PROJECT_DIR$/_site/2013/04/26/create-windows-xp-image-for-openstack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/01/deploy-a-ceilometer-horizon-project.html" afterPath="$PROJECT_DIR$/_site/2013/05/01/deploy-a-ceilometer-horizon-project.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/01/terminal-command-of-ceilometer.html" afterPath="$PROJECT_DIR$/_site/2013/05/01/terminal-command-of-ceilometer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/03/create-windows-7-image-for-openstack.html" afterPath="$PROJECT_DIR$/_site/2013/05/03/create-windows-7-image-for-openstack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/03/php-cache-of-a-page.html" afterPath="$PROJECT_DIR$/_site/2013/05/03/php-cache-of-a-page.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/06/interactive-coding-ipython.html" afterPath="$PROJECT_DIR$/_site/2013/05/06/interactive-coding-ipython.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/06/the-viewpoint-metatag.html" afterPath="$PROJECT_DIR$/_site/2013/05/06/the-viewpoint-metatag.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/06/why-use-pip-over-easy-install.html" afterPath="$PROJECT_DIR$/_site/2013/05/06/why-use-pip-over-easy-install.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/13/openstack-grizzly-multihost-deployment-doc.html" afterPath="$PROJECT_DIR$/_site/2013/05/13/openstack-grizzly-multihost-deployment-doc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/15/create-ubuntu-image-for-openstack.html" afterPath="$PROJECT_DIR$/_site/2013/05/15/create-ubuntu-image-for-openstack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/15/different-between-python-package-tools.html" afterPath="$PROJECT_DIR$/_site/2013/05/15/different-between-python-package-tools.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/15/learn-how-to-use-distutils.html" afterPath="$PROJECT_DIR$/_site/2013/05/15/learn-how-to-use-distutils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/16/deploy-openstack-grizzly-in-virtual-machine.html" afterPath="$PROJECT_DIR$/_site/2013/05/16/deploy-openstack-grizzly-in-virtual-machine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/19/what-is-wsgi.html" afterPath="$PROJECT_DIR$/_site/2013/05/19/what-is-wsgi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/20/set-proxy-for-git-or-apt.html" afterPath="$PROJECT_DIR$/_site/2013/05/20/set-proxy-for-git-or-apt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/22/change-to-zsh.html" afterPath="$PROJECT_DIR$/_site/2013/05/22/change-to-zsh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/23/install-mysql-and-mongo-web-admin.html" afterPath="$PROJECT_DIR$/_site/2013/05/23/install-mysql-and-mongo-web-admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/05/27/openstack-horizon-locale.html" afterPath="$PROJECT_DIR$/_site/2013/05/27/openstack-horizon-locale.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/07/learn-python-setuptools-in-detail.html" afterPath="$PROJECT_DIR$/_site/2013/06/07/learn-python-setuptools-in-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/09/learn-python-abc-module.html" afterPath="$PROJECT_DIR$/_site/2013/06/09/learn-python-abc-module.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/09/learn-python-stevedore-module-in-detail.html" afterPath="$PROJECT_DIR$/_site/2013/06/09/learn-python-stevedore-module-in-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/11/hacking-in-openstack-ceilometer-compute-agent.html" afterPath="$PROJECT_DIR$/_site/2013/06/11/hacking-in-openstack-ceilometer-compute-agent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/11/pipeline-of-openstack-ceilometer.html" afterPath="$PROJECT_DIR$/_site/2013/06/11/pipeline-of-openstack-ceilometer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-api.html" afterPath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-api.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-collector.html" afterPath="$PROJECT_DIR$/_site/2013/06/12/hacking-in-openstack-ceilometer-collector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/01/program-and-life.html" afterPath="$PROJECT_DIR$/_site/2013/08/01/program-and-life.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/06/tools-of-reading.html" afterPath="$PROJECT_DIR$/_site/2013/08/06/tools-of-reading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/08/28/change-bootstrap-to-3.html" afterPath="$PROJECT_DIR$/_site/2013/08/28/change-bootstrap-to-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/10/01/deploy-ceilometer-of-openstack.html" afterPath="$PROJECT_DIR$/_site/2013/10/01/deploy-ceilometer-of-openstack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/12/08/implemention-of-breadcrumbs-by-css3.html" afterPath="$PROJECT_DIR$/_site/2013/12/08/implemention-of-breadcrumbs-by-css3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/12/08/linux-command-continue.html" afterPath="$PROJECT_DIR$/_site/2013/12/08/linux-command-continue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/12/11/deploy-pptp-vpn-in-ubuntu.html" afterPath="$PROJECT_DIR$/_site/2013/12/11/deploy-pptp-vpn-in-ubuntu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2013/12/11/lamp-in-mac.html" afterPath="$PROJECT_DIR$/_site/2013/12/11/lamp-in-mac.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-git-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-git-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-html-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-html-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-javascript-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-javascript-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-jquery-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-jquery-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-php-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-php-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-python-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-python-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-shell-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-shell-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/15/general-svn-resources.html" afterPath="$PROJECT_DIR$/_site/2014/01/15/general-svn-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/16/php-namespace-and-autoload.html" afterPath="$PROJECT_DIR$/_site/2014/01/16/php-namespace-and-autoload.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/17/python-script-of-sae-log-download.html" afterPath="$PROJECT_DIR$/_site/2014/01/17/python-script-of-sae-log-download.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/24/apache-log-format.html" afterPath="$PROJECT_DIR$/_site/2014/01/24/apache-log-format.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/25/how-to-use-php-socket.html" afterPath="$PROJECT_DIR$/_site/2014/01/25/how-to-use-php-socket.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/01/30/understanding-the-github-workflow.html" afterPath="$PROJECT_DIR$/_site/2014/01/30/understanding-the-github-workflow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html" afterPath="$PROJECT_DIR$/_site/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/02/15/apache-and-nginx.html" afterPath="$PROJECT_DIR$/_site/2014/02/15/apache-and-nginx.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/03/10/grunt-bower-and-laravel.html" afterPath="$PROJECT_DIR$/_site/2014/03/10/grunt-bower-and-laravel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/03/20/php-debug-with-xdebug.html" afterPath="$PROJECT_DIR$/_site/2014/03/20/php-debug-with-xdebug.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/03/20/use-other-libraries-in-laravel.html" afterPath="$PROJECT_DIR$/_site/2014/03/20/use-other-libraries-in-laravel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/03/22/managing-your-larrvel-queue-by-supervisor.html" afterPath="$PROJECT_DIR$/_site/2014/03/22/managing-your-larrvel-queue-by-supervisor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/10/install-docker-in-mac.html" afterPath="$PROJECT_DIR$/_site/2014/04/10/install-docker-in-mac.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/10/install-vagrant-in-mac.html" afterPath="$PROJECT_DIR$/_site/2014/04/10/install-vagrant-in-mac.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/11/redis-queue-in-laravel.html" afterPath="$PROJECT_DIR$/_site/2014/04/11/redis-queue-in-laravel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/16/insert-large-number-of-data-in-mysql.html" afterPath="$PROJECT_DIR$/_site/2014/04/16/insert-large-number-of-data-in-mysql.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/19/design-patterns-of-php.html" afterPath="$PROJECT_DIR$/_site/2014/04/19/design-patterns-of-php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/23/roc-curve.html" afterPath="$PROJECT_DIR$/_site/2014/04/23/roc-curve.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/04/27/magic-methods-and-magic-constants-in-php.html" afterPath="$PROJECT_DIR$/_site/2014/04/27/magic-methods-and-magic-constants-in-php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/05/04/set-environment-variables-of-server-for-php.html" afterPath="$PROJECT_DIR$/_site/2014/05/04/set-environment-variables-of-server-for-php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/05/11/general-mysql-resources.html" afterPath="$PROJECT_DIR$/_site/2014/05/11/general-mysql-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/08/03/general-mac-resources.html" afterPath="$PROJECT_DIR$/_site/2014/08/03/general-mac-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/09/26/use-old-version-of-brew-php.html" afterPath="$PROJECT_DIR$/_site/2014/09/26/use-old-version-of-brew-php.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2014/12/06/ioc-and-facade-in-laravel.html" afterPath="$PROJECT_DIR$/_site/2014/12/06/ioc-and-facade-in-laravel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/01/08/conflict-between-camel-and-snake-in-laravel.html" afterPath="$PROJECT_DIR$/_site/2015/01/08/conflict-between-camel-and-snake-in-laravel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html" afterPath="$PROJECT_DIR$/_site/2015/01/10/use-dropzone-and-qiniu-to-store-blog-images.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/02/13/general-seo-resources.html" afterPath="$PROJECT_DIR$/_site/2015/02/13/general-seo-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/09/07/sort-algorithms.html" afterPath="$PROJECT_DIR$/_site/2015/09/07/sort-algorithms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2015/10/04/general-vim-resources.html" afterPath="$PROJECT_DIR$/_site/2015/10/04/general-vim-resources.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation1.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation2.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Facebook-Annimation2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/LLVM-record.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/LLVM-record.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/OC-Singleton.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/OC-Singleton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/Objc-API-Thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/Objc-API-Thread.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/OtherLinkerFlags-iOS-XCode.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/OtherLinkerFlags-iOS-XCode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/RunTime-Swizzle.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/RunTime-Swizzle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/UITableViewCell-AutoHeight.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/UITableViewCell-AutoHeight.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/UITextInput-proto.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/UITextInput-proto.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/c++-extern-detail.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/c++-extern-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/code-style-gnuc.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/code-style-gnuc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/crashlog-from-dump.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/crashlog-from-dump.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/error-of-cocopods.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/error-of-cocopods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/forever-background-ios.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/forever-background-ios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/game-developper-code-desing.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/game-developper-code-desing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/hit-test-Event.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/hit-test-Event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-ActionSheet-problem.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-ActionSheet-problem.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Alpha-hidden-opaque.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Alpha-hidden-opaque.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Animations.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Animations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Base-Knowledge.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Base-Knowledge.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-BlueTooth_develop.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-BlueTooth_develop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Extension.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Extension.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-GCD-Thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-GCD-Thread.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Crop-Graphics.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Crop-Graphics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Dealing.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Image-Dealing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-NSPredicate.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-NSPredicate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-Photo-memory.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-Photo-memory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-multi-thread.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-multi-thread.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-pause-CALayer-Annimation.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-pause-CALayer-Annimation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-self-define-take-photo.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-self-define-take-photo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-static-librays.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-static-librays.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-GCDAsyncSocket.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-GCDAsyncSocket.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-ICONFONT.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-ICONFONT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-NSInvocation.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-use-NSInvocation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-useProtoBuffer.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-useProtoBuffer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/iOS-useWifi.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/iOS-useWifi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/issues-when-using-github.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/issues-when-using-github.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/knowledge-of-game-developper.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/knowledge-of-game-developper.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/linux-file-system.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/linux-file-system.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/nodejs-deamon-fork.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/nodejs-deamon-fork.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/output-format.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/output-format.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/pop-experiences.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/pop-experiences.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/runtime-main-point.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/runtime-main-point.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/scrollview-experience.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/scrollview-experience.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/server-design.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/server-design.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/socket-develop-knowledge.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/socket-develop-knowledge.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/sql-design.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/sql-design.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/sql-use-of-explain.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/sql-use-of-explain.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/symbol-not-found-for-architecture-armv7.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/symbol-not-found-for-architecture-armv7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/tabbar-zoom.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/tabbar-zoom.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-attribute-string.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-attribute-string.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-bundle.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-bundle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-const.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-const.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-rac.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-rac.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/use-of-vfl.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/use-of-vfl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/using-of-UIActivityIndicatorView.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/using-of-UIActivityIndicatorView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/win7-service.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/win7-service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/17/xcode-quickbutton.html" afterPath="$PROJECT_DIR$/_site/2016/03/17/xcode-quickbutton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/book-list-of-2016.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/book-list-of-2016.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/from-swift-2-oc.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/from-swift-2-oc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/swfit-server.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/swfit-server.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/18/tableview-controls.html" afterPath="$PROJECT_DIR$/_site/2016/03/18/tableview-controls.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/03/22/ubuntu-with-gogs.html" afterPath="$PROJECT_DIR$/_site/2016/03/22/ubuntu-with-gogs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/04/29/create-redis-on-mac.html" afterPath="$PROJECT_DIR$/_site/2016/04/29/create-redis-on-mac.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/04/29/new-method-in-jsarray.html" afterPath="$PROJECT_DIR$/_site/2016/04/29/new-method-in-jsarray.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/04/29/nginx-install-on-ubuntu.html" afterPath="$PROJECT_DIR$/_site/2016/04/29/nginx-install-on-ubuntu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/04/29/redis-config.html" afterPath="$PROJECT_DIR$/_site/2016/04/29/redis-config.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/04/29/redis-master-slave.html" afterPath="$PROJECT_DIR$/_site/2016/04/29/redis-master-slave.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/04/29/ubuntu-install-mongodb.html" afterPath="$PROJECT_DIR$/_site/2016/04/29/ubuntu-install-mongodb.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/05/12/ios-bluetooth-connect.html" afterPath="$PROJECT_DIR$/_site/2016/05/12/ios-bluetooth-connect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/06/21/hot-update-iOS.html" afterPath="$PROJECT_DIR$/_site/2016/06/21/hot-update-iOS.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/2016/07/07/add-unityview-in-native-iOS-app.html" afterPath="$PROJECT_DIR$/_site/2016/07/07/add-unityview-in-native-iOS-app.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="$PROJECT_DIR$/_site/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/pages/feed.xml" afterPath="$PROJECT_DIR$/_site/pages/feed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/client_tech/2016-07-07-ios-commucate-with-unity.md" afterPath="$PROJECT_DIR$/_posts/client_tech/2016-07-07-ios-commucate-with-unity.md" />
     </list>
     <ignored path="AmazingW.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -197,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2016-07-07-add-unityview-in-native-iOS-app.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-07-07-add-unityview-in-native-iOS-app.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="6" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2016-07-07-ios-commucate-with-unity.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-07-07-ios-commucate-with-unity.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="119" selection-end-column="3" />
+            <state relative-caret-position="465">
+              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -235,7 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2016-03-17-iOS-ActionSheet-problem.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-17-output-format.md" />
         <option value="$PROJECT_DIR$/_posts/2016-03-17-xcode-quickbutton.md" />
         <option value="$PROJECT_DIR$/_posts/client_tech/2016-03-17-iOS-Animations.md" />
@@ -286,6 +101,7 @@
         <option value="$PROJECT_DIR$/_posts/2016-07-07-add-unityview-in-native-iOS-app.md" />
         <option value="$PROJECT_DIR$/_posts/client_tech/2016-07-07-add-unityview-in-native-iOS-app.md" />
         <option value="$PROJECT_DIR$/_posts/2016-07-07-new-post.md" />
+        <option value="$PROJECT_DIR$/_posts/client_tech/2016-07-07-ios-commucate-with-unity.md" />
       </list>
     </option>
   </component>
@@ -296,8 +112,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1031" />
-    <option name="y" value="97" />
+    <option name="x" value="303" />
+    <option name="y" value="86" />
     <option name="width" value="2556" />
     <option name="height" value="1230" />
   </component>
@@ -476,23 +292,23 @@
       <workItem from="1466480054869" duration="1392000" />
       <workItem from="1467706541014" duration="29000" />
       <workItem from="1467872040328" duration="1029000" />
-      <workItem from="1467873155708" duration="3166000" />
+      <workItem from="1467873155708" duration="3355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14903000" />
+    <option name="totallyTimeSpent" value="15092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1031" y="97" width="2556" height="1230" extended-state="0" />
-    <editor active="false" />
+    <frame x="303" y="86" width="2556" height="1230" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17918622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1955211" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1955211" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -731,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/client_tech/2016-07-07-ios-commucate-with-unity.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="3" selection-start-line="119" selection-start-column="3" selection-end-line="119" selection-end-column="3" />
+        <state relative-caret-position="465">
+          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
           <folding />
         </state>
       </provider>

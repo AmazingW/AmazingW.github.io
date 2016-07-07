@@ -15,6 +15,7 @@ C/C++可以直接与object-c交互，只需把文件后缀写成.mm就行了。c
 
 首先，定义一个新建一个.mm文件，然后在里面定义一个C风格接口的函数，如
 
+```objc
 extern "C"
 
 {
@@ -31,6 +32,7 @@ void testFunc(char* arg)
 
 }
 
+```
 
 第二步，将这个mm文件放到unity工程的Assets/Plugins/IOS路径下。
 
@@ -38,9 +40,11 @@ void testFunc(char* arg)
 
 unity若要编译ios项目，首先要导出xcode工程，然后再由xcode导出ipa安装包。当你生产xcode工程时，你会发现，第二步中的mm文件被引用到了xcdoe工程的Libraries下（你可以在xcdoe中的Libraries下找找看）。我的理解是这个mm文件最终会被编译成库，那上面的testFunc函数就成了库函数。在c#中要使用这个库函数，首先要在文件头加入using System.Runtime.InteropServices;然后声明函数：
 
+```c#
 [DllImort("__Internal")]
 
 private static extern void testFunc(string arg);
+```
 
   注意：这里的参数类型！！！是string而不是char*。关于C与C#参数类型映射关系，可以看这里 http://blog.csdn.net/yatusiter/article/details/9221861
 
