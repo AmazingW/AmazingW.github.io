@@ -131,13 +131,13 @@ keywords: protobuffer,iOS
 <h4 style="font-family: inherit; font-weight: bold; color: inherit; margin-top: 10.5px; margin-bottom: 10.5px; font-size: 1.25em; margin: 1.2em 0 .6em 0; text-align: start; line-height: 1.6;">引入方式</h4>
 
 <p style="margin: 0 0 1.1em; line-height: 1.6;">1.将google的objectc文件夹，复制到自己的文件夹中 <br/>
-<img src="IOS 从0使用protobuffer_files/.1450937401512.png" type="image/png" alt="Alt text" longdesc="./1450937401512.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
+<img src="../../../assets/img/proto1.png" type="image/png" alt="Alt text" longdesc="./proto1.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
 
 <p style="margin: 0 0 1.1em; line-height: 1.6;">2.设置header search paths <br/>
-<img src="IOS 从0使用protobuffer_files/.1450937483085.png" type="image/png" alt="Alt text" longdesc="./1450937483085.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
+<img src="../../../assets/img/proto2.png" type="image/png" alt="Alt text" longdesc="./proto2.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
 
 <p style="margin: 0 0 1.1em; line-height: 1.6;">3.设置依赖和连接库。 <br/>
-<img src="IOS 从0使用protobuffer_files/.1450937521339.png" type="image/png" alt="Alt text" longdesc="./1450937521339.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
+<img src="../../../assets/img/proto3.png" type="image/png" alt="Alt text" longdesc="./proto3.png" style="border: 0; vertical-align: middle; max-width: 100%;" title=""/></p>
 
 <p style="margin: 0 0 1.1em; line-height: 1.6;">4.引入我们编译好的data.pbobjc.h以及.m文件</p>
 

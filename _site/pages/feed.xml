@@ -6,8 +6,8 @@
 </description>
     <link>http://amazingw.github.com/</link>
     <atom:link href="http://amazingw.github.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Jul 2016 15:25:46 +0800</pubDate>
-    <lastBuildDate>Thu, 07 Jul 2016 15:25:46 +0800</lastBuildDate>
+    <pubDate>Mon, 11 Jul 2016 10:12:33 +0800</pubDate>
+    <lastBuildDate>Mon, 11 Jul 2016 10:12:33 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -18,21 +18,24 @@
 
 &lt;p&gt;首先，定义一个新建一个.mm文件，然后在里面定义一个C风格接口的函数，如&lt;/p&gt;
 
-&lt;p&gt;extern “C”&lt;/p&gt;
+&lt;div class=&quot;language-objc highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;extern&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;C&quot;&lt;/span&gt;
 
-&lt;p&gt;{&lt;/p&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
-&lt;p&gt;void testFunc(char* arg)&lt;/p&gt;
+&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;p&gt;{&lt;/p&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
-&lt;p&gt;// 这里可以调用object-c的函数了&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;// 这里可以调用object-c的函数了
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// 如 [[ AlertView alloc] init]; ...
+&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;// 如 [[ AlertView alloc] init]; …&lt;/p&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;}&lt;/p&gt;
-
-&lt;p&gt;}&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;第二步，将这个mm文件放到unity工程的Assets/Plugins/IOS路径下。&lt;/p&gt;
 
@@ -40,9 +43,11 @@
 
 &lt;p&gt;unity若要编译ios项目，首先要导出xcode工程，然后再由xcode导出ipa安装包。当你生产xcode工程时，你会发现，第二步中的mm文件被引用到了xcdoe工程的Libraries下（你可以在xcdoe中的Libraries下找找看）。我的理解是这个mm文件最终会被编译成库，那上面的testFunc函数就成了库函数。在c#中要使用这个库函数，首先要在文件头加入using System.Runtime.InteropServices;然后声明函数：&lt;/p&gt;
 
-&lt;p&gt;[DllImort(“__Internal”)]&lt;/p&gt;
+&lt;div class=&quot;language-c# highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;[DllImort(&quot;__Internal&quot;)]&lt;/span&gt;
 
-&lt;p&gt;private static extern void testFunc(string arg);&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extern&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;testFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;注意：这里的参数类型！！！是string而不是char*。关于C与C#参数类型映射关系，可以看这里 http://blog.csdn.net/yatusiter/article/details/9221861&lt;/p&gt;
 
@@ -120,6 +125,8 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;参数1：gameobject名字；参数2：回调函数的名字；参数3：参数。同android开发中java回调c#一样，三个参数都是字符串类型！但android开发中的第三个参数不能是null（若没有参数，可以用空字符串”“，因为使用null程序会崩掉），这里不知道能不能为null，还没测试过。&lt;/p&gt;
+
+&lt;p&gt;源码在&lt;a href=&quot;https://github.com/AmazingW/Unity5WithiOS&quot;&gt;https://github.com/AmazingW/Unity5WithiOS&lt;/a&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 07 Jul 2016 00:00:00 +0800</pubDate>
@@ -256,6 +263,8 @@ Xcode 7.3.1
 &lt;img src=&quot;../../../assets/img/unity_xcode28.png&quot; alt=&quot;POZWJg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;9.编译运行,最好在真机调试。&lt;/p&gt;
+
+&lt;p&gt;源码在&lt;a href=&quot;https://github.com/AmazingW/Unity5WithiOS&quot;&gt;https://github.com/AmazingW/Unity5WithiOS&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Jul 2016 00:00:00 +0800</pubDate>
         <link>http://amazingw.github.com/2016/07/07/add-unityview-in-native-iOS-app.html</link>
