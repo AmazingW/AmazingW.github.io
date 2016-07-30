@@ -63,6 +63,37 @@ $(function() {
     $(this).addClass('active').siblings().removeClass('active');
   });
 
+  $("#search-input").keyup(function(){
+    var value = $("#search-input")[0].value;
+    var valueUpper = value.toUpperCase();
+
+    if(valueUpper.length == 0) {
+      toc.fadeIn(350);
+      return;
+    }
+
+    toc.hide();
+    var linkArr = $('.toc-link');
+
+    for (var i=0;i<linkArr.length;i ++) {
+      var tocBOM = linkArr[i];
+
+      var bomTitle = tocBOM['pathname'];
+      bomTitle = bomTitle.replace(/(^\s*)|(\s*$)/g, "");
+      var postTitleUpper = (tocBOM['text']).toUpperCase();
+
+      if(postTitleUpper.indexOf(valueUpper)>0) {
+        try {
+          var bomclassStr = '.toc-link[data-title~="' + bomTitle + '"]';
+          $(bomclassStr).fadeIn(350);
+        }catch(err) {
+          console.log(bomTitle);
+          console.log('error:',tocBOM);
+        }
+
+      }
+    }
+  });
 
   // Menu
   menu.on('click', function() {
