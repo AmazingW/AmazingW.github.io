@@ -3,6 +3,7 @@ _drafts/
 .DS_Store
 .idea/
 .sass-cache
+_site
 Gemfile
 Gemfile.lock
 _posts/.MWebMetaData/
