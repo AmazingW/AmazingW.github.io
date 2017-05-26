@@ -2,7 +2,7 @@ ite/
 _drafts/
 .DS_Store
 .idea/
-.sass-cache
+.sass-cache/
 _site
 Gemfile
 Gemfile.lock
