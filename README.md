@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://AmazingW.github.io](http://AmazingW.github.io)
+地址：[http://wuqifei.github.io](http://wuqifei.github.io)
 博客参考su yan的开源模块,我保留了[su yan](https://github.com/suyan/suyan.github.io)的一部分技术类的文章，非常感谢他
 ### 安装说明
 
